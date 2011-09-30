@@ -471,6 +471,10 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 var pos = $li.position();
                 $subnav.css("left", pos.left - 2);
                 $subnav.show();
+            }, function(){
+                var $li = $(this);
+                $li.children(subnavtl).hide();
+                $li.children(navLinkDropdown).hide();
             });
 
             // hide the menu after an option has been clicked
@@ -529,13 +533,6 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 }
             });
 
-
-            $("#topnavigation_user_options_name").keydown(function(e) {
-                // hide signin or user options menu when tabbing out of the last menu option
-                if (!e.shiftKey && e.which == $.ui.keyCode.TAB) {
-                    closeMenu();
-                }
-            });
 
             $(topnavUserOptions).bind("click", decideShowLoginLogout);
 
