@@ -432,6 +432,10 @@ define(["config/config"], function(config) {
     }
    
 	config.Directory = {
+        divider1: {
+            divider: true,
+            title: "Divisions"
+        },
         turbomachineryenergyfluidmechanics: {
             title: "Turbomachinery, Energy and Fluid Mechanics",
             children: {
@@ -558,66 +562,64 @@ define(["config/config"], function(config) {
                 }
             }
         },
-        strategicthemes: {
-            title: "Strategic Themes",
-            children: {
-                energytransportandurbaninfrastructure: {
-                    title: "Energy, transport and urban infrastructure"
-                },
-                uncertaintyriskandresilience: {
-                    title: "Uncertainty, risk and resilience"
-                },
-                engineeringforlifesciencesandhealthcare: {
-                    title: "Engineering for life sciences and healthcare"
-                },
-                inspiringresearchthroughindustrialcollaboration: {
-                    title: "Inspiring research through industrial collaboration"
-                }
-            }
+        divider2: {
+            divider: true,
+            title: "Strategic Themes"
         },
-        cuedteaching: {
-            title: "CUED Teaching",
-            children: {
-                engineeringtripospartia: {
-                    title: "Engineering Tripos Part IA"
-                },
-                engineeringtripospartib: {
-                    title: "Engineering Tripos Part IB"
-                },
-                engineeringtripospartiia: {
-                    title: "Engineering Tripos Part IIA"
-                },
-                engineeringtripospartiib: {
-                    title: "Engineering Tripos Part IIB"
-                },
-                manufacturingengineeringtripospartiia: {
-                    title: "Manufacturing Engineering Tripos Part IIA"
-                },
-                manufacturingengineeringtripospartiib: {
-                    title: "Manufacturing Engineering Tripos Part IIB"
-                },
-                mphilinnuclearenergy: {
-                    title: "MPhil in Nuclear Energy"
-                },
-                mphilinindustrialsystemsmanufactureandmanagement: {
-                    title: "MPhil in Industrial Systems, Manufacture and Management"
-                },
-                mphilinenergytechnologies: {
-                    title: "MPhil in Energy Technologies"
-                },
-                mphilininterdisciplinarydesignforthebuiltenvironment: {
-                    title: "MPhil in Interdisciplinary Design for the Built Environment"
-                },
-                mphilinengineeringforsustainabledevelopment: {
-                    title: "MPhil in Engineering for Sustainable Development"
-                },
-                mphilinconstructionengineering: {
-                    title: "MPhil in Construction Engineering"
-                },
-                mresinphotonicssystemsdevelopment: {
-                    title: "MRes in Photonics Systems Development"
-                }
-            }
+        energytransportandurbaninfrastructure: {
+            title: "Energy, transport and urban infrastructure"
+        },
+        uncertaintyriskandresilience: {
+            title: "Uncertainty, risk and resilience"
+        },
+        engineeringforlifesciencesandhealthcare: {
+            title: "Engineering for life sciences and healthcare"
+        },
+        inspiringresearchthroughindustrialcollaboration: {
+            title: "Inspiring research through industrial collaboration"
+        },
+        divider3: {
+            divider: true,
+            title: "CUED Teaching"
+        },
+        engineeringtripospartia: {
+            title: "Engineering Tripos Part IA"
+        },
+        engineeringtripospartib: {
+            title: "Engineering Tripos Part IB"
+        },
+        engineeringtripospartiia: {
+            title: "Engineering Tripos Part IIA"
+        },
+        engineeringtripospartiib: {
+            title: "Engineering Tripos Part IIB"
+        },
+        manufacturingengineeringtripospartiia: {
+            title: "Manufacturing Engineering Tripos Part IIA"
+        },
+        manufacturingengineeringtripospartiib: {
+            title: "Manufacturing Engineering Tripos Part IIB"
+        },
+        mphilinnuclearenergy: {
+            title: "MPhil in Nuclear Energy"
+        },
+        mphilinindustrialsystemsmanufactureandmanagement: {
+            title: "MPhil in Industrial Systems, Manufacture and Management"
+        },
+        mphilinenergytechnologies: {
+            title: "MPhil in Energy Technologies"
+        },
+        mphilininterdisciplinarydesignforthebuiltenvironment: {
+            title: "MPhil in Interdisciplinary Design for the Built Environment"
+        },
+        mphilinengineeringforsustainabledevelopment: {
+            title: "MPhil in Engineering for Sustainable Development"
+        },
+        mphilinconstructionengineering: {
+            title: "MPhil in Construction Engineering"
+        },
+        mresinphotonicssystemsdevelopment: {
+            title: "MRes in Photonics Systems Development"
         }
     };
     
