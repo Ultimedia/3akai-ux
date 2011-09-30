@@ -452,7 +452,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 var pos = $li.position();
                 $subnav.css("left", pos.left - 2);
                 $subnav.show();
-            };
+            });
 
             $(hasSubnav).hover(openMenu, closeMenu);
 
