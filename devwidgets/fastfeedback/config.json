@@ -1,0 +1,22 @@
+{
+    "enabled":            true,
+    "groupdashboard":     true,
+    "grouppages":         true,
+    "userdashboard":      true,
+    "userpages":          true,
+    "personalportal":     true,
+    "showinsakaigoodies": true,
+    "sakaidocs": true,
+    "hasSettings":        false,
+    "i18n": {
+        "default": {
+            "bundle":     "/devwidgets/fastfeedback/bundles/default.properties",
+            "name":       "Fast Feedback Widget",
+            "description":"Fast Feedback Widget"
+        }
+    },
+    "id":                 "fastfeedback",
+    "img": "/devwidgets/fastfeedback/images/icon.png",
+    "type":               "sakai",
+    "url":                "/devwidgets/fastfeedback/fastfeedback.html"
+}

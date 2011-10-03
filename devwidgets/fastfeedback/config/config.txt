@@ -1,0 +1,77 @@
+### YEAR 1 (Oct09 - Sep10)
+
+FFFTITLE 1A Feedback 
+
+FFFMENU Lectures 
+Kinematics and Dynamics (Hunt) =hemh@eng.cam.ac.uk 
+Mechanical Vibrations (Langley) =rsl21@eng.cam.ac.uk 
+Thermofluid Mechanics (Davidson) =pad3@eng.cam.ac.uk 
+Thermofluid Mechanics (White) =ajw36@eng.cam.ac.uk 
+Structural Mechanics (Middleton) =crm@eng.cam.ac.uk 
+Structural Mechanics (Lees) =jml2@eng.cam.ac.uk 
+Materials (Shercliff) =hrs@eng.cam.ac.uk 
+Materials (Markaki) =am253@eng.cam.ac.uk 
+Materials (Fleck) =naf1@eng.cam.ac.uk 
+Phys. Principles (Wilkinson) =tdw@eng.cam.ac.uk 
+Linear Circuits (Durkan) =cd229@eng.cam.ac.uk 
+Linear Circuits (Udrea) =fu@eng.cam.ac.uk 
+Electromagnetics (Wilkinson) =tdw@eng.cam.ac.uk 
+Digital Circuits (Penty) =rvp11@eng.cam.ac.uk 
+Maths (Hynes) =tph@eng.cam.ac.uk 
+Maths (Young_JB) =jby@eng.cam.ac.uk 
+Maths (Juniper) =mpj1001@eng.cam.ac.uk 
+Maths (Wells) =gnw20@eng.cam.ac.uk 
+Maths (Prager) =rwp@eng.cam.ac.uk 
+Maths (Smith MC) =mcs@eng.cam.ac.uk 
+fast feedback (Pareyn)=bp323@caret.cam.ac.uk 
+Dimensional Analysis (Parks) =gtp@eng.cam.ac.uk 
+Computing (Csanyi) =gc121@eng.cam.ac.uk 
+Drawing (Crilly) =nc266@eng.cam.ac.uk 
+Drawing (Long) =pjgl2@eng.cam.ac.uk 
+Drawing (Moultrie) =jm329@eng.cam.ac.uk 
+Drawing (Johnson) =alj3@eng.cam.ac.uk 
+Engineer in Society (Minshall) =thwm100@eng.cam.ac.uk 
+Product Design (Clarkson) =pjc10@eng.cam.ac.uk 
+Product Design (Crilly) =nc266@eng.cam.ac.uk 
+Engineering Applications (Long) =pjgl2@eng.cam.ac.uk 
+
+FFFMENU Coursework 
+Computing =tpl@eng.cam.ac.uk 
+Drawing =alj3@eng.cam.ac.uk 
+Dim. Analysis (Fluids) =gtp@eng.cam.ac.uk 
+Dim. Analysis (Structures) =cjb@eng.cam.ac.uk 
+Elect. Instrumentation =ajf@eng.cam.ac.uk 
+Microprocessors =twd20@eng.cam.ac.uk 
+Exposition =dc135@eng.cam.ac.uk 
+Statics Exp. =cjb@eng.cam.ac.uk 
+Struc. Design Proj. =crm11@cam.ac.uk 
+Electrical =ajf@eng.cam.ac.uk 
+Information = sss40@eng.cam.ac.uk 
+Materials =am253@eng.cam.ac.uk 
+Mechanics =gnw20@eng.cam.ac.uk 
+Structures =fc286@eng.cam.ac.uk 
+Thermo/Fluids =jby@eng.cam.ac.uk 
+Engine Strip =gtp@eng.cam.ac.uk 
+Workshop Skills =gtp@eng.cam.ac.uk 
+Computer Build =tdw@eng.cam.ac.uk 
+Language (French) =cd237@eng.cam.ac.uk 
+Language (German) =cd237@eng.cam.ac.uk 
+Language (Japanese) =cd237@eng.cam.ac.uk 
+Language (Spanish) =cd237@eng.cam.ac.uk 
+
+FFFMENU Education 
+Study Skills =hrs@eng.cam.ac.uk 
+Exams Skills =hrs@eng.cam.ac.uk 
+Examples Classes =hrs@eng.cam.ac.uk 
+Lab. Experiments =rsc10@eng.cam.ac.uk 
+Supervisions =hrs@eng.cam.ac.uk 
+Exams =hrs@eng.cam.ac.uk 
+Computing =tpl@eng.cam.ac.uk 
+Computing help =sjm@eng.cam.ac.uk 
+Course as a Whole =hrs@eng.cam.ac.uk 
+
+FFFMENU General 
+Cycling Facilities =rmt23@eng.cam.ac.uk 
+CUES =chairman@cues.org.uk 
+SSJC = hrs@eng.cam.ac.uk 
+Unclassifiable =hrs@eng.cam.ac.uk 

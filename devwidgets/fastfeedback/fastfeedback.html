@@ -1,0 +1,49 @@
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/devwidgets/fastfeedback/css/fastfeedback.css" />
+
+<div class="fastfeedback_widget">
+
+    <!-- WIDGET HEADER -->
+    <div class="s3d-contentpage-title">__MSG__FAST_FEEDBACK__</div>
+
+    <!-- WIDGET BODY -->
+    <div class="fl-widget-content">
+        <div id="fastfeedback_feedback_container">
+            __MSG__PLEASE_GIVE_FEEDBACK_ON_LECTURES_OR_COURSEWORK__
+            <span id="fastfeedback_anonymized_note">__MSG__YOUR_MESSAGE_WILL_BE_ANONYMIZED__</span>
+            <label for="fastfeedback_feedback_for_course">__MSG__SPECIFY_COURSE_TO_GIVE_FEEDBACK__</label>
+            <div id="fastfeedback_feedback_for_course_container"></div>
+            <label for="fastfeedback_feedback_for">__MSG__WHAT_ARE_YOU_GIVING_FEEDBACK_ON__</label>
+            <select id="fastfeedback_feedback_for">
+                <option value=__MSG__LECTURES__>__MSG__LECTURES__</option>
+                <option value=__MSG__COURSEWORK__>__MSG__COURSEWORK__</option>
+            </select>
+            <label for="fastfeedback_feedback_input">__MSG__FEEDBACK__</label>
+            <textarea id="fastfeedback_feedback_input" rows=10></textarea>
+            <button type="button" class="s3d-button s3d-overlay-button" id="fastfeedback_action_send">__MSG__SEND__</button>
+            <button type="button" class="s3d-link-button s3d-bold" id="fastfeedback_action_dont_send">__MSG__DONT_SEND__</button>
+        </div>
+    </div>
+
+    <!-- TEMPLATES -->
+    <div id="fastfeedback_feedback_for_course_template" style="display:none;"><!--
+        <select id="fastfeedback_feedback_for_course">
+            <option value="no_value">__MSG__SPECIFY_COURSE__</option>
+            {var selected = false}
+            {for course in config.courses}
+                <option {if config.selectedCourse === $.trim(course.split("=")[0].split("(")[0]) && selected == false} selected="selected" {var selected = true}{/if}>${course.split("=")[0]}</option>
+            {/for}
+        </select>
+    --></div>
+
+    <!-- i18n -->
+    <div id="fastfeedback_feedback_sent" style="display:none;">__MSG__FEEDBACK_SENT__</div>
+    <div id="fastfeedback_feedback_successfully_sent" style="display:none;">__MSG__FEEDBACK_SUCCESSFULLY_SENT__</div>
+    <div id="fastfeedback_feedback_not_sent" style="display:none;">__MSG__FEEDBACK_NOT_SENT__</div>
+    <div id="fastfeedback_feedback_not_successfully_sent" style="display:none;">__MSG__FEEDBACK_NOT_SUCCESSFULLY_SENT__</div>
+    <div id="fastfeedback_give_feedback" style="display:none;">__MSG__GIVE_FEEDBACK__</div>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="/devwidgets/fastfeedback/javascript/fastfeedback.js"></script>
