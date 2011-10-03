@@ -9,14 +9,12 @@
     "sakaidocs": true,
     "hasSettings":        false,
     "i18n": {
-        "default": {
-            "bundle":     "/devwidgets/fastfeedback/bundles/default.properties",
-            "name":       "Fast Feedback Widget",
-            "description":"Fast Feedback Widget"
-        }
+        "default":     "/devwidgets/fastfeedback/bundles/default.properties"
     },
     "id":                 "fastfeedback",
     "img": "/devwidgets/fastfeedback/images/icon.png",
     "type":               "sakai",
+    "name":               "Fast Feedback Widget",
+    "description":        "Fast Feedback Widget",
     "url":                "/devwidgets/fastfeedback/fastfeedback.html"
 }
