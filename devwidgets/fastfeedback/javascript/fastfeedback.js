@@ -48,7 +48,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
         var fastfeedbackFeedbackForCourse = "#fastfeedback_feedback_for_course";
         var subject = "";
         var configVars = {};
-        var feedbackUser = "user1";
+        var feedbackUser = "admin";
 
         // i18n
         var fastfeedbackFeedbackSent = "#fastfeedback_feedback_sent";

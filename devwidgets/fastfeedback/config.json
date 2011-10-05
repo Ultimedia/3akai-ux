@@ -1,12 +1,12 @@
 {
     "enabled":            true,
-    "groupdashboard":     true,
-    "grouppages":         true,
-    "userdashboard":      true,
-    "userpages":          true,
-    "personalportal":     true,
-    "showinsakaigoodies": true,
-    "sakaidocs": true,
+    "groupdashboard":     false,
+    "grouppages":         false,
+    "userdashboard":      false,
+    "userpages":          false,
+    "personalportal":     false,
+    "showinsakaigoodies": false,
+    "sakaidocs": false,
     "hasSettings":        false,
     "i18n": {
         "default":     "/devwidgets/fastfeedback/bundles/default.properties"

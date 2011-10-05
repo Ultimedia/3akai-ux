@@ -867,6 +867,33 @@ define(["config/config"], function(config) {
                                     "groupid": "${groupid}"
                                 }
                             }
+                        },
+                        "${pid}4": {
+                            structure0: {
+                                "fast-feedback":{
+                                    "_ref":"${refid}6",
+                                    "_order":4,
+                                    "_nonEditable": true,
+                                    "_title":"Fast Feedback",
+                                    "main":{
+                                        "_ref":"${refid}6",
+                                        "_order":0,
+                                        "_nonEditable": true,
+                                        "_title":"Fast Feedback"
+                                    }
+                                }
+                            },
+                            "${refid}6": {
+                                page: "<img id='widget_fastfeedback_${refid}7' class='widget_inline' style='display: blo"+ 
+								"ck; padding: 10px; margin: 4px;' src='/devwidgets/fastfeedback/images/icon.png' "+ 
+								"data-mce-src='/devwidgets/fastfeedback/images/icon.png' data-mce-style='display:"+ 
+								" block; padding: 10px; margin: 4px;' border='1'></p>"
+                            },
+							"${refid}7": {
+                             	fastfeedback:{
+                             		
+                             	}
+							}
                         }
                     },
                     structure: {
@@ -898,6 +925,14 @@ define(["config/config"], function(config) {
                             "_title": "Participants",
                             "_order": 3,
                             "_docref": "${pid}3",
+                            "_nonEditable": true,
+                            "_view": ["everyone", "-student", "-observer", "-ts"],
+                            "_edit": ["-ts"]
+                        },
+                        "fast-feedback": {
+                            "_title": "Fast Feedback",
+                            "_order": 4,
+                            "_docref": "${pid}4",
                             "_nonEditable": true,
                             "_view": ["everyone", "-student", "-observer", "-ts"],
                             "_edit": ["-ts"]
@@ -1281,6 +1316,33 @@ define(["config/config"], function(config) {
 								    "name": true
 								}
 							}
+                        },
+                        "${pid}4": {
+                            structure0: {
+                                "fast-feedback":{
+                                    "_ref":"${refid}14",
+                                    "_order":4,
+                                    "_nonEditable": true,
+                                    "_title":"Fast Feedback",
+                                    "main":{
+                                        "_ref":"${refid}14",
+                                        "_order":0,
+                                        "_nonEditable": true,
+                                        "_title":"Fast Feedback"
+                                    }
+                                }
+                            },
+                            "${refid}14": {
+                                page: "<img id='widget_fastfeedback_${refid}14' class='widget_inline' style='display: blo"+ 
+								"ck; padding: 10px; margin: 4px;' src='/devwidgets/fastfeedback/images/icon.png' "+ 
+								"data-mce-src='/devwidgets/fastfeedback/images/icon.png' data-mce-style='display:"+ 
+								" block; padding: 10px; margin: 4px;' border='1'></p>"
+                            },
+							"${refid}15": {
+                             	fastfeedback:{
+                             		
+                             	}
+							}
                         }
                     },
                     structure: {
@@ -1314,6 +1376,14 @@ define(["config/config"], function(config) {
                             "_docref": "${pid}3",
                             "_nonEditable": false,
                             "_view": ["everyone", "anonymous", "-student", "-ta"],
+                            "_edit": ["-ts"]
+                        },
+                         "fast-feedback": {
+                            "_title": "Fast Feedback",
+                            "_order": 4,
+                            "_docref": "${pid}4",
+                            "_nonEditable": true,
+                            "_view": ["everyone", "-student", "-observer", "-ts"],
                             "_edit": ["-ts"]
                         }
                     },
@@ -2341,6 +2411,33 @@ define(["config/config"], function(config) {
 								   	"perPage": 5
 								}
 							},
+                        },
+                        "${pid}6": {
+                            structure0: {
+                                "fast-feedback":{
+                                    "_ref":"${refid}27",
+                                    "_order":4,
+                                    "_nonEditable": true,
+                                    "_title":"Fast Feedback",
+                                    "main":{
+                                        "_ref":"${refid}27",
+                                        "_order":0,
+                                        "_nonEditable": true,
+                                        "_title":"Fast Feedback"
+                                    }
+                                }
+                            },
+                            "${refid}27": {
+                                page: "<img id='widget_fastfeedback_${refid}27' class='widget_inline' style='display: blo"+ 
+								"ck; padding: 10px; margin: 4px;' src='/devwidgets/fastfeedback/images/icon.png' "+ 
+								"data-mce-src='/devwidgets/fastfeedback/images/icon.png' data-mce-style='display:"+ 
+								" block; padding: 10px; margin: 4px;' border='1'></p>"
+                            },
+							"${refid}28": {
+                             	fastfeedback:{
+                             		
+                             	}
+							}
                         }
                     },
                     structure: {
@@ -2390,6 +2487,14 @@ define(["config/config"], function(config) {
                             "_docref": "${pid}5",
                             "_nonEditable": false,
                             "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
+                            "_edit": ["-ts"]
+                        },
+                        "fast-feedback": {
+                            "_title": "Fast Feedback",
+                            "_order": 6,
+                            "_docref": "${pid}6",
+                            "_nonEditable": true,
+                            "_view": ["everyone", "-student", "-observer", "-ts"],
                             "_edit": ["-ts"]
                         }
                     },
