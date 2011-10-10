@@ -4995,12 +4995,10 @@ define(["config/config"], function(config) {
     };
     
     // Add Kaltura mime-type
-    config.MimeTypes = {
-        "kaltura/video": {
+    config.MimeTypes["kaltura/video"] = {
             cssClass: "icon-video-sprite",
             URL: "/dev/images/mimetypes/video.png",
             description: "KALTURA_VIDEO_FILE"
-        }
     };
     
     return config;
