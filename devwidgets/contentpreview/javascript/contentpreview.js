@@ -42,6 +42,10 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
 
         var obj = {};
         obj.type = "showpreview";
+        
+        sakai_global.KALTURA_SERVER_URL = "http://www.kaltura.com";
+        sakai_global.KALTURA_PARTNER_ID = "656132"; // INSERT YOUR PARTNER ID HERE
+        sakai_global.KALTURA_PLAYER_ID = "548422"; // ??
 
         var qs = new Querystring();
 
@@ -50,13 +54,15 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
             obj.type = "showpreview";
             obj.buttons = "default";
             var callback = null;
-            var user = sakai_global.content_profile.content_data.data["_bodyLastModifiedBy"];
-            if (user === "admin") {
-                user = sakai_global.content_profile.content_data.data["sakai:pool-content-created-for"];
-            }
-            sakai.api.User.getUser(user, function(success, userdata){
-                var mimeType = sakai.api.Content.getMimeType(sakai_global.content_profile.content_data.data);
-                obj.userName = sakai.api.User.getDisplayName(userdata);
+            var mimeType = sakai.api.Content.getMimeType(sakai_global.content_profile.content_data.data);
+            if (mimeType == "kaltura/video") {            
+                var html5FlashCompatibilityURL = sakai_global.KALTURA_SERVER_URL+"/p/"+sakai_global.KALTURA_PARTNER_ID+"/sp/"+sakai_global.KALTURA_PARTNER_ID+"00/embedIframeJs/uiconf_id/"+sakai_global.KALTURA_PLAYER_ID+"/partner_id/"+sakai_global.KALTURA_PARTNER_ID;
+                $.getScript(html5FlashCompatibilityURL, function() {                                        
+                    obj.sakai = sakai;
+                    sakai.api.Util.TemplateRenderer("contentpreview_widget_main_template", obj, $("#contentpreview_widget_main_container"));
+                    renderFullSizePreview();
+                });
+            } else {
                 if (qs.get("nopreview") === "true"){
                     callback = renderDefaultPreview;
                     obj.type = "default";
@@ -67,13 +73,12 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                     callback = renderFullSizePreview;
                 } else {
                     obj.type = "default";
+                    callback = renderDefaultPreview;
                 }
                 obj.sakai = sakai;
                 sakai.api.Util.TemplateRenderer("contentpreview_widget_main_template", obj, $("#contentpreview_widget_main_container"));
-                if (callback) {
-                    callback();
-                }
-            });
+                callback();
+            }
         };
 
         var renderFullSizePreview = function(){
