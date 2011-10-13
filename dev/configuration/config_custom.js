@@ -567,59 +567,354 @@ define(["config/config"], function(config) {
             title: "Strategic Themes"
         },
         energytransportandurbaninfrastructure: {
-            title: "Energy, transport and urban infrastructure"
+            title: "Energy, transport and urban infrastructure",
+            children: {
+                energytransportandurbaninfrastructurechild: {
+                    title: "Energy, transport and urban infrastructure"
+                }
+            }
         },
         uncertaintyriskandresilience: {
-            title: "Uncertainty, risk and resilience"
+            title: "Uncertainty, risk and resilience",
+            children: {
+                uncertaintyriskandresiliencechild: {
+                    title: "Uncertainty, risk and resilience"
+                }
+            }
         },
         engineeringforlifesciencesandhealthcare: {
-            title: "Engineering for life sciences and healthcare"
+            title: "Engineering for life sciences and healthcare",
+            children: {
+                engineeringforlifesciencesandhealthcarechild: {
+                    title: "Engineering for life sciences and healthcare"
+                }
+            }
         },
         inspiringresearchthroughindustrialcollaboration: {
-            title: "Inspiring research through industrial collaboration"
+            title: "Inspiring research through industrial collaboration",
+              children: {
+                inspiringresearchthroughindustrialcollaborationchild: {
+                    title: "Inspiring research through industrial collaboration"
+                }
+            }
         },
         divider3: {
             divider: true,
             title: "CUED Teaching"
         },
         engineeringtripospartia: {
-            title: "Engineering Tripos Part IA"
+            title: "Engineering Tripos Part IA",
+            children: {
+                et1a1: {
+                    title: "Kinematics and Dynamics in Two Dimensions"
+                },
+                et1a2: {
+                    title: "Mechanical Vibrations"
+                },
+                et1a3: {
+                    title: "Thermofluid Mechanics"
+                },
+                et1a4: {
+                    title: "Structural Mechanics"
+                },
+                et1a5: {
+                    title: "Materials"
+                },
+                et1a6: {
+                    title: "Physical Principles of Electronics and Electromagnetics"
+                },
+                et1a7: {
+                    title: "Linear Circuits and Devices"
+                },
+                et1a8: {
+                    title: "Digital Circuits and Information Processing"
+                },
+                et1a9: {
+                    title: "Mathematics"
+                },
+                et1a10: {
+                    title: "Computing"
+                },
+                et1a11: {
+                    title: "Dimensional Analysis"
+                },
+                et1a12: {
+                    title: "The Engineer in Society"
+                },
+                et1a13: {
+                    title: "Drawing"
+                },
+                et1a14: {
+                    title: "Product Design"
+                }
+            }
         },
         engineeringtripospartib: {
-            title: "Engineering Tripos Part IB"
+            title: "Engineering Tripos Part IB",
+            children: {
+                et1b1: {
+                    title: "Mechanics: Dynamics of Rigid Bodies"
+                },
+                et1b2: {
+                    title: "Structures"
+                },
+                et1b3: {
+                    title: "Materials: Microstructure, Processing and Design"
+                },
+                et1b4: {
+                    title: "Thermofluid Mechanics"
+                },
+                et1b5: {
+                    title: "Linear Circuits and Devices"
+                },
+                et1b6: {
+                    title: "Electrical Power"
+                },
+                et1b7: {
+                    title: "Electromagnetic Fields and Waves"
+                },
+                et1b8: {
+                    title: "Linear Systems and Control"
+                },
+                et1b9: {
+                    title: "Communications Fourier Transforms & Signal & Data Analysis"
+                },
+                et1b10: {
+                    title: "Vector Calculus"
+                },
+                et1b11: {
+                    title: "Linear Algebra"
+                },
+                et1b12: {
+                    title: "Probability"
+                },
+                et1b13: {
+                    title: "Introductory Business Economics"
+                },
+                et1b14: {
+                    title: "Aerothermal Engineering"
+                },
+                et1b15: {
+                    title: "Mechanical Engineering"
+                },
+                et1b16: {
+                    title: "Civil and Structural Engineering"
+                },
+                et1b17: {
+                    title: "Information Engineering"
+                },
+                et1b18: {
+                    title: "Electrical Engineering"
+                },
+                et1b19: {
+                    title: "Engineering for the Life Sciences"
+                },
+                et1b20: {
+                    title: "Manufacturing & Management"
+                }
+            }
         },
         engineeringtripospartiia: {
-            title: "Engineering Tripos Part IIA"
+            title: "Engineering Tripos Part IIA",
+            children: {
+                etIIa1: {
+                    title: "Fluid mechanics I"
+                },
+                etIIa2: {
+                    title: "Fluid mechanics IIa"
+                },
+                etIIa3: {
+                    title: "Thermodynamics and power generation"
+                },
+                etIIa4: {
+                    title: "Heat and mass transfer"
+                },
+                etIIa5: {
+                    title: "Radio frequency electronics"
+                },
+                etIIa6: {
+                    title: "Integrated digital electronics"
+                },
+                etIIa7: {
+                    title: "Electric drive systems"
+                },
+                etIIa8: {
+                    title: "Semiconductor engineering"
+                },
+                etIIa9: {
+                    title: "Photonic technology"
+                },
+                etIIa10: {
+                    title: "Present and Future Energy Systems"
+                },
+                etIIa11: {
+                    title: "Materials processing and design"
+                },
+                etIIa12: {
+                    title: "Dynamics"
+                },
+                etIIa13: {
+                    title: "Vibration"
+                },
+                etIIa14: {
+                    title: "Mechanics of solids"
+                },
+                etIIa15: {
+                    title: "Machine Design"
+                },
+                etIIa16: {
+                    title: "Fracture mechanics of materials and structures"
+                },
+                etIIa17: {
+                    title: "Geotechnical Engineering I"
+                },
+                etIIa18: {
+                    title: "Geotechnical Engineering II"
+                },
+                etIIa19: {
+                    title: "Structural materials and design"
+                },
+                etIIa20: {
+                    title: "Structural analysis and stability"
+                },
+                etIIa21: {
+                    title: "Water Engineering"
+                },
+                etIIa22: {
+                    title: "Finite Element Methods"
+                },
+                etIIa23: {
+                    title: "Business economics"
+                },
+                etIIa24: {
+                    title: "Marketing"
+                },
+                etIIa25: {
+                    title: "Modelling Risk"
+                },
+                etIIa26: {
+                    title: "Fracture mechanics of materials and structures"
+                },
+                etIIa27: {
+                    title: "Operations Management for Engineers"
+                },
+                etIIa28: {
+                    title: "Signals and systems"
+                },
+                etIIa29: {
+                    title: "Systems and Control"
+                },
+                etIIa30: {
+                    title: "Signal and pattern processing"
+                },
+                etIIa31: {
+                    title: "Data transmission"
+                },
+                etIIa32: {
+                    title: "Computer and network systems"
+                },
+                etIIa33: {
+                    title: "Software engineering and design"
+                },
+                etIIa34: {
+                    title: "Introduction to Molecular Bioengineering"
+                },
+                etIIa35: {
+                    title: "Mathematical Physiology"
+                },
+                etIIa36: {
+                    title: "Introduction to Neuroscience"
+                },
+                etIIa37: {
+                    title: "Medical Imaging and 3D Computer Graphics"
+                },
+                etIIa38: {
+                    title: "Biomaterials"
+                },
+                etIIa39: {
+                    title: "Data structures and algorithms"
+                }  
+            }
         },
         engineeringtripospartiib: {
-            title: "Engineering Tripos Part IIB"
+            title: "Engineering Tripos Part IIB",
+            	children: {
+            	engineeringtripospartiibchild: {
+                    title: "Engineering Tripos Part IIB"
+                }
+            }
         },
         manufacturingengineeringtripospartiia: {
-            title: "Manufacturing Engineering Tripos Part IIA"
+            title: "Manufacturing Engineering Tripos Part IIA",
+            	children: {
+            	manufacturingengineeringtripospartiiachild: {
+                    title: "Manufacturing Engineering Tripos Part IIA"
+                }
+            }
         },
         manufacturingengineeringtripospartiib: {
-            title: "Manufacturing Engineering Tripos Part IIB"
+            title: "Manufacturing Engineering Tripos Part IIB",
+            	children: {
+            	manufacturingengineeringtripospartiibchild: {
+                    title: "Manufacturing Engineering Tripos Part IIB"
+                }
+            }
         },
         mphilinnuclearenergy: {
-            title: "MPhil in Nuclear Energy"
+            title: "MPhil in Nuclear Energy",
+            children: {
+            	mphilinnuclearenergychild: {
+                    title: "MPhil in Nuclear Energy"
+                }
+            }
         },
         mphilinindustrialsystemsmanufactureandmanagement: {
-            title: "MPhil in Industrial Systems, Manufacture and Management"
+            title: "MPhil in Industrial Systems, Manufacture and Management",
+            children: {
+            	mphilinindustrialsystemsmanufactureandmanagementchild: {
+                    title: "MPhil in Industrial Systems, Manufacture and Management"
+                }
+            }
         },
         mphilinenergytechnologies: {
-            title: "MPhil in Energy Technologies"
+            title: "MPhil in Energy Technologies",
+            children: {
+            	mphilinenergytechnologieschild: {
+                    title: "MPhil in Energy Technologies"
+                }
+            }
         },
         mphilininterdisciplinarydesignforthebuiltenvironment: {
-            title: "MPhil in Interdisciplinary Design for the Built Environment"
+            title: "MPhil in Interdisciplinary Design for the Built Environment",
+            children: {
+            	mphilininterdisciplinarydesignforthebuiltenvironmentchild: {
+                    title: "MPhil in Interdisciplinary Design for the Built Environment"
+                }
+            }
         },
         mphilinengineeringforsustainabledevelopment: {
-            title: "MPhil in Engineering for Sustainable Development"
+            title: "MPhil in Engineering for Sustainable Development",
+            children: {
+            	mphilinengineeringforsustainabledevelopmentchild: {
+                    title: "MPhil in Engineering for Sustainable Development"
+                }
+            }
         },
         mphilinconstructionengineering: {
-            title: "MPhil in Construction Engineering"
+            title: "MPhil in Construction Engineering",
+            children: {
+            	mphilinconstructionengineeringchild: {
+                    title: "MPhil in Construction Engineering"
+                }
+            }
         },
         mresinphotonicssystemsdevelopment: {
-            title: "MRes in Photonics Systems Development"
+            title: "MRes in Photonics Systems Development",
+            children: {
+            	mresinphotonicssystemsdevelopmentchild: {
+                    title: "MRes in Photonics Systems Development"
+                }
+            }
         }
     };
     
@@ -4995,14 +5290,13 @@ define(["config/config"], function(config) {
     };
     
     // Add Kaltura mime-type
-    config.MimeTypes["kaltura/video"] = {
+    config.MimeTypes = {
+        "kaltura/video": {
             cssClass: "icon-video-sprite",
             URL: "/dev/images/mimetypes/video.png",
             description: "KALTURA_VIDEO_FILE"
+        }
     };
     
     return config;
 });
-
-
-
