@@ -5283,19 +5283,17 @@ define(["config/config"], function(config) {
     ]
 
     // Kaltura config
-    config.kaltura = {        
+    config.kaltura = {
         serverURL:  "http://ucamoae-100-69.dmz.caret.local", // Kaltura Server URL
         partnerId: 102, // INSERT YOUR PARTNER ID HERE
         playerId: 4421535 // INSERT YOUR PLAYER ID (UICONF_ID - from Kaltura Studio tab)
     };
-    
+
     // Add Kaltura mime-type
-    config.MimeTypes = {
-        "kaltura/video": {
-            cssClass: "icon-video-sprite",
-            URL: "/dev/images/mimetypes/video.png",
-            description: "KALTURA_VIDEO_FILE"
-        }
+    config.MimeTypes["kaltura/video"] = {
+        cssClass: "icon-video-sprite",
+        URL: "/dev/images/mimetypes/video.png",
+        description: "KALTURA_VIDEO_FILE"
     };
     
     return config;
