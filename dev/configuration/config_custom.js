@@ -630,323 +630,11 @@ define(["config/config"], function(config) {
             titleSing: "COURSE",
             templates: [
 				{
-                    id: "coursetemplate1",
-                    title: "Template 1",
-                    img: "/dev/images/worldtemplates/coursetemplate1.png",
-                    fullImg: "/dev/images/worldtemplates/coursetemplate1-full.png",
-                    perfectFor: "basic course organisation, using an About section,"+
-                    " a Syllabus, List of Resources and Participants",
-                    roles: [
-                        {
-                            id: "ts",
-                            roleTitle: "Teaching staff",
-                            title: "Teaching staff",
-                            allowManage: true
-                        },
-                        {
-                            id: "observer",
-                            roleTitle: "Observers",
-                            title: "Observer",
-                            allowManage: false
-                        },
-                        {
-                            id: "student",
-                            roleTitle: "Students",
-                            title: "Student",
-                            allowManage: false
-                        }
-                    ],
-                    docs: {
-                        "${pid}0": {
-                            structure0: {
-                                "about":{
-                                    "_ref":"${refid}0",
-                                    "_order":0,
-                                    "_nonEditable": false,
-                                    "_title": "About",
-                                    "main":{
-                                        "_ref":"${refid}0",
-                                        "_order":0,
-                                        "_nonEditable": false,
-                                        "_title":"About"
-                                    }
-                                }
-                            },
-                            "${refid}0": {	
-                            	page: "<div id=\'header\' style=\'\'> <h1 style=\'color: rgb(102, 102, 102); font-size:"+ 
-								" 22px; margin: 20px 0pt 15px; font-weight: normal;\'>About &lt;name of the cours"+ 
-								"e&gt;</h1> <hr style=\'color: rgb(255, 0, 0); background-color: rgb(232, 232, 23"+ 
-								"2); height: 5px; border: 0pt none;\'> </div><p> <br></p> <p style=\'color: rgb(9"+ 
-								"9, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0"+ 
-								"pt;\'>\n &lt;give a description about this course here&gt; </p>"
-                            }
-                        },
-                        "${pid}1": {
-                            structure0: {
-                                "syllabus":{
-                                    "_ref":"${refid}1",
-                                    "_order":1,
-                                    "_nonEditable": false,
-                                    "_title":"Syllabus",
-                                    "main":{
-                                        "_ref":"${refid}1",
-                                        "_order":0,
-                                        "_nonEditable": false,
-                                        "_title":"Syllabus"
-                                    }
-                                }
-                            },
-                            "${refid}1": {
-                                page: "<img id='widget_inlinecontent_${refid}2' class='widget_inline' style='display: b"+ 
-								"lock; padding: 10px; margin: 4px;' src='/devwidgets/inlinecontent/images/inlinec"+ 
-								"ontent.png' data-mce-src='/devwidgets/inlinecontent/images/inlinecontent.png' da"+ 
-								"ta-mce-style='display: block; padding: 10px; margin: 4px;' border='1'></p>"
-                            },
-                            "${refid}2": {
-								inlinecontent: {
-									"option1": "y1",
-									"option2": "/var/proxy/ucam/eng_teaching?y=y1&c=P1-MV",
-									"saneurl": "/var/proxy/ucam/eng_teaching?y=y1&c=P1-MV",
-									"defined": "false"
-								}
-							}
-                        },
-                        "${pid}2": {
-                            structure0: {
-                                "resources":{
-                                    "_ref":"${refid}3",
-                                    "_order":2,
-                                    "_nonEditable": false,
-                                    "_title":"Resources",
-                                    "main":{
-                                        "_ref":"${refid}3",
-                                        "_order":0,
-                                        "_nonEditable": false,
-                                        "_title":"Resources"
-                                    }
-                                }
-                            },
-                            "${refid}3": {
-                                page: "<h1 style=\'color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; f"+ 
-								"ont-weight: normal;\' data-mce-style=\'color: #666666; font-size: 22px; margin: "+ 
-								"20px 0pt 15px; font-weight: normal;\'>Lecture Notes<br></h1><hr style=\'color: r"+ 
-								"gb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt no"+ 
-								"ne;\' data-mce-style=\'color: #ff0000; background-color: #e8e8e8; height: 5px; b"+ 
-								"order: 0pt none;\'><p><br></p><p style=\'color: rgb(99, 99, 99); font-size: 16px"+ 
-								"; line-height: 18px; padding-top: 0pt; padding-right: 0pt; padding-bottom: 10px;"+ 
-								" margin: 0pt;\'><span style=\'font-family: arial,helvetica,sans-serif; font-size"+ 
-								": medium; color: rgb(128, 128, 128);\' data-mce-style=\'font-family: arial,helve"+ 
-								"tica,sans-serif; font-size: medium; color: #808080;\'>These are all the Lecture "+ 
-								"Notes for &lt;name of the course/module&gt;.</span> </p><p style=\'color: rgb(99"+ 
-								", 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margi"+ 
-								"n: 0pt;\'><br><img id=\'widget_embedcontent_${refid}6\' class=\'widget_inline\' "+ 
-								"style=\'display: block; padding: 10px; margin: 4px;\' src=\'/devwidgets/embedcon"+ 
-								"tent/images/content.png\' data-mce-src=\'devwidgets/embedcontent/images/content."+ 
-								"png\' data-mce-style=\'display: block; padding: 10px; margin: 4px;\' border=\'1\'"+ 
-								"><br><br></p><h1 style=\'color: rgb(102, 102, 102); font-size: 22px; margin: 20"+ 
-								"px 0pt 15px; font-weight: normal;\' data-mce-style=\'color: #666666; font-size: "+ 
-								"22px; margin: 20px 0pt 15px; font-weight: normal;\'>Lecture Videos<br></h1><hr s"+ 
-								"tyle=\'color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px;"+ 
-								" border: 0pt none;\' data-mce-style=\'color: #ff0000; background-color: #e8e8e8;"+ 
-								" height: 5px; border: 0pt none;\'><p><br><span style=\'font-family: arial,helvet"+ 
-								"ica,sans-serif; font-size: medium; color: rgb(128, 128, 128);\' data-mce-style=\'"+ 
-								"font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;\'>T"+ 
-								"hese are all the Lecture Videos for &lt;name of the course/module&gt;.</span> <b"+ 
-								"r></p><p style=\'padding-left: 30px;\'><br><img id=\'widget_embedcontent_${refid}7"+ 
-								"\' class=\'widget_inline\' style=\'display: block; padding: 10px; margin: 4px;"+ 
-								"\' src=\'/devwidgets/embedcontent/images/content.png\' data-mce-src=\'devwidgets"+ 
-								"/embedcontent/images/content.png\' data-mce-style=\'display: block; padding: 10p"+ 
-								"x; margin: 4px;\' border=\'1\'><br><br></p><h1 style=\'color: rgb(102, 102, 102)"+ 
-								"; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;\' data-mce-style="+ 
-								"\'color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;\'"+ 
-								">Lecture Handouts<br></h1><hr style=\'color: rgb(255, 0, 0); background-color: r"+ 
-								"gb(232, 232, 232); height: 5px; border: 0pt none;\' data-mce-style=\'color: #ff0"+ 
-								"000; background-color: #e8e8e8; height: 5px; border: 0pt none;\'><p><br><span st"+ 
-								"yle=\'font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128"+ 
-								", 128, 128);\' data-mce-style=\'font-family: arial,helvetica,sans-serif; font-si"+ 
-								"ze: medium; color: #808080;\'>These are all the Lecture Handouts for &lt;name of"+ 
-								" the course/module&gt;.<br><br></span></p><p style=\'padding-left: 30px;\'><img "+ 
-								"id=\'widget_embedcontent_${refid}8\' class=\'widget_inline\' style=\'display: bl"+ 
-								"ock; padding: 10px; margin: 4px;\' src=\'/devwidgets/embedcontent/images/content"+ 
-								".png\' data-mce-src=\'devwidgets/embedcontent/images/content.png\' data-mce-styl"+ 
-								"e=\'display: block; padding: 10px; margin: 4px;\' border=\'1\'><span style=\'fon"+ 
-								"t-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 12"+ 
-								"8);\' data-mce-style=\'font-family: arial,helvetica,sans-serif; font-size: mediu"+ 
-								"m; color: #808080;\'><br></span><br></p><h1 style=\'color: rgb(102, 102, 102); f"+ 
-								"ont-size: 22px; margin: 20px 0pt 15px; font-weight: normal;\' data-mce-style=\'c"+ 
-								"olor: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;\'>Ex"+ 
-								"amples Papers<br></h1><hr style=\'color: rgb(255, 0, 0); background-color: rgb(2"+ 
-								"32, 232, 232); height: 5px; border: 0pt none;\' data-mce-style=\'color: #ff0000;"+ 
-								" background-color: #e8e8e8; height: 5px; border: 0pt none;\'><p><br><span style="+ 
-								"\'font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 12"+ 
-								"8, 128);\' data-mce-style=\'font-family: arial,helvetica,sans-serif; font-size: "+ 
-								"medium; color: #808080;\'>These are all the Examples Papers for &lt;name of the "+ 
-								"course/module&gt;.<br><br></span> </p><p style=\'padding-left: 30px;\' data-mce-"+ 
-								"style=\'padding-left: 30px;\'><img id=\'widget_embedcontent_${refid}9\' class=\'"+ 
-								"widget_inline\' style=\'display: block; padding: 10px; margin: 4px;\' src=\'/dev"+ 
-								"widgets/embedcontent/images/content.png\' data-mce-src=\'devwidgets/embedcontent"+ 
-								"/images/content.png\' data-mce-style=\'display: block; padding: 10px; margin: 4p"+ 
-								"x;\' border=\'1\'><br></p><p><br></p>"
-							},
-							"${refid}6": {
-								embedcontent: {
-								    "embedmethod": "thumbnail",
-								    "sakai:indexed-fields": "title,description",
-								    "download": false,
-								    "sling:resourceType": "sakai/widget-data",
-								    "title": "",
-								    "details": false,
-								    "description": "",
-								    "layout": "horizontal",
-								    "name": true
-								}
-							},
-							"${refid}7": {
-								embedcontent: {
-								    "embedmethod": "thumbnail",
-								    "sakai:indexed-fields": "title,description",
-								    "download": false,
-								    "sling:resourceType": "sakai/widget-data",
-								    "title": "",
-								    "details": false,
-								    "description": "",
-								    "layout": "horizontal",
-								    "name": true
-								}
-							},
-							"${refid}8": {
-								embedcontent: {
-								    "embedmethod": "thumbnail",
-								    "sakai:indexed-fields": "title,description",
-								    "download": false,
-								    "sling:resourceType": "sakai/widget-data",
-								    "title": "",
-								    "details": false,
-								    "description": "",
-								    "layout": "horizontal",
-								    "name": true
-								}
-							},
-							"${refid}9": {
-								embedcontent: {
-								    "embedmethod": "thumbnail",
-								    "sakai:indexed-fields": "title,description",
-								    "download": false,
-								    "sling:resourceType": "sakai/widget-data",
-								    "title": "",
-								    "details": false,
-								    "description": "",
-								    "layout": "horizontal",
-								    "name": true
-								}
-							}
-                        },
-                         "${pid}3": {
-                            structure0: {
-                                "participants":{
-                                    "_ref":"${refid}4",
-                                    "_order":3,
-                                    "_nonEditable": true,
-                                    "_title":"Participants",
-                                    "main":{
-                                        "_ref":"${refid}4",
-                                        "_order":0,
-                                        "_nonEditable": true,
-                                        "_title":"Participants"
-                                    }
-                                }
-                            },
-                            "${refid}4": {
-                                page: "<img id='widget_participants_${refid}5' class='widget_inline' style='display: bl"+ 
-								"ock; padding: 10px; margin: 4px;' src='/devwidgets/participants/images/participa"+ 
-								"nts.png' data-mce-src='/devwidgets/participants/images/participants.png' data-mc"+ 
-								"e-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p>"
-                            },
-                            "${refid}5": {
-                                participants: {
-                                    "groupid": "${groupid}"
-                                }
-                            }
-                        },
-                        "${pid}4": {
-                            structure0: {
-                                "fast-feedback":{
-                                    "_ref":"${refid}6",
-                                    "_order":4,
-                                    "_nonEditable": true,
-                                    "_title":"Fast Feedback",
-                                    "main":{
-                                        "_ref":"${refid}6",
-                                        "_order":0,
-                                        "_nonEditable": true,
-                                        "_title":"Fast Feedback"
-                                    }
-                                }
-                            },
-                            "${refid}6": {
-                                page: "<img id='widget_fastfeedback_${refid}7' class='widget_inline' style='display: blo"+ 
-								"ck; padding: 10px; margin: 4px;' src='/devwidgets/fastfeedback/images/icon.png' "+ 
-								"data-mce-src='/devwidgets/fastfeedback/images/icon.png' data-mce-style='display:"+ 
-								" block; padding: 10px; margin: 4px;' border='1'></p>"
-                            },
-							"${refid}7": {
-                             	fastfeedback:{
-                             		
-                             	}
-							}
-                        }
-                    },
-                    structure: {
-						"about": {
-                            "_title": "About",
-                            "_order": 0,
-                            "_docref": "${pid}0",
-                            "_nonEditable": false,
-                            "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
-                            "_edit": ["-ts"]
-                       },
-                       "syllabus": {
-                            "_title": "Syllabus",
-                            "_order": 1,
-                            "_docref": "${pid}1",
-                            "_nonEditable": false,
-                            "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
-                            "_edit": ["-ts"]
-                        },
-                        "resources": {
-                            "_title": "Resources",
-                            "_order": 2,
-                            "_docref": "${pid}2",
-                            "_nonEditable": false,
-                            "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
-                            "_edit": ["-ts"]
-                        },
-                        "participants": {
-                            "_title": "Participants",
-                            "_order": 3,
-                            "_docref": "${pid}3",
-                            "_nonEditable": true,
-                            "_view": ["everyone", "-student", "-observer", "-ts"],
-                            "_edit": ["-ts"]
-                        },
-                        "fast-feedback": {
-                            "_title": "Fast Feedback",
-                            "_order": 4,
-                            "_docref": "${pid}4",
-                            "_nonEditable": true,
-                            "_view": ["everyone", "-student", "-observer", "-ts"],
-                            "_edit": ["-ts"]
-                        }
-                    },
-                    joinRole: "student",
-                    creatorRole: "ts"
-                },
-				{
-                    id: "coursetemplate2",
-                    title: "Template 2",
+                    id: "general-course",
+                    title: "General Course",
                     img: "/dev/images/worldtemplates/coursetemplate2.png",
                     fullImg: "/dev/images/worldtemplates/coursetemplate2-full.png",
-                    perfectFor: "basic course organisation using, using a Syllabus, listing Lecture"+
+                    perfectFor: "basic course organisation, using a Syllabus, listing Lecture"+
                     " Materials, Timetables and Participants. Also includes 'Comment' boxes.",
                    	roles: [
                         {
@@ -1391,8 +1079,8 @@ define(["config/config"], function(config) {
                     creatorRole: "ts"
                 },
            		{
-                    id: "coursetemplate3",
-                    title: "Template 3",
+                    id: "more-detailed-course",
+                    title: "More Detailed Course",
                     img: "/dev/images/worldtemplates/coursetemplate3.png",
                     fullImg: "/dev/images/worldtemplates/coursetemplate3-full.png",
                     perfectFor: "Advanced course organisation, using a Syllabus, listing Lecture "+
@@ -2712,7 +2400,7 @@ define(["config/config"], function(config) {
 								" rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px "+ 
 								"0px 3px;\'><span style=\'color: rgb(29, 95, 144);\'>Comments &amp; Questions</sp"+ 
 								"an><br></h1><p>If you have any comments or questions about arranging the time sl"+ 
-								"ots, you can ask it here.<br><br><img id=\'widget_comments_${refid}7\' class=\'w"+ 
+								"ots, you can ask them here.<br><br><img id=\'widget_comments_${refid}7\' class=\'w"+ 
 								"idget_inline\' style=\'display: block; padding: 10px; margin: 4px;\' src=\'/devw"+ 
 								"idgets/comments/images/comments.png\' data-mce-src=\'devwidgets/comments/images/"+ 
 								"comments.png\' data-mce-style=\'display: block; padding: 10px; margin: 4px;\' bo"+ 
@@ -3233,7 +2921,7 @@ define(["config/config"], function(config) {
 				    title: "Research group",
 				    img: "/dev/images/worldtemplates/researchgrouptemplate1.png",
 				    fullImg: "/dev/images/worldtemplates/researchgrouptemplate1-full.png",
-				    perfectFor: "Group collaborations and sharing, using sections to describe your research and collaborate"+
+				    perfectFor: "Group collaborations and sharing, using sections to describe your research and collaborate "+
 					"on it internally, to list Events and Meetings and collaborate on Funding.",
 				    roles: [
 				        {
@@ -3773,13 +3461,13 @@ define(["config/config"], function(config) {
 				                "collaberations":{
 				                    "_ref":"${refid}16",
 				                    "_order":0,
-				                    "_title":"Collaberations",
+				                    "_title":"Collaborations",
 				                    "_nonEditable": false,
 				                    "main":{
 				                        "_ref":"${refid}16",
 				                        "_order":0,
 				                        "_nonEditable": false,
-				                        "_title":"Collaberations"
+				                        "_title":"Collaborations"
 				                    }
 				                },
 				                "contact-list":{
