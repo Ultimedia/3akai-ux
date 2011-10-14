@@ -5016,5 +5016,10 @@ define(["config/config"], function(config) {
         description: "KALTURA_VIDEO_FILE"
     };
     
+	// Fastfeedback widget config, specify the target user
+	config.fastfeedbackwidget = {
+    	fastfeedbackUser: "fastfeedback"
+	};
+    
     return config;
 });

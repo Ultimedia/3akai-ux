@@ -31,34 +31,34 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
      * @param {Boolean} showSettings Show the settings of the widget or not
      */
     sakai_global.fastfeedback = function(tuid, showSettings){
-
+		var $rootel = $("#" + tuid);
+	
         // containers
-        var fastfeedbackClickToGiveFeedbackContainer = "#fastfeedback_click_to_give_feedback_container";
-        var fastfeedbackFeedbackContainer = "#fastfeedback_feedback_container";
-        var fastfeedbackFeedbackForCourseContainer = "#fastfeedback_feedback_for_course_container";
+        var fastfeedbackClickToGiveFeedbackContainer = $("#fastfeedback_click_to_give_feedback_container", $rootel);
+        var fastfeedbackFeedbackContainer = $("#fastfeedback_feedback_container", $rootel);
+        var fastfeedbackFeedbackForCourseContainer = $("#fastfeedback_feedback_for_course_container", $rootel);
 
         // buttons
-        var fastfeedbackActionDontSend = "#fastfeedback_action_dont_send";
-        var fastfeedbackActionSend = "#fastfeedback_action_send";
-        var fastfeedbackClickToGiveFeedback = "#fastfeedback_click_to_give_feedback";
+        var fastfeedbackActionDontSend = $("#fastfeedback_action_dont_send", $rootel);
+        var fastfeedbackActionSend = $("#fastfeedback_action_send", $rootel);
+        var fastfeedbackClickToGiveFeedback = $("#fastfeedback_click_to_give_feedback", $rootel);
 
         // Feedback
-        var fastfeedbackFeedbackInput = "#fastfeedback_feedback_input";
-        var fastfeedbackFeedbackFor = "#fastfeedback_feedback_for";
-        var fastfeedbackFeedbackForCourse = "#fastfeedback_feedback_for_course";
+        var fastfeedbackFeedbackInput = $("#fastfeedback_feedback_input", $rootel);
+        var fastfeedbackFeedbackFor = $("#fastfeedback_feedback_for", $rootel);
+        var fastfeedbackFeedbackForCourse = $("#fastfeedback_feedback_for_course", $rootel);
         var subject = "";
         var configVars = {};
-        var feedbackUser = "admin";
 
         // i18n
-        var fastfeedbackFeedbackSent = "#fastfeedback_feedback_sent";
-        var fastfeedbackFeedbackSuccessfullySent = "#fastfeedback_feedback_successfully_sent";
-        var fastfeedbackFeedbackNotSent = "#fastfeedback_feedback_not_sent";
-        var fastfeedbackFeedbackNotSuccessfullySent = "#fastfeedback_feedback_not_successfully_sent";
-        var fastfeedbackGiveFeedback = "#fastfeedback_give_feedback";
+        var fastfeedbackFeedbackSent = $("#fastfeedback_feedback_sent", $rootel);
+        var fastfeedbackFeedbackSuccessfullySent = $("#fastfeedback_feedback_successfully_sent", $rootel);
+        var fastfeedbackFeedbackNotSent = $("#fastfeedback_feedback_not_sent", $rootel);
+        var fastfeedbackFeedbackNotSuccessfullySent = $("#fastfeedback_feedback_not_successfully_sent", $rootel);
+        var fastfeedbackGiveFeedback = $("#fastfeedback_give_feedback", $rootel);
 
         // Templates
-        var fastfeedbackFeedbackForCourseTemplate = "fastfeedback_feedback_for_course_template";
+        var fastfeedbackFeedbackForCourseTemplate = $("#fastfeedback_feedback_for_course_template", $rootel);
 
         // Config
         var configLocation = "./devwidgets/fastfeedback/config/config.txt";
@@ -81,6 +81,9 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
          * Send the message/e-mail with feedback
          */
         var sendFeedback = function(){
+        	// get the user from the config file
+        	var feedbackUser = sakai.config.fastfeedbackwidget.fastfeedbackUser;
+        	
             if ($(fastfeedbackFeedbackInput).val().trim() && $(fastfeedbackFeedbackForCourse).val() !== "no_value") {
                 sakai.api.Communication.sendMessage(feedbackUser, sakai.data.me,
                     subject, $(fastfeedbackFeedbackFor).val() + " feedback \n\n" + $(fastfeedbackFeedbackInput).val(),
@@ -102,10 +105,13 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
                 resetInputField();
             });
             $(fastfeedbackFeedbackForCourse).live("change", function(){
+            	fastfeedbackFeedbackForCourse = $("#fastfeedback_feedback_for_course", $rootel);
+            
                 if ($(fastfeedbackFeedbackForCourse)[0].selectedIndex !== 0) {
                     $(this).children("option[value='no_value']").remove();
                 }
                 subject = "TEACHANON: " + configVars.config.courses[$(fastfeedbackFeedbackForCourse)[0].selectedIndex];
+                subject = subject.replace('=', ':');
             });
         };
 
@@ -130,9 +136,10 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
                                 // Filter out lines starting with '#' and 'FFF'
                                 if(lines[line].substring(0,1) !== '#' && lines[line].substring(0,3) !== "FFF"){
                                     configVars.config.courses.push(lines[line]);
-                                    if ($.trim(lines[line].split("=")[0].split("(")[0]) === sakai_global.group.groupData["sakai:group-title"] || $.trim(lines[line].split("=")[0]) === sakai_global.group.groupData["sakai:group-title"]) {
-                                        configVars.config.selectedCourse = $.trim(lines[line].split("=")[0].split("(")[0]);
+                                    if ($.trim(lines[line].split(":")[0].split("(")[0]) === sakai_global.group.groupData["sakai:group-title"] || $.trim(lines[line].split(":")[0]) === sakai_global.group.groupData["sakai:group-title"]) {
+                                        configVars.config.selectedCourse = $.trim(lines[line].split(":")[0].split("(")[0]);
                                         subject = "TEACHANON: " + $.trim(lines[line]);
+                                      
                                     }
                                 }
                             }

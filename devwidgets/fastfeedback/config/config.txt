@@ -23,7 +23,6 @@ Maths (Juniper) =mpj1001@eng.cam.ac.uk
 Maths (Wells) =gnw20@eng.cam.ac.uk 
 Maths (Prager) =rwp@eng.cam.ac.uk 
 Maths (Smith MC) =mcs@eng.cam.ac.uk 
-fast feedback (Pareyn)=bp323@caret.cam.ac.uk 
 Dimensional Analysis (Parks) =gtp@eng.cam.ac.uk 
 Computing (Csanyi) =gc121@eng.cam.ac.uk 
 Drawing (Crilly) =nc266@eng.cam.ac.uk 
