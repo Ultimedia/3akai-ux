@@ -631,7 +631,7 @@ define(["config/config"], function(config) {
             templates: [
 				{
                     id: "general-course",
-                    title: "General Course",
+                    title: "General course",
                     img: "/dev/images/worldtemplates/coursetemplate2.png",
                     fullImg: "/dev/images/worldtemplates/coursetemplate2-full.png",
                     perfectFor: "basic course organisation, using a Syllabus, listing Lecture"+
@@ -1031,12 +1031,36 @@ define(["config/config"], function(config) {
                              		
                              	}
 							}
+                        },
+                         "${pid}5": {
+                            structure0: {
+                                "about":{
+                                    "_ref":"${refid}16",
+                                    "_order":0,
+                                    "_nonEditable": false,
+                                    "_title":"About",
+                                    "main":{
+                                        "_ref":"${refid}16",
+                                        "_order":0,
+                                        "_nonEditable": false,
+                                        "_title":"About"
+                                    }
+                                }
+                            },
+                            "${refid}16": {
+                                page: "<div id='header' style=''> <h1 style='color: rgb(102, 102, 102); font-size: 22px"+ 
+								"; margin: 20px 0pt 15px; font-weight: normal;'>About &lt;name of the course&gt;<"+ 
+								"/h1> <hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); hei"+ 
+								"ght: 5px; border: 0pt none;'> </div><p> <br></p> <p style='color: rgb(99, 99, 99"+ 
+								"); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'> &l"+ 
+								"t;give a description about this course here&gt; </p>"
+                            }
                         }
                     },
                     structure: {
                         "participants": {
                             "_title": "Participants",
-                            "_order": 3,
+                            "_order": 4,
                             "_docref": "${pid}0",
                             "_nonEditable": true,
                             "_view": ["everyone", "-student", "-observer", "-ts"],
@@ -1044,7 +1068,7 @@ define(["config/config"], function(config) {
                         },
                         "syllabus": {
                             "_title": "Syllabus",
-                            "_order": 0,
+                            "_order": 1,
                             "_docref": "${pid}1",
                             "_nonEditable": false,
                             "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
@@ -1052,7 +1076,7 @@ define(["config/config"], function(config) {
                         },
                         "content": {
                             "_title": "Lecture Materials",
-                            "_order": 1,
+                            "_order": 2,
                             "_docref": "${pid}2",
                             "_nonEditable": false,
                             "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
@@ -1060,15 +1084,23 @@ define(["config/config"], function(config) {
                         },
                         "timetables": {
                             "_title": "Timetables",
-                            "_order": 2,
+                            "_order": 3,
                             "_docref": "${pid}3",
                             "_nonEditable": false,
                             "_view": ["everyone", "anonymous", "-student", "-ta"],
                             "_edit": ["-ts"]
                         },
+                        "about": {
+                            "_title": "About",
+                            "_order": 0,
+                            "_docref": "${pid}5",
+                            "_nonEditable": false,
+                            "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
+                            "_edit": ["-ts"]
+                        },
                          "fast-feedback": {
                             "_title": "Fast Feedback",
-                            "_order": 4,
+                            "_order": 5,
                             "_docref": "${pid}4",
                             "_nonEditable": true,
                             "_view": ["everyone", "-student", "-observer", "-ts"],
@@ -1080,7 +1112,7 @@ define(["config/config"], function(config) {
                 },
            		{
                     id: "more-detailed-course",
-                    title: "More Detailed Course",
+                    title: "More detailed course",
                     img: "/dev/images/worldtemplates/coursetemplate3.png",
                     fullImg: "/dev/images/worldtemplates/coursetemplate3-full.png",
                     perfectFor: "Advanced course organisation, using a Syllabus, listing Lecture "+
