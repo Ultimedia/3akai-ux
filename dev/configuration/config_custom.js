@@ -2519,13 +2519,13 @@ define(["config/config"], function(config) {
             ]
         },
         {
-            id: "collaborations",
-            title: "COLLABORATIONS",
-            titleSing: "COLLABORATIONS",
+            id: "supervisions",
+            title: "SUPERVISIONS",
+            titleSing: "SUPERVISION",
             templates: [
             	{
                     id: "supervision",
-                    title: "Supervision",
+                    title: "Supervision outline",
                     img: "/dev/images/worldtemplates/supervision-full.png",
                     fullImg: "/dev/images/worldtemplates/supervision.png",
                     perfectFor: "organising supervisions, using an About section, a Schedule page, an overview"+
@@ -3242,8 +3242,15 @@ define(["config/config"], function(config) {
                     },
                     joinRole: "student",
                     creatorRole: "supervisor"
-				},
-				{
+				}
+			]
+		},
+		{
+            id: "research-groups",
+            title: "RESEARCH_GROUPS",
+            titleSing: "RESEARCH_GROUP",
+            templates: [
+            	{
 				    id: "researchgroup",
 				    title: "Research group",
 				    img: "/dev/images/worldtemplates/researchgrouptemplate1.png",
@@ -4732,8 +4739,15 @@ define(["config/config"], function(config) {
 				    },
 				    joinRole: "observer",
 				    creatorRole: "lead"
-				},
-				{
+				}
+            ]
+		},
+		{
+            id: "research-projects",
+            title: "RESEARCH_PROJECTS",
+            titleSing: "RESEARCH_PROJECT",
+            templates: [
+            	{
                     id: "basicproject",
                     title: "Research project",
                     img: "/dev/images/worldtemplates/researchproject-full.png",
@@ -4999,7 +5013,77 @@ define(["config/config"], function(config) {
                     creatorRole: "lead"
                 }
             ]
-        }
+		},
+		{
+            id: "personal-websites",
+            title: "PERSONAL_WEBSITES",
+            titleSing: "PERSONAL_WEBSITE",
+            templates: [
+            {
+                    id: "basicwebsite",
+                    title: "Personal website",
+                    img: "/dev/images/worldtemplates/researchproject-full.png",
+                    fullImg: "/dev/images/worldtemplates/researchproject.png",
+                    perfectFor: "Basic website",
+					roles: [
+                        {
+                            id: "ts",
+                            roleTitle: "Teaching staff",
+                            title: "Teaching staff",
+                            allowManage: true
+                        },
+                        {
+                            id: "observer",
+                            roleTitle: "Observers",
+                            title: "Observer",
+                            allowManage: false
+                        },
+                        {
+                            id: "student",
+                            roleTitle: "Students",
+                            title: "Student",
+                            allowManage: false
+                        }
+					],
+                    docs: {
+                        "${pid}0": {
+                            structure0: {
+                                "my-personal-website":{
+                                    "_ref":"${refid}0",
+                                    "_order":0,
+                                    "_nonEditable": true,
+                                    "_title":"My personal website",
+                                    "main":{
+                                        "_ref":"${refid}0",
+                                        "_order":0,
+                                        "_nonEditable": true,
+                                        "_title":"My personal website"
+                                    }
+                                }
+                            },
+                            "${refid}0": {
+                                page: "<h1 style=\'font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weigh"+ 
+								"t: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204)"+ 
+								"; padding: 0px 0px 3px;\'><span style=\'color: rgb(29, 95, 144);\'>My personal "+ 
+								"website</span><br></h1>"
+                            }
+                        }
+                    },
+                    structure: {
+                        "my-personal-website": {
+                            "_title": "My personal website",
+                            "_order": 4,
+                            "_docref": "${pid}0",
+                            "_nonEditable": false,
+                            "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
+                            "_edit": ["-ts", "-oberserver", "-student"]
+                        }
+                    },
+                    joinRole: "observer",
+                    creatorRole: "ts"
+                }
+            ]
+		}
     ]
 
     // Kaltura config
