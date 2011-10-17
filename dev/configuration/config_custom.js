@@ -5020,6 +5020,11 @@ define(["config/config"], function(config) {
 	config.fastfeedbackwidget = {
     	fastfeedbackUser: "fastfeedback"
 	};
+	
+	// Fastfeedback widget config, specify the target user
+    config.templategeneratorwidget = {
+        exportUser: "exporttemplate"
+    };
     
     return config;
 });
