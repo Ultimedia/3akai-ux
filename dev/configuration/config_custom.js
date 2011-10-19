@@ -5100,15 +5100,32 @@ define(["config/config"], function(config) {
         description: "KALTURA_VIDEO_FILE"
     };
     
-	// Fastfeedback widget config, specify the target user
-	config.fastfeedbackwidget = {
-    	fastfeedbackUser: "fastfeedback"
-	};
+	  // Fastfeedback widget config, specify the target user
+	  config.fastfeedbackwidget = {
+      	fastfeedbackUser: "fastfeedback"
+	  };
 	
-	// Fastfeedback widget config, specify the target user
+	  // Fastfeedback widget config, specify the target user
     config.templategeneratorwidget = {
         exportUser: "exporttemplate"
     };
-    
+
+    // Remove the Sign Up link:
+    config.Navigation.splice(4,1);
+
+    // Prevent users changing their internal passwords through the UI:
+    config.allowPasswordChange = false;
+
+    // Set up Raven / Friends links:
+    config.Authentication.allowInternalAccountCreation = false;
+    config.Authentication.internal = false;
+    config.Authentication.external = [{
+        label: "Raven",
+        url: "/system/ucam/auth/raven"
+    }, {
+        label: "Friends",
+        url: "/system/ucam/auth/friends"
+    }];
+
     return config;
 });
