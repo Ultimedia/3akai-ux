@@ -229,8 +229,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                             }
                         });
                         // Extract our updated HTML structure
-                        var generatedHTML = $templategeneratorExport.empty().append(myPageContent).html().trim().replace(/"/g, '\'');
-
+                        var generatedHTML = $templategeneratorExport.empty().append(myPageContent).html().trim().replace(/"/g, '\'').replace(/\n/g, "");
                         // Insert the updated HTML structure into the page
                         page[pid][newRef].page = generatedHTML;
                         $templategeneratorExport.empty();
@@ -263,7 +262,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 // Stringify the created javascript object (this creates the actual string and manipulates the escaping)
                 templategeneratorData.output = JSON.stringify(templategeneratorData.exportData, null, "\t");
                 templategeneratorData.output = templategeneratorData.output.replace(/\\/g, '');
-
+            
                 // Create a file from the generated string
                 createTemplateFile();
             }
