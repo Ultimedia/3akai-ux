@@ -5127,5 +5127,18 @@ define(["config/config"], function(config) {
         url: "/system/ucam/auth/friends"
     }];
 
+    // Make all content (uploaded to or created in Sakai OAE) visible to
+    // logged in users only by default.
+    config.Permissions.Content.defaultaccess = "everyone";
+    config.Permissions.Documents.defaultaccess = "everyone";
+    // Make memberships visible to logged in users only by default and
+    // allow users to edit that settting:
+    config.defaultpubstructure.structure0.memberships._reorderOnly = false;
+    config.defaultpubstructure.structure0.memberships._view = "everyone";
+    // Make contacts visible to logged in users only by default and
+    // allow users to edit that settting:
+    config.defaultpubstructure.structure0.contacts._reorderOnly = false;
+    config.defaultpubstructure.structure0.contacts._view = "everyone";
+
     return config;
 });
