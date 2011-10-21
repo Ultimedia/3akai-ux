@@ -5140,5 +5140,8 @@ define(["config/config"], function(config) {
     config.defaultpubstructure.structure0.contacts._reorderOnly = false;
     config.defaultpubstructure.structure0.contacts._view = "everyone";
 
+    // Set UK style dates:
+    config.defaultLanguage = "en_GB";
+
     return config;
 });
