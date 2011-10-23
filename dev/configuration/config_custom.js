@@ -5088,7 +5088,7 @@ define(["config/config"], function(config) {
 
     // Kaltura config
     config.kaltura = {
-        serverURL:  "http://kaltura.ucamoae.caret.cam.ac.uk", // Kaltura Server URL
+        serverURL:  "https://kaltura.ucamoae.caret.cam.ac.uk", // Kaltura Server URL
         partnerId: 1188888811, // INSERT YOUR PARTNER ID HERE
         playerId: 1199999911 // INSERT YOUR PLAYER ID (UICONF_ID - from Kaltura Studio tab)
     };
