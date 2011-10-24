@@ -926,7 +926,7 @@ define(["config/config"], function(config) {
             templates: [
                 {
                     "id": "general-course",
-                    "title": "General-course",
+                    "title": "General course",
                     "img": "/dev/images/worldtemplates/coursetemplate2.png",
                     "fullImg": "/dev/images/worldtemplates/coursetemplate2-full.png",
                     "perfectFor": "Basic course organisation, using a Syllabus, Listing Lecture Materials, Timetables, Participants and Fast Feedback. Also includes 'Comment' boxes.",
@@ -1306,7 +1306,8 @@ define(["config/config"], function(config) {
                                 "everyone",
                                 "anonymous",
                                 "-student",
-                                "-ta"
+                                "-observer",
+                                "-ts"
                             ],
                             "_edit": [
                                 "-ts"
@@ -1350,7 +1351,7 @@ define(["config/config"], function(config) {
                 },
                 {
                     "id": "more-detailed-course",
-                    "title": "More-detailed-course",
+                    "title": "More detailed course",
                     "img": "/dev/images/worldtemplates/coursetemplate3.png",
                     "fullImg": "/dev/images/worldtemplates/coursetemplate3-full.png",
                     "perfectFor": "Advanced course organisation, using a Syllabus, listing Lecture Materials, Timetables, Participants and Fast Feedback. Also includes 'Comment' boxes and a 'Lecture description'.",
@@ -1947,7 +1948,7 @@ define(["config/config"], function(config) {
             templates: [
                 {
                     "id": "supervision-outline",
-                    "title": "Supervision-outline",
+                    "title": "Supervision outline",
                     "img": "/dev/images/worldtemplates/supervision-full.png",
                     "fullImg": "/dev/images/worldtemplates/supervision.png",
                     "perfectFor": "Organising supervisions, using an About section, a Schedule page, an overview of the supervision sessions and Participants. ",
@@ -2522,7 +2523,7 @@ define(["config/config"], function(config) {
             templates: [
                 {
                     "id": "research-group",
-                    "title": "Research-group",
+                    "title": "Research group",
                     "img": "/dev/images/worldtemplates/researchgrouptemplate1.png",
                     "fullImg": "/dev/images/worldtemplates/researchgrouptemplate1-full.png",
                     "perfectFor": "Group collaborations and sharing, using sections to describe your research on it internally, to list Events and Meetings and collaborate on Funding.",
@@ -3176,11 +3177,7 @@ define(["config/config"], function(config) {
                                 " consectetur adipiscing elit. Aenean commodo \ndignissim quam ac fermentum. Quis"+ 
                                 "que aliquam tristique mi at molestie. \nMauris vitae sapien mauris. Ut pulvinar "+ 
                                 "sapien lorem, eu auctor sem. \nNulla vehicula sodales sollicitudin. Praesent id "+ 
-                                "diam arcu, tristique \nauctor sem.</p><p style=\'padding-left: 30px;\'><img id=\'"+ 
-                                "widget_embedcontent_${refid}33\' class=\'widget_inline\' style=\'display: block;"+ 
-                                " padding: 10px; margin: 4px;\' src=\'/devwidgets/embedcontent/images/content.png"+ 
-                                "\' data-mce-src=\'devwidgets/embedcontent/images/content.png\' data-mce-style=\'"+ 
-                                "display: block; padding: 10px; margin: 4px;\' border=\'1\'><br></p><h1 style=\'f"+ 
+                                "diam arcu, tristique \nauctor sem.</p><h1 style=\'f"+ 
                                 "ont-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; colo"+ 
                                 "r: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0p"+ 
                                 "x 0px 3px;\'><span style=\'color: rgb(29, 95, 144);\'>&lt;Name Talk 3&gt;</span>"+ 
@@ -3192,30 +3189,6 @@ define(["config/config"], function(config) {
                                 "p><br></p><p><br></p>"
                             },
                             "${refid}32": {
-                                
-                                embedcontent:{
-                                    "embedmethod": "thumbnail",
-                                    "sakai:indexed-fields": "title,description",
-                                    "download": false,
-                                    "sling:resourceType": "sakai/widget-data",
-                                    "title": "",
-                                    "details": false,
-                                    "description": "",
-                                    "name": true,
-                                    "layout": "horizontal",
-                                    "items": {
-                                        "_created": 1319209315934,
-                                        "_id": "nhx34Pv1EeCV4eV1fwABAQ+",
-                                        "_lastModifiedBy": "exporttemplate",
-                                        "_lastModified": 1319209315934,
-                                        "_createdBy": "exporttemplate",
-                                        "__array__0__": "/p/ilCsUXOaa",
-                                        "_path": "ioY3APwCAT/id2097612/embedcontent/items",
-                                        "__array__1__": "/p/ilCsu3Eaa"
-                                    }
-                                }
-                            },
-                            "${refid}33": {
                                 embedcontent:{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
@@ -3259,11 +3232,7 @@ define(["config/config"], function(config) {
                                 "<br>\nLorem\n ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo "+ 
                                 "\ndignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. \nMauri"+ 
                                 "s vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. \nNulla vehicula"+ 
-                                " sodales sollicitudin. Praesent id diam arcu, tristique \nauctor sem.</p><p><img"+ 
-                                " id=\'widget_embedcontent_${refid}35\' class=\'widget_inline\' style=\'display: b"+ 
-                                "lock; padding: 10px; margin: 4px;\' src=\'/devwidgets/embedcontent/images/conten"+ 
-                                "t.png\' data-mce-src=\'devwidgets/embedcontent/images/content.png\' data-mce-sty"+ 
-                                "le=\'display: block; padding: 10px; margin: 4px;\' border=\'1\'><br></p>"
+                                " sodales sollicitudin. Praesent id diam arcu, tristique \nauctor sem.</p>"
                             },
                             "${refid}34": {
                                 embedcontent:{
@@ -3273,34 +3242,11 @@ define(["config/config"], function(config) {
                                     "sling:resourceType": "sakai/widget-data",
                                     "title": "",
                                     "details": false,
-                                    "description": "",
+                                     "description": "",
                                     "name": true,
                                     "layout": "horizontal",
                                     "items": {
                                         "_created": 1319209841669,
-                                        "_id": "13lDUPv2EeCV4eV1fwABAQ+",
-                                        "_lastModifiedBy": "exporttemplate",
-                                        "_lastModified": 1319209841669,
-                                        "_createdBy": "exporttemplate",
-                                        "__array__0__": "/p/ilCAsGWaa",
-                                        "_path": "ioY3APwCAT/id5074023/embedcontent/items",
-                                        "__array__1__": "/p/ilCASwF30b"
-                                    }
-                                }
-                            },
-                            "${refid}35": {
-                                embedcontent:{
-                                    "embedmethod": "thumbnail",
-                                    "sakai:indexed-fields": "title,description",
-                                    "download": false,
-                                    "sling:resourceType": "sakai/widget-data",
-                                    "title": "",
-                                    "details": false,
-                                    "description": "",
-                                    "name": true,
-                                    "layout": "horizontal",
-                                    "items": {
-                                       "_created": 1319209841669,
                                         "_id": "13lDUPv2EeCV4eV1fwABAQ+",
                                         "_lastModifiedBy": "exporttemplate",
                                         "_lastModified": 1319209841669,
@@ -3420,7 +3366,7 @@ define(["config/config"], function(config) {
                                 }
                             },
                             "${refid}38": {
-                                page: "<p></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Management Meetings</span><br></h1><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit<strong>.<br></strong></span></p><p style=\"\" data-mce-style=\"\"><img id=\"widget_embedcontent_id2525733\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/embedcontent/images/content.png\" data-mce-src=\"devwidgets/embedcontent/images/content.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br><br></span></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Steering Committee Meetings</span><br></h1>\n<p><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p><img id=\"widget_embedcontent_id7325092\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/embedcontent/images/content.png\" data-mce-src=\"devwidgets/embedcontent/images/content.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p style=\"padding-left: 30px;\" data-mce-style=\"padding-left: 30px;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br><br></span></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Progress Meetings</span><br></h1>\n<p><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p style=\"\" data-mce-style=\"\"><br><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p><br></p>"
+                                page: "<p></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Management Meetings</span><br></h1><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit<strong>.<br></strong></span></p><p style=\"padding-left: 30px;\"><img id=\"widget_embedcontent_${refid}39\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/embedcontent/images/content.png\" data-mce-src=\"devwidgets/embedcontent/images/content.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br><br></span></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Steering Committee Meetings</span><br></h1>\n<p><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p style=\"padding-left: 30px;\"><img id=\"widget_embedcontent_${refid}40\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/embedcontent/images/content.png\" data-mce-src=\"devwidgets/embedcontent/images/content.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p style=\"padding-left: 30px;\" data-mce-style=\"padding-left: 30px;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br><br></span></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Progress Meetings</span><br></h1>\n<p><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p style=\"padding-left: 30px;\"><img id=\"widget_embedcontent_${refid}41\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/embedcontent/images/content.png\" data-mce-src=\"devwidgets/embedcontent/images/content.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p><br></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p style=\"\" data-mce-style=\"\"><br><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p><br></p>"
                             },
                             "${refid}39": {
                                 embedcontent:{
@@ -3432,7 +3378,17 @@ define(["config/config"], function(config) {
                                     "details": false,
                                     "description": "",
                                     "name": true,
-                                    "layout": "horizontal"
+                                    "layout": "horizontal",
+                                    "items":{
+                                        "_created": 1319207049137,
+                                        "_id": "Vv6yEPvwEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319207049137,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilQqOZmuk",
+                                        "_path": "iooYRKeqi/id2525733/embedcontent/items",
+                                        "__array__1__": "/p/ilQqc7cwaa"
+                                    }
                                 }
                             },
                             "${refid}40": {
@@ -3445,10 +3401,20 @@ define(["config/config"], function(config) {
                                     "details": false,
                                     "description": "",
                                     "name": true,
-                                    "layout": "horizontal"
+                                    "layout": "horizontal",
+                                    "items":{
+                                        "_created": 1319207103323,
+                                        "_id": "d0rSsPvwEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319207103323,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilQq33numg",
+                                        "_path": "iooYRKeqi/id7325092/embedcontent/items",
+                                        "__array__1__": "/p/ilQqSCDqaa"
+                                    }
                                 }
                             },
-                            "${refid}41": {
+                             "${refid}41": {
                                 embedcontent:{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
@@ -3458,20 +3424,18 @@ define(["config/config"], function(config) {
                                     "details": false,
                                     "description": "",
                                     "name": true,
-                                    "layout": "horizontal"
-                                }
-                            },
-                            "${refid}42": {
-                                embedcontent:{
-                                    "embedmethod": "thumbnail",
-                                    "sakai:indexed-fields": "title,description",
-                                    "download": false,
-                                    "sling:resourceType": "sakai/widget-data",
-                                    "title": "",
-                                    "details": false,
-                                    "description": "",
-                                    "name": true,
-                                    "layout": "horizontal"
+                                    "layout": "horizontal",
+                                    "items":{
+                                        "_created": 1319207162992,
+                                        "_id": "mtuXAPvwEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319207162992,
+                                        "__array__2__": "/p/ilQqAQwcym",
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilQqoe5aa",
+                                        "_path": "iooYRKeqi/id867445/embedcontent/items",
+                                        "__array__1__": "/p/ilQqWE07qi"
+                                    }
                                 }
                             }
                         },
@@ -3532,7 +3496,17 @@ define(["config/config"], function(config) {
                                     "details": false,
                                     "description": "",
                                     "name": true,
-                                    "layout": "horizontal"
+                                    "layout": "horizontal",
+                                    "items":{
+                                        "_created": 1319212049090,
+                                        "_id": "-zL6IPv7EeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319212049090,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/io3W3pMaa",
+                                        "_path": "iooY4KOcH/id5146344/embedcontent/items",
+                                        "__array__1__": "/p/ilWgaxqEXb"
+                                    }
                                 }
                             },
                             "${refid}45": {
@@ -3545,7 +3519,16 @@ define(["config/config"], function(config) {
                                     "details": false,
                                     "description": "",
                                     "name": true,
-                                    "layout": "horizontal"
+                                    "layout": "horizontal",
+                                    "items":{
+                                        "_created": 1319207594111,
+                                        "_id": "m9Mg8PvxEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319207594111,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilWgKGJaa",
+                                        "_path": "iooY4KOcH/id227542/embedcontent/items"
+                                    }
                                 }
                             }
                         }
@@ -3572,6 +3555,7 @@ define(["config/config"], function(config) {
                             "_order": 9,
                             "_nonEditable": true,
                             "_view": [
+                                "everyone",
                                 "-lead",
                                 "-researcher",
                                 "-mentor",
@@ -3692,7 +3676,7 @@ define(["config/config"], function(config) {
             templates: [
                 {
                     "id": "research-project",
-                    "title": "Research-project",
+                    "title": "Research project",
                     "img": "/dev/images/worldtemplates/researchproject.png",
                     "fullImg": "/dev/images/worldtemplates/researchproject-full.png",
                     "perfectFor": "Smaller group collaborations or as a basic template to support PhD or Master Research projects.",
@@ -3718,7 +3702,7 @@ define(["config/config"], function(config) {
                         {
                             "id": "observer",
                             "roleTitle": "Observer",
-                            "title": "Mentor",
+                            "title": "Observer",
                             "allowManage": false
                         }
                     ],
@@ -3853,6 +3837,7 @@ define(["config/config"], function(config) {
                             "_order": 4,
                             "_nonEditable": true,
                             "_view": [
+                                "everyone",
                                 "-lead",
                                 "-researcher",
                                 "-mentor",
