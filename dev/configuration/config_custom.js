@@ -1938,6 +1938,544 @@ define(["config/config"], function(config) {
                     },
                     "joinRole": "observer",
                     "creatorRole": "ts"
+                },
+                {
+                    "id": "working-course-template",
+                    "title": "Working-Course-Template",
+                    "img": "",
+                    "fullImg": "",
+                    "perfectFor": "General course organisation, enabling you to list the different course topics and their syllabi. It also lists different timetables, Examples Papers, Coursework and Exam Papers.",
+                    "roles": [
+                        {
+                            "id": "ts",
+                            "roleTitle": "Teaching staff",
+                            "title": "Teaching staff",
+                            "allowManage": true
+                        },
+                        {
+                            "id": "observer",
+                            "roleTitle": "Observers",
+                            "title": "Observer",
+                            "allowManage": false
+                        },
+                        {
+                            "id": "student",
+                            "roleTitle": "Students",
+                            "title": "Student",
+                            "allowManage": false
+                        }
+                    ],
+                    "docs": {
+                        "${pid}0": {
+                            "structure0": {
+                                "about": {
+                                    "_ref": "${refid}0",
+                                    "_order": 0,
+                                    "_nonEditable": false,
+                                    "_title": "About",
+                                    "main": {
+                                        "_ref": "${refid}0",
+                                        "_order": 0,
+                                        "_nonEditable": false,
+                                        "_title": "About"
+                                    }
+                                }
+                            },
+                            "${refid}0": {
+                                "page": "<div id='header' style=''> <h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>About &lt;name of the topic&gt;</h1> <hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;'> </div><p> <br></p> <p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'> &lt;Add a description of the topic and any topic overview here&gt; </p>"
+                            }
+                        },
+                        "${pid}1": {
+                            "structure0": {
+                                "fast-feedback": {
+                                    "_ref": "${refid}1",
+                                    "_order": 4,
+                                    "_nonEditable": true,
+                                    "_title": "Fast Feedback",
+                                    "main": {
+                                        "_ref": "${refid}1",
+                                        "_order": 0,
+                                        "_nonEditable": true,
+                                        "_title": "Fast Feedback"
+                                    }
+                                }
+                            },
+                            "${refid}1": {
+                                "page": "<img id='widget_fastfeedback_${refid}2' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/fastfeedback/images/icon.png' data-mce-src='/devwidgets/fastfeedback/images/icon.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><p></p>"
+                            },
+                            "${refid}2": {
+                                "fastfeedback": {}
+                            }
+                        },
+                        "${pid}2": {
+                            "structure0": {
+                                "id1375560": {
+                                    "_title": "Michaelmas timetable",
+                                    "_order": 0,
+                                    "_ref": "${refid}3",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 1",
+                                        "_order": 0,
+                                        "_ref": "${refid}3",
+                                        "_nonEditable": false,
+                                    }
+                                },
+                                "id2281431": {
+                                    "_title": "Lent timetable",
+                                    "_order": 1,
+                                    "_ref": "${refid}5",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 2",
+                                        "_order": 0,
+                                        "_ref": "${refid}5",
+                                        "_nonEditable": false,
+                                    }
+                                },
+                                "id2180014": {
+                                    "_title": "Easter timetable",
+                                    "_order": 2,
+                                    "_ref": "${refid}6",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 3",
+                                        "_order": 0,
+                                        "_ref": "${refid}6",
+                                        "_nonEditable": false,
+                                    }
+                                }
+                            },
+                            "${refid}3": {
+                                "page": "<p>"
+                            },
+                            "${refid}5": {
+                                "page": "<div id='header' style=''> <h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lecture Timetable for Lent Term<br></h1> <hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;'> </div><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'> &lt;When timetable is available, Create content and add Timetable as Files and Documents, use settings, display settings to add download link&gt; </p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'><br></p>"
+                            },
+                            "${refid}6": {
+                                "page": "<div id='header' style=''> <h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lecture Timetable for Easter Term<br></h1></div><div id='header' style=''><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;'> </div><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'>  </p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'> &lt;When timetable is available, Create content and add Timetable as Files and Documents, use settings, display settings to add download link&gt; </p>"
+                            }
+                        },
+                        "${pid}3": {
+                            "structure0": {
+                                "Examples-Papers": {
+                                    "_title": "Examples Papers",
+                                    "_order": 0,
+                                    "_ref": "${refid}7",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Examples Papers",
+                                        "_order": 0,
+                                        "_ref": "${refid}7",
+                                        "_nonEditable": false
+                                    }
+                                }
+                            },
+                            "${refid}7": {
+                                "page": "<div id='header' style=''> <h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Part 1A Examples Papers<br></h1> <hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;'> </div><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'> &lt;Add link to Teaching Office Examples Table http://www.eng.cam.ac.uk/teaching/past_papers/examples_student/examples_IA/index.html&gt; </p>"
+                            }
+                        },
+                        "${pid}4": {
+                            "structure0": {
+                                "Lab-Coursework": {
+                                    "_title": "Lab/Coursework",
+                                    "_order": 0,
+                                    "_ref": "${refid}8",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Lab/Coursework",
+                                        "_order": 0,
+                                        "_ref": "${refid}8",
+                                        "_nonEditable": false
+                                    }
+                                }
+                            },
+                            "${refid}8": {
+                                "page": "<div id='jbmDzM5aa-id8711855'><div id='header' style=''> <h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lab/Coursework<br></h1> <hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;'> </div><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'> &lt;Add lab and/or coursework materials here&gt; </p></div>"
+                            }
+                        },
+                        "${pid}5": {
+                            "structure0": {
+                                "Exam-Papers": {
+                                    "_title": "Exam Papers",
+                                    "_order": 0,
+                                    "_ref": "${refid}9",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Exam Papers",
+                                        "_order": 0,
+                                        "_ref": "${refid}9",
+                                        "_nonEditable": false
+                                    }
+                                }
+                            },
+                            "${refid}9": {
+                                "page": "<div id='jbKD3wA9aa-id5399887'><div id='header' style=''> <h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Part 1A Exam Papers<br></h1> <hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;'> </div><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'> &lt;Add link to Teaching Office Exams Table http://www.eng.cam.ac.uk/teaching/past_papers/index.html&gt; </p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px; margin: 0pt;'><br></p></div>"
+                            }
+                        },
+                        "${pid}6": {
+                            "structure0": {
+                                "id4585562": {
+                                    "_title": "Syllabus",
+                                    "_order": 0,
+                                    "_ref": "${refid}10",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 1",
+                                        "_order": 0,
+                                        "_ref": "${refid}10",
+                                        "_nonEditable": false
+                                    }
+                                },
+                                "id4853412": {
+                                    "_title": "Section1",
+                                    "_order": 1,
+                                    "_ref": "${refid}11",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 2",
+                                        "_order": 0,
+                                        "_ref": "${refid}11",
+                                        "_nonEditable": false
+                                    }
+                                },
+                                "id9689347": {
+                                    "_title": "Section2",
+                                    "_order": 2,
+                                    "_ref": "${refid}13",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 3",
+                                        "_order": 0,
+                                        "_ref": "${refid}13",
+                                        "_nonEditable": false
+                                    }
+                                }
+                            },
+                            "${refid}10": {
+                                "page": "<p><br></p>"
+                            },
+                            "${refid}11": {
+                                "page": "<h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Handouts and Slides for &lt;name of course/module&gt;<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding-top: 0pt; padding-right: 0pt; padding-bottom: 10px; margin: 0pt;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'>These are all the Lecture Notes for &lt;name of the course/module&gt;.</span> <br></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;' data-mce-style='color: #636363; font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;'><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lecture Videos<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'>These are all the Lecture Videos for &lt;name of the course/module&gt;.</span> <br></p><p style='padding-left: 30px;'><br></p><p><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Web Resources<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'>These are the web based resources (Files/Matlab/Academic Papers etc for &lt;name of the course/module&gt;. <br><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span></p><p style=''><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'><span style='color: rgb(54, 109, 160);'><strong><span data-mce-style='font-size: medium;' style='font-size: medium;'>Comments and questions</span></strong></span><br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'><span style='font-size: small;'>If you have any comments or questions about the Lecture Materials, you can ask them below:<br><br></span></span><img id='widget_comments_${refid}12' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='http://localhost:8080/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'></p>"
+                            },
+                            "${refid}12": {
+                                comments: {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5
+                                }
+                            },
+                            "${refid}13": {
+                                "page": "<h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Handouts and Slides for &lt;name of course/module&gt;<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding-top: 0pt; padding-right: 0pt; padding-bottom: 10px; margin: 0pt;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;' data-mce-style='color: #636363; font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;'><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lecture Videos<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='padding-left: 30px;'><br></p><p><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Web Resources<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'>&lt;Files/Matlab/Academic Papers etc.&gt; <br><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span></p><p style=''><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'><span style='color: rgb(54, 109, 160);'><strong><span data-mce-style='font-size: medium;' style='font-size: medium;'>Comments and questions</span></strong></span><br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'><span style='font-size: small;'>If you have any comments or questions about the Lecture Materials, you can ask them below:<br><br></span></span><img id='widget_comments_${refid}14' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='https://v34.ucamoae.caret.cam.ac.uk/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'></p>"
+                            },
+                            "${refid}14": {
+                                comments: {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5
+                                }
+                            }
+                        },
+                        "${pid}7": {
+                            "structure0": {
+                                "id6269478": {
+                                    "_title": "Syllabus",
+                                    "_order": 0,
+                                    "_ref": "${refid}15",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 1",
+                                        "_order": 0,
+                                        "_ref": "${refid}15",
+                                        "_nonEditable": false,
+                                        "_id": "main"
+                                    }
+                                },
+                                "id6627736": {
+                                    "_title": "Section 1",
+                                    "_order": 1,
+                                    "_ref": "${refid}16",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 2",
+                                        "_order": 0,
+                                        "_ref": "${refid}16",
+                                        "_nonEditable": false
+                                    }
+                                },
+                                "id773531": {
+                                    "_title": "Section 2",
+                                    "_order": 2,
+                                    "_ref": "${refid}18",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 3",
+                                        "_order": 0,
+                                        "_ref": "${refid}18",
+                                        "_nonEditable": false
+                                    }
+                                }
+                            },
+                            "${refid}15": {
+                                "page": ""
+                            },
+                            "${refid}16": {
+                                "page": "<h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Handouts and Slides for &lt;name of course/module&gt;<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding-top: 0pt; padding-right: 0pt; padding-bottom: 10px; margin: 0pt;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;' data-mce-style='color: #636363; font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;'><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lecture Videos<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='padding-left: 30px;'><br></p><p><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Web Resources<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'>&lt;Files/Matlab/Academic Papers etc.&gt; <br><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span></p><p style=''><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'><span style='color: rgb(54, 109, 160);'><strong><span data-mce-style='font-size: medium;' style='font-size: medium;'>Comments and questions</span></strong></span><br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'><span style='font-size: small;' data-mce-style='font-size: small;'>If you have any comments or questions about the Lecture Materials, you can ask them below:<br><br></span></span><img id='widget_comments_${refid}17' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p>"
+                            },
+                            "${refid}17": {
+                                comments: {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5
+                                }
+                            },
+                            "${refid}18": {
+                                "page": "<h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Handouts and Slides for &lt;name of course/module&gt;<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding-top: 0pt; padding-right: 0pt; padding-bottom: 10px; margin: 0pt;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;' data-mce-style='color: #636363; font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;'><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lecture Videos<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='padding-left: 30px;'><br></p><p><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Web Resources<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'>&lt;Files/Matlab/Academic Papers etc.&gt; <br><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span></p><p style=''><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'><span style='color: rgb(54, 109, 160);'><strong><span data-mce-style='font-size: medium;' style='font-size: medium;'>Comments and questions</span></strong></span><br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'><span style='font-size: small;' data-mce-style='font-size: small;'>If you have any comments or questions about the Lecture Materials, you can ask them below:<br><br></span></span><img id='widget_comments_${refid}19' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p>"
+                            },
+                            "${refid}19": {
+                                comments: {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5
+                                }
+                            }
+                        },
+                        "${pid}8": {
+                            "structure0": {
+                                "id3967295": {
+                                    "_title": "Syllabus",
+                                    "_order": 0,
+                                    "_ref": "${refid}20",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 1",
+                                        "_order": 0,
+                                        "_ref": "${refid}20",
+                                        "_nonEditable": false,
+                                    }
+                                },
+                                "id568167": {
+                                    "_title": "Section 1",
+                                    "_order": 1,
+                                    "_ref": "${refid}21",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 2",
+                                        "_order": 0,
+                                        "_ref": "${refid}21",
+                                        "_nonEditable": false
+                                    }
+                                },
+                                "id5823633": {
+                                    "_title": "Section 2",
+                                    "_order": 2,
+                                    "_ref": "${refid}23",
+                                    "_nonEditable": false,
+                                    "main": {
+                                        "_title": "Page 3",
+                                        "_order": 0,
+                                        "_ref": "${refid}23",
+                                        "_nonEditable": false
+                                    }
+                                }
+                            },
+                            "${refid}20": {
+                                "page": ""
+                            },
+                            "${refid}21": {
+                                "page": "<h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Handouts and Slides for &lt;name of course/module&gt;<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding-top: 0pt; padding-right: 0pt; padding-bottom: 10px; margin: 0pt;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;' data-mce-style='color: #636363; font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;'><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lecture Videos<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='padding-left: 30px;'><br></p><p><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Web Resources<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'>&lt;Files/Matlab/Academic Papers etc.&gt; <br><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span></p><p style=''><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'><span style='color: rgb(54, 109, 160);'><strong><span data-mce-style='font-size: medium;' style='font-size: medium;'>Comments and questions</span></strong></span><br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'><span style='font-size: small;' data-mce-style='font-size: small;'>If you have any comments or questions about the Lecture Materials, you can ask them below:<br><br></span></span><img id='widget_comments_${refid}22' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p>"
+                            },
+                            "${refid}22": {
+                                comments: {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5
+                                }
+                            },
+                            "${refid}23": {
+                                "page": "<h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Handouts and Slides for &lt;name of course/module&gt;<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding-top: 0pt; padding-right: 0pt; padding-bottom: 10px; margin: 0pt;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='color: rgb(99, 99, 99); font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;' data-mce-style='color: #636363; font-size: 16px; line-height: 18px; padding: 0pt 0pt 10px 30px; margin: 0pt;'><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Lecture Videos<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span><br style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></p><p style='padding-left: 30px;'><br></p><p><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'>Web Resources<br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><br><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'>&lt;Files/Matlab/Academic Papers etc.&gt; <br><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'></span></p><p style=''><br><br></p><h1 style='color: rgb(102, 102, 102); font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;' data-mce-style='color: #666666; font-size: 22px; margin: 20px 0pt 15px; font-weight: normal;'><span style='color: rgb(54, 109, 160);'><strong><span data-mce-style='font-size: medium;' style='font-size: medium;'>Comments and questions</span></strong></span><br></h1><hr style='color: rgb(255, 0, 0); background-color: rgb(232, 232, 232); height: 5px; border: 0pt none;' data-mce-style='color: #ff0000; background-color: #e8e8e8; height: 5px; border: 0pt none;'><p><span style='font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(128, 128, 128);' data-mce-style='font-family: arial,helvetica,sans-serif; font-size: medium; color: #808080;'><span style='font-size: small;' data-mce-style='font-size: small;'>If you have any comments or questions about the Lecture Materials, you can ask them below:<br><br></span></span><img id='widget_comments_${refid}24' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p>"
+                            },
+                            "${refid}24": {
+                                comments: {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5
+                                }
+                            }
+                        }
+                    },
+                    "structure": {
+                        "about": {
+                            "_title": "About",
+                            "_order": 0,
+                            "_nonEditable": false,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}0"
+                        },
+                        "fast-feedback": {
+                            "_title": "Fast Feedback",
+                            "_order": 8,
+                            "_nonEditable": true,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}1"
+                        },
+                        "Timetables": {
+                            "_title": "Timetables",
+                            "_order": 1,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_nonEditable": false,
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}2"
+                        },
+                        "Examples-Papers": {
+                            "_title": "Examples Papers",
+                            "_order": 2,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_nonEditable": false,
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}3"
+                        },
+                        "Lab-Coursework": {
+                            "_title": "Lab/Coursework",
+                            "_order": 3,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_nonEditable": false,
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}4"
+                        },
+                        "Exam-Papers": {
+                            "_title": "Exam Papers",
+                            "_order": 4,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_nonEditable": false,
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}5"
+                        },
+                        "Topic": {
+                            "_title": "Topic",
+                            "_order": 5,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_nonEditable": false,
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}6"
+                        },
+                        "Topic-2": {
+                            "_title": "Topic 2",
+                            "_order": 6,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_nonEditable": false,
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}7"
+                        },
+                        "Topic-3": {
+                            "_title": "Topic 3",
+                            "_order": 7,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-ts"
+                            ],
+                            "_edit": [
+                                "-ts"
+                            ],
+                            "_nonEditable": false,
+                            "_canView": true,
+                            "_canSubedit": true,
+                            "_canEdit": true,
+                            "_docref": "${pid}8"
+                        }
+                    },
+                    "joinRole": "observer",
+                    "creatorRole": "ts"
                 }
             ]
         },
