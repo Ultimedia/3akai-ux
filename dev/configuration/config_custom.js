@@ -1941,7 +1941,7 @@ define(["config/config"], function(config) {
                 },
                 {
                     "id": "working-course-template",
-                    "title": "Working Course Template",
+                    "title": "Working Course",
                     "img": "",
                     "fullImg": "",
                     "perfectFor": "General course organisation, enabling you to list the different course topics and their syllabi. It also lists different timetables, Examples Papers, Coursework and Exam Papers.",
