@@ -4571,6 +4571,7 @@ define(["config/config"], function(config) {
     // logged in users only by default.
     config.Permissions.Content.defaultaccess = "everyone";
     config.Permissions.Documents.defaultaccess = "everyone";
+    config.Permissions.Groups.defaultaccess = "logged-in-only";
     // Make memberships visible to logged in users only by default and
     // allow users to edit that settting:
     config.defaultpubstructure.structure0.memberships._reorderOnly = false;
