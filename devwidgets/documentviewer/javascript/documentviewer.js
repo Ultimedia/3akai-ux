@@ -153,10 +153,9 @@ require(["jquery", "sakai/sakai.api.core", "/devwidgets/documentviewer/lib/docum
         };
 
         var renderAudioPlayer = function(data){
-            var so = createSWFObject(false, {}, {});
+            var so = createSWFObject(false, {"height":"25px"}, {});
             so.addVariable('file', getPath(data));
             so.addVariable('provider', 'sound');
-            so.addVariable('image', "/devwidgets/documentviewer/images/content_preview_audio.jpg");
             so.addVariable('stretching','fill');
             so.write("documentviewer_video_" + tuid);
         };
@@ -244,7 +243,7 @@ require(["jquery", "sakai/sakai.api.core", "/devwidgets/documentviewer/lib/docum
             if (!url){
                 url = "/devwidgets/video/jwplayer/player.swf";
             }
-            var so = new SWFObject(url,'ply', '100%', '560','9','#000000');
+            var so = new SWFObject(url,'ply', '100%', params.height || '560','9','#000000');
             so.addParam('allowfullscreen','true');
             if (params.allowscriptaccess) {
                 so.addParam('allowscriptaccess', params.allowscriptaccess);
@@ -264,7 +263,7 @@ require(["jquery", "sakai/sakai.api.core", "/devwidgets/documentviewer/lib/docum
                 renderKalturaPlayer(data);            
             } else if (sakai.api.Content.isJwPlayerSupportedVideo(mimeType)){
                 renderVideoPlayer(getPath(data));
-            } else if (mimeType === "audio/mp3" || mimeType === "audio/x-aac") {
+            } else if (sakai.api.Content.isJwPlayerSupportedAudio(mimeType)) {
                 renderAudioPlayer(data);
             } else if (mimeType === "application/x-shockwave-flash") {
                 renderFlashPlayer(data);

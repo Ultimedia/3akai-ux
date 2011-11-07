@@ -1,5 +1,4 @@
-/**
- *
+/*
  * Licensed to the Sakai Foundation (SF) under one
  * or more contributor license agreements. See the NOTICE file
  * distributed with this work for additional information
@@ -15,9 +14,7 @@
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
- *
  */
-
 define(
     [
         "jquery",
@@ -619,7 +616,7 @@ define(
 
         isJwPlayerSupportedVideo : function(mimeType) {
             supported = false;
-            if (mimeType && mimeType.substring(0, 6) === "video/" ){
+            if (mimeType && mimeType.substring(0, 6) === "video/"){
                 var mimeSuffix = mimeType.substring(6);
                 if (mimeSuffix === "x-flv" || mimeSuffix === "mp4" || mimeSuffix === "3gpp" || mimeSuffix === "quicktime") {
                     supported = true;
@@ -630,6 +627,14 @@ define(
 
         isKalturaPlayerSupportedVideo : function(mimeType) {            
             return mimeType === "kaltura/video";
+        },
+
+        isJwPlayerSupportedAudio : function(mimeType) {
+            supported = false;
+            if (mimeType && mimeType.substring(0, 6) === "audio/"){
+                supported = true;
+            }
+            return supported;
         },
 
         getCreatorProfile : function(content, callback) {
@@ -658,7 +663,8 @@ define(
                     mimeType.substring(0,5) === "text/" ||
                     mimeType === "application/x-shockwave-flash" ||
                     sakai_content.isKalturaPlayerSupportedVideo(mimeType) ||
-                    sakai_content.isJwPlayerSupportedVideo(mimeType)) {
+                    sakai_content.isJwPlayerSupportedVideo(mimeType) ||
+                    sakai_content.isJwPlayerSupportedAudio(mimeType)) {
                 result = true;
             }
             return result;
