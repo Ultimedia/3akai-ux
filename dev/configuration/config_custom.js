@@ -622,111 +622,108 @@ define(["config/config"], function(config) {
         engineeringtripospartia: {
             title: "Engineering Tripos Part IA",
             children: {
-                et1a1: {
+                etIa1: {
                     title: "Kinematics and Dynamics in Two Dimensions"
                 },
-                et1a2: {
+                etIa2: {
                     title: "Mechanical Vibrations"
                 },
-                et1a3: {
-                    title: "Thermofluid Mechanics"
+                etIa3: {
+                    title: "Fluid Mechanics"
                 },
-                et1a4: {
+                etIa4: {
+                    title: "Thermodynamics"
+                },
+                etIa5: {
                     title: "Structural Mechanics"
                 },
-                et1a5: {
+                etIa6: {
                     title: "Materials"
                 },
-                et1a6: {
+                etIa7: {
                     title: "Physical Principles of Electronics and Electromagnetics"
                 },
-                et1a7: {
+                etIa8: {
                     title: "Linear Circuits and Devices"
                 },
-                et1a8: {
+                etIa9: {
                     title: "Digital Circuits and Information Processing"
                 },
-                et1a9: {
-                    title: "Mathematics"
+                etIa10: {
+                    title: "Mathematics Michaelmas (Standard)"
                 },
-                et1a10: {
+                etIa11: {
+                    title: "Mathematics Michaelmas (Fast)"
+                },
+                etIa12: {
+                    title: "Mathematics Lent and Easter"
+                },
+                etIa13: {
                     title: "Computing"
-                },
-                et1a11: {
-                    title: "Dimensional Analysis"
-                },
-                et1a12: {
-                    title: "The Engineer in Society"
-                },
-                et1a13: {
-                    title: "Drawing"
-                },
-                et1a14: {
-                    title: "Product Design"
                 }
             }
         },
         engineeringtripospartib: {
             title: "Engineering Tripos Part IB",
             children: {
-                et1b1: {
+                etIb1: {
                     title: "Mechanics: Dynamics of Rigid Bodies"
                 },
-                et1b2: {
+                etIb2: {
                     title: "Structures"
                 },
-                et1b3: {
-                    title: "Materials: Microstructure, Processing and Design"
+                etIb3: {
+                    title: "Materials: Microstructure"
                 },
-                et1b4: {
+                etIb4: {
                     title: "Thermofluid Mechanics"
                 },
-                et1b5: {
+                etIb5: {
                     title: "Linear Circuits and Devices"
                 },
-                et1b6: {
+                etIb6: {
                     title: "Electrical Power"
                 },
-                et1b7: {
+                etIb7: {
                     title: "Electromagnetic Fields and Waves"
                 },
-                et1b8: {
+                etIb8: {
                     title: "Linear Systems and Control"
                 },
-                et1b9: {
+                etIb9: {
                     title: "Communications Fourier Transforms & Signal & Data Analysis"
                 },
-                et1b10: {
+                etIb10: {
                     title: "Vector Calculus"
                 },
-                et1b11: {
+                etIb11: {
                     title: "Linear Algebra"
                 },
-                et1b12: {
+                etIb12: {
                     title: "Probability"
                 },
-                et1b13: {
+                etIb13: {
                     title: "Introductory Business Economics"
                 },
-                et1b14: {
+                etIb14: {
                     title: "Aerothermal Engineering"
                 },
-                et1b15: {
+                etIb15: {
                     title: "Mechanical Engineering"
                 },
-                et1b16: {
+                etIb16: {
                     title: "Civil and Structural Engineering"
                 },
-                et1b17: {
+                etIb17: {
                     title: "Information Engineering"
                 },
-                et1b18: {
+                etIb18: {
                     title: "Electrical Engineering"
                 },
-                et1b19: {
+                etIb19: {
                     title: "Engineering for the Life Sciences"
                 },
-                et1b20: {
+                etIb20: {
                     title: "Manufacturing & Management"
                 }
             }
@@ -735,37 +732,37 @@ define(["config/config"], function(config) {
             title: "Engineering Tripos Part IIA",
             children: {
                 etIIa1: {
-                    title: "Fluid mechanics I"
+                    title: "Fluid Mechanics I"
                 },
                 etIIa2: {
-                    title: "Fluid mechanics IIa"
+                    title: "Fluid Mechanics II"
                 },
                 etIIa3: {
-                    title: "Thermodynamics and power generation"
+                    title: "Thermodynamics and Power Generation"
                 },
                 etIIa4: {
-                    title: "Heat and mass transfer"
+                    title: "Heat And Mass Transfer"
                 },
                 etIIa5: {
-                    title: "Radio frequency electronics"
+                    title: "Radio Frequency Electronics"
                 },
                 etIIa6: {
-                    title: "Integrated digital electronics"
+                    title: "Integrated Digital Electronics"
                 },
                 etIIa7: {
-                    title: "Electric drive systems"
+                    title: "Electric Drive Systems"
                 },
                 etIIa8: {
-                    title: "Semiconductor engineering"
+                    title: "Semiconductor Engineering"
                 },
                 etIIa9: {
-                    title: "Photonic technology"
+                    title: "Photonic Technology"
                 },
                 etIIa10: {
                     title: "Present and Future Energy Systems"
                 },
                 etIIa11: {
-                    title: "Materials processing and design"
+                    title: "Materials Processing and Design"
                 },
                 etIIa12: {
                     title: "Dynamics"
@@ -774,13 +771,13 @@ define(["config/config"], function(config) {
                     title: "Vibration"
                 },
                 etIIa14: {
-                    title: "Mechanics of solids"
+                    title: "Mechanics of Solids"
                 },
                 etIIa15: {
                     title: "Machine Design"
                 },
                 etIIa16: {
-                    title: "Fracture mechanics of materials and structures"
+                    title: "Fracture Mechanics of Materials and Structures"
                 },
                 etIIa17: {
                     title: "Geotechnical Engineering I"
@@ -789,10 +786,10 @@ define(["config/config"], function(config) {
                     title: "Geotechnical Engineering II"
                 },
                 etIIa19: {
-                    title: "Structural materials and design"
+                    title: "Structural Materials and Design"
                 },
                 etIIa20: {
-                    title: "Structural analysis and stability"
+                    title: "Structural Analysis and Stability"
                 },
                 etIIa21: {
                     title: "Water Engineering"
@@ -801,135 +798,861 @@ define(["config/config"], function(config) {
                     title: "Finite Element Methods"
                 },
                 etIIa23: {
-                    title: "Business economics"
+                    title: "Building Physics and Environmental Geotechnics"
                 },
                 etIIa24: {
-                    title: "Marketing"
+                    title: "Business Economics"
                 },
                 etIIa25: {
-                    title: "Modelling Risk"
+                    title: "Marketing"
                 },
                 etIIa26: {
-                    title: "Fracture mechanics of materials and structures"
+                    title: "Modelling Risk"
                 },
                 etIIa27: {
-                    title: "Operations Management for Engineers"
+                    title: "Human Resource Management"
                 },
                 etIIa28: {
-                    title: "Signals and systems"
+                    title: "Organisational Behaviour"
                 },
                 etIIa29: {
-                    title: "Systems and Control"
+                    title: "Operations Management for Engineers"
                 },
                 etIIa30: {
-                    title: "Signal and pattern processing"
+                    title: "Signals and Systems"
                 },
                 etIIa31: {
-                    title: "Data transmission"
+                    title: "Systems and Control"
                 },
                 etIIa32: {
-                    title: "Computer and network systems"
+                    title: "Signal and Pattern Processing"
                 },
                 etIIa33: {
-                    title: "Software engineering and design"
+                    title: "Data Transmission"
                 },
                 etIIa34: {
-                    title: "Introduction to Molecular Bioengineering"
+                    title: "Computer and Network Systems"
                 },
                 etIIa35: {
-                    title: "Mathematical Physiology"
+                    title: "Software Engineering and design"
                 },
                 etIIa36: {
-                    title: "Introduction to Neuroscience"
+                    title: "Introduction to Molecular Bioengineering"
                 },
                 etIIa37: {
-                    title: "Medical Imaging and 3D Computer Graphics"
+                    title: "Mathematical Physiology"
                 },
                 etIIa38: {
-                    title: "Biomaterials"
+                    title: "Introduction to Neuroscience"
                 },
                 etIIa39: {
-                    title: "Data structures and algorithms"
-                }  
+                    title: "Medical Imaging and 3D Computer Graphics"
+                },
+                etIIa40: {
+                    title: "Biomaterials"
+                },
+                etIIa41: {
+                    title: "Data Structures and algorithms"
+                },
+                etIIa42: {
+                    title: "Mathematical Methods"
+                }
             }
         },
         engineeringtripospartiib: {
             title: "Engineering Tripos Part IIB",
-            	children: {
-            	engineeringtripospartiibchild: {
-                    title: "Engineering Tripos Part IIB"
+            children: {
+                etIIb1: {
+                    title: "Computational Fluid Dynamics"
+                },
+                etIIb2: {
+                    title: "Turbomachinery I"
+                },
+                etIIb3: {
+                    title: "Aircraft Stability and Control"
+                },
+                etIIb4: {
+                    title: "Aerodynamics"
+                },
+                etIIb5: {
+                    title: "Environmental Fluid Mechanics"
+                },
+                etIIb6: {
+                    title: "Molecular Thermodynamics"
+                },
+                etIIb7: {
+                    title: "Flow Instability"
+                },
+                etIIb8: {
+                    title: "Turbomachinery II"
+                },
+                etIIb9: {
+                    title: "Turbulence and vortex dynamics"
+                },
+                etIIb10: {
+                    title: "Combustion and IC Engines"
+                },
+                etIIb11: {
+                    title: "Aeroacoustics"
+                },
+                etIIb12: {
+                    title: "Nanotechnology"
+                },
+                etIIb13: {
+                    title: "Solid State Devices and Chemical/Biological Sensors"
+                },
+                etIIb14: {
+                    title: "VLSI Design, Technology and CAD"
+                },
+                etIIb15: {
+                    title: "Photonic Systems"
+                },
+                etIIb16: {
+                    title: "Electronic Sensors & Instrumentation"
+                },
+                etIIb17: {
+                    title: "Solar-electronic power: Generation and Distribution"
+                },
+                etIIb18: {
+                    title: "Advanced Electronic Devices"
+                },
+                etIIb19: {
+                    title: "Renewable Electrical Power"
+                },
+                etIIb20: {
+                    title: "Display Technology"
+                },
+                etIIb21: {
+                    title: "Designing with Composites"
+                },
+                etIIb22: {
+                    title: "Electrical and Nano Materials"
+                },
+                etIIb23: {
+                    title: "Design Methods"
+                },
+                etIIb24: {
+                    title: "Design Case Studies"
+                },
+                etIIb25: {
+                    title: "Advanced Linear Vibration"
+                },
+                etIIb26: {
+                    title: "Random and Non-Linear Vibrations"
+                },
+                etIIb27: {
+                    title: "Applications of Dynamics"
+                },
+                etIIb28: {
+                    title: "Continuum Mechanics"
+                },
+                etIIb29: {
+                    title: "MEMS: Design"
+                },
+                etIIb30: {
+                    title: "Advanced Machine Design"
+                },
+                etIIb31: {
+                    title: "Foundation Engineering"
+                },
+                etIIb32: {
+                    title: "Dynamics in Civil Engineering"
+                },
+                etIIb33: {
+                    title: "Concrete and Masonry Structures"
+                },
+                etIIb34: {
+                    title: "Pre-Stressed Concrete"
+                },
+                etIIb35: {
+                    title: "Structural Steelwork"
+                },
+                etIIb36: {
+                    title: "Building Physics"
+                },
+                etIIb37: {
+                    title: "Architectural Engineering"
+                },
+                etIIb38: {
+                    title: "Contaminated Land and Waste Containment"
+                },
+                etIIb39: {
+                    title: "Sustainable Water Engineering"
+                },
+                etIIb40: {
+                    title: "Plate and Shell Structures"
+                },
+                etIIb41: {
+                    title: "Information Systems"
+                },
+                etIIb42: {
+                    title: "Management of Technology"
+                },
+                etIIb43: {
+                    title: "International Business Economics (MS9)"
+                },
+                etIIb44: {
+                    title: "Accounting and Finance"
+                },
+                etIIb45: {
+                    title: "Strategic Management"
+                },
+                etIIb46: {
+                    title: "Project Management"
+                },
+                etIIb47: {
+                    title: "Control System Design"
+                },
+                etIIb48: {
+                    title: "Robust and Nonlinear Systems and Control"
+                },
+                etIIb49: {
+                    title: "Optimal and predictive control"
+                },
+                etIIb50: {
+                    title: "Advanced Wireless communications"
+                },
+                etIIb51: {
+                    title: "Signal Detection and Estimation"
+                },
+                etIIb52: {
+                    title: "Digital Filters and Spectrum Estimation"
+                },
+                etIIb53: {
+                    title: "Image Processing and Image Coding"
+                },
+                etIIb54: {
+                    title: "Statistical Pattern Processing"
+                },
+                etIIb55: {
+                    title: "Speech and Language Processing"
+                },
+                etIIb56: {
+                    title: "Computer Vision and Robotics"
+                },
+                etIIb57: {
+                    title: "Machine Learning"
+                },
+                etIIb58: {
+                    title: "Systems Biology"
+                },
+                etIIb59: {
+                    title: "Biosensors"
+                },
+                etIIb60: {
+                    title: "Biomimetics"
+                },
+                etIIb61: {
+                    title: "Cellular and molecular biomechanics"
+                },
+                etIIb62: {
+                    title: "Strategic Valuation (TPE6)"
+                },
+                etIIb63: {
+                    title: "Electricity and Environment"
+                },
+                etIIb64: {
+                    title: "Medical Physics"
+                },
+                etIIb65: {
+                    title: "Low Power Embedded Systems Programming"
+                },
+                etIIb66: {
+                    title: "French"
+                },
+                etIIb67: {
+                    title: "German"
+                },
+                etIIb68: {
+                    title: "Spanish"
+                },
+                etIIb69: {
+                    title: "Japanese"
+                },
+                etIIb70: {
+                    title: "Materials and processes for Microsystems (MEMS)"
+                },
+                etIIb71: {
+                    title: "Surveying Field Course"
+                },
+                etIIb72: {
+                    title: "Partial Differential Equations and Variational Methods"
+                },
+                etIIb73: {
+                    title: "Complex Analysis and Optimisation"
+                },
+                etIIb74: {
+                    title: "Sustainable Development"
+                },
+                etIIb75: {
+                    title: "Sustainable Energy"
+                },
+                etIIb76: {
+                    title: "Nuclear Power Engineering"
+                },
+                etIIb77: {
+                    title: "Stochastic Process and Optimisation Methods"
                 }
             }
-        },
+        },     
         manufacturingengineeringtripospartiia: {
             title: "Manufacturing Engineering Tripos Part IIA",
-            	children: {
-            	manufacturingengineeringtripospartiiachild: {
-                    title: "Manufacturing Engineering Tripos Part IIA"
+            children: {
+                metIIa1: {
+                    title: "Materials into Products"
+                },
+                metIIa2: {
+                    title: "Production Machines and Systems"
+                },
+                metIIa3: {
+                    title: "Design"
+                },
+                metIIa4: {
+                    title: "Operations Management"
+                },
+                metIIa5: {
+                    title: "Industrial Engineering"
+                },
+                metIIa6: {
+                    title: "Organisational Behaviour"
+                },
+                metIIa7: {
+                    title: "Managing Business and People"
+                },
+                metIIa8: {
+                    title: "Financial and Management Accounting"
+                },
+                metIIa9: {
+                    title: "Industrial Economics, Strategy and Governance"
+                },
+                metIIa10: {
+                    title: "Contemporary Issues in Manufacturing"
                 }
             }
         },
         manufacturingengineeringtripospartiib: {
             title: "Manufacturing Engineering Tripos Part IIB",
-            	children: {
-            	manufacturingengineeringtripospartiibchild: {
-                    title: "Manufacturing Engineering Tripos Part IIB"
+            children: {
+                metIIb1: {
+                    title: "Manufacturing Technology and Materials"
+                },
+                metIIb2: {
+                    title: "Manufacturing Systems Engineering"
+                },
+                metIIb3: {
+                    title: "Asset Management"
+                },
+                metIIb4: {
+                    title: "Managing People"
+                },
+                metIIb5: {
+                    title: "Technology and Innovation"
+                },
+                metIIb6: {
+                    title: "Strategy and Marketing"
+                },
+                metIIb7: {
+                    title: "Enterprise, International and Manufacturing Policy"
+                },
+                metIIb8: {
+                    title: "Sustainable Manufacturing"
                 }
             }
         },
         mphilinnuclearenergy: {
             title: "MPhil in Nuclear Energy",
             children: {
-            	mphilinnuclearenergychild: {
-                    title: "MPhil in Nuclear Energy"
+                mphilnuclen1: {
+                    title: "Reactor Physics"
+                },
+                mphilnuclen2: {
+                    title: "Reactor Engineering & Thermal-hydraulics"
+                },
+                mphilnuclen3: {
+                    title: "Fuel Cycle, Waste & Decommissioning"
+                },
+                mphilnuclen4: {
+                    title: "Materials"
+                },
+                mphilnuclen5: {
+                    title: "System & Safety"
+                },
+                mphilnuclen6: {
+                    title: "Nuclear Technology Policy"
+                },
+                mphilnuclen7: {
+                    title: "Strategic Valuation"
+                },
+                mphilnuclen8: {
+                    title: "Technology Innovation"
+                },
+                mphilnuclen9: {
+                    title: "Enterprise & Development"
+                },
+                mphilnuclen10: {
+                    title: "Project Management"
+                },
+                mphilnuclen11: {
+                    title: "Sustainability and International Environmental Policy"
+                },
+                mphilnuclen12: {
+                    title: "Globalisation and Big Business"
+                },
+                mphilnuclen13: {
+                    title: "System Dynamics"
+                },
+                mphilnuclen14: {
+                    title: "Introduction to Technology Policy"
+                },
+                mphilnuclen15: {
+                    title: "Political Economy of Technology Policy"
+                },
+                mphilnuclen16: {
+                    title: "Management of Technology"
+                },
+                mphilnuclen17: {
+                    title: "Accounting and Finance"
+                },
+                mphilnuclen18: {
+                    title: "Strategic Management"
+                },
+                mphilnuclen19: {
+                    title: "Particle & Nuclear Physics/Comp. Physics"
+                },
+                mphilnuclen20: {
+                    title: "Atomistic Materials Modelling"
+                },
+                mphilnuclen21: {
+                    title: "Environmental Fluid Mechanics"
+                },
+                mphilnuclen22: {
+                    title: "Fluid Mechanics & Environment"
+                },
+                mphilnuclen23: {
+                    title: "Design Methods"
+                },
+                mphilnuclen24: {
+                    title: "Extraction & Re-cycling"
+                },
+                mphilnuclen25: {
+                    title: "Corrosion & Protection"
+                },
+                mphilnuclen26: {
+                    title: "Electrochemical Engineering"
+                },
+                mphilnuclen27: {
+                    title: "Computational Fluid Dynamics"
+                },
+                mphilnuclen28: {
+                    title: "Control Systems Design"
+                },
+                mphilnuclen29: {
+                    title: "Robust & Non-Linear Control"
+                },
+                mphilnuclen30: {
+                    title: "Electronic Sensors & Instrument"
                 }
             }
         },
+
         mphilinindustrialsystemsmanufactureandmanagement: {
             title: "MPhil in Industrial Systems, Manufacture and Management",
             children: {
-            	mphilinindustrialsystemsmanufactureandmanagementchild: {
-                    title: "MPhil in Industrial Systems, Manufacture and Management"
+                mphilismm1: {
+                    title: "Manufacturing Systems"
+                },
+                mphilismm2: {
+                    title: "Manufacturing Processes"
+                },
+                mphilismm3: {
+                    title: "Management of People"
+                },
+                mphilismm4: {
+                    title: "Sales and Marketing"
+                },
+                mphilismm5: {
+                    title: "Product Design & New Product Introduction"
+                },
+                mphilismm6: {
+                    title: "Personal Development"
+                },
+                mphilismm7: {
+                    title: "Business Strategy and Finance"
+                },
+                mphilismm8: {
+                    title: "Technology Management & Entrepreneurship"
+                },
+                mphilismm9: {
+                    title: "Management of Change"
+                },
+                mphilismm10: {
+                    title: "Teamworking & Leadership"
+                },
+                mphilismm11: {
+                    title: "Design Management"
+                },
+                mphilismm12: {
+                    title: "Distributed Information and Automation"
+                },
+                mphilismm13: {
+                    title: "Industrial Photonics"
+                },
+                mphilismm14: {
+                    title: "Industry & Government"
+                },
+                mphilismm15: {
+                    title: "International Manufacturing"
+                },
+                mphilismm16: {
+                    title: "Production Processes"
+                },
+                mphilismm17: {
+                    title: "Strategy and Performance"
+                },
+                mphilismm18: {
+                    title: "Technology Management"
                 }
             }
         },
+
         mphilinenergytechnologies: {
             title: "MPhil in Energy Technologies",
             children: {
-            	mphilinenergytechnologieschild: {
-                    title: "MPhil in Energy Technologies"
+                mphilentech1: {
+                    title: "Communication Skills"
+                },
+                mphilentech2: {
+                    title: "Review of Fundamentals"
+                },
+                mphilentech3: {
+                    title: "Computational Fluid Dynamics"
+                },
+                mphilentech4: {
+                    title: "Turbomachinery"
+                },
+                mphilentech5: {
+                    title: "Aerodynamics"
+                },
+                mphilentech6: {
+                    title: "Environmental Fluid Mechanics and Air Pollution"
+                },
+                mphilentech7: {
+                    title: "Molecular Thermodynamics"
+                },
+                mphilentech8: {
+                    title: "Combustion and Internal Combustion Engines"
+                },
+                mphilentech9: {
+                    title: "Solar-electronic Power: Generation and Distribution"
+                },
+                mphilentech10: {
+                    title: "Renewable Electrical Power"
+                },
+                mphilentech11: {
+                    title: "Architectural Engineering"
+                },
+                mphilentech12: {
+                    title: "Technological Innovation"
+                },
+                mphilentech13: {
+                    title: "Management of Technology"
+                },
+                mphilentech14: {
+                    title: "Enterprise and Business Development"
+                },
+                mphilentech15: {
+                    title: "Project Management"
+                },
+                mphilentech16: {
+                    title: "Sustainable Development"
+                },
+                mphilentech17: {
+                    title: "Sustainable Energy"
+                },
+                mphilentech18: {
+                    title: "Nuclear Power Engineering"
+                },
+                mphilentech19: {
+                    title: "Stochastic Optimisation Methods"
+                },
+                mphilentech20: {
+                    title: "Experimental Methods in Fluids"
+                },
+                mphilentech21: {
+                    title: "Turbulent Reacting Flows"
+                },
+                mphilentech22: {
+                    title: "Clean Coal Technologies"
+                },
+                mphilentech23: {
+                    title: "Renewable Energy: Wind, Tide and Hydro"
+                },
+                mphilentech24: {
+                    title: "Renewable Energy: Solar and Biomass"
+                },
+                mphilentech25: {
+                    title: "Particle Technology"
+                },
+                mphilentech26: {
+                    title: "Catalysis"
+                },
+                mphilentech27: {
+                    title: "Electrochemical Engineering"
+                },
+                mphilentech28: {
+                    title: "Micro and Nano-electrochemistry"
+                },
+                mphilentech29: {
+                    title: "Fluids and Natural Resources"
+                },
+                mphilentech30: {
+                    title: "Long Thesis"
+                },
+                mphilentech31: {
+                    title: "Short Thesis"
                 }
             }
         },
+
         mphilininterdisciplinarydesignforthebuiltenvironment: {
             title: "MPhil in Interdisciplinary Design for the Built Environment",
             children: {
-            	mphilininterdisciplinarydesignforthebuiltenvironmentchild: {
-                    title: "MPhil in Interdisciplinary Design for the Built Environment"
+                mphilidbe1: {
+                    title: "Interdisciplinary Understanding"
+                },
+                mphilidbe2: {
+                    title: "Client, User and Design Team"
+                },
+                mphilidbe3: {
+                    title: "Teamwork, Leadership and Collaboration"
+                },
+                mphilidbe4: {
+                    title: "Sustainable Construction"
+                },
+                mphilidbe5: {
+                    title: "Infrastructure and Landscape"
+                },
+                mphilidbe6: {
+                    title: "Structure of the Industry"
+                },
+                mphilidbe7: {
+                    title: "Urban Design and Sustainable Communities"
                 }
             }
         },
+
         mphilinengineeringforsustainabledevelopment: {
             title: "MPhil in Engineering for Sustainable Development",
             children: {
-            	mphilinengineeringforsustainabledevelopmentchild: {
-                    title: "MPhil in Engineering for Sustainable Development"
+                mphilendsusdeve1: {
+                    title: "Management of Technology and Innovation"
+                },
+                mphilendsusdeve2: {
+                    title: "Concepts, Vales and Change Processes"
+                },
+                mphilendsusdeve3: {
+                    title: "Sustainability Methods and Metrics"
+                },
+                mphilendsusdeve4: {
+                    title: "Sustainability Assessments of Large Infrastructure Projects"
+                },
+                mphilendsusdeve5: {
+                    title: "Economic Legal and Regulation Issues"
+                },
+                mphilendsusdeve6: {
+                    title: "Sustainable Design and Implementation"
+                },
+                mphilendsusdeve7: {
+                    title: "Development Engineering"
+                },
+                mphilendsusdeve8: {
+                    title: "Environmental Engineering"
+                },
+                mphilendsusdeve9: {
+                    title: "Sustainable Water Engineering"
+                },
+                mphilendsusdeve10: {
+                    title: "Solar-Electronic Power: Generation and Distribution"
+                },
+                mphilendsusdeve11: {
+                    title: "Renewable Electrical Power"
+                },
+                mphilendsusdeve12: {
+                    title: "Building Physics"
+                },
+                mphilendsusdeve13: {
+                    title: "Architectural Engineering"
+                },
+                mphilendsusdeve14: {
+                    title: "Contaminated Land and Waste Containment"
+                },
+                mphilendsusdeve15: {
+                    title: "Technological Innovation: Research and Practice"
+                },
+                mphilendsusdeve16: {
+                    title: "Management of Technology"
+                },
+                mphilendsusdeve17: {
+                    title: "Accounting and Finance"
+                },
+                mphilendsusdeve18: {
+                    title: "Biomimetics"
+                },
+                mphilendsusdeve19: {
+                    title: "Electricity and the Environment"
+                },
+                mphilendsusdeve20: {
+                    title: "Environmental Fluid Mechanics"
+                },
+                mphilendsusdeve21: {
+                    title: "Sustainable Energy"
+                },
+                mphilendsusdeve22: {
+                    title: "International Business Economics"
+                },
+                mphilendsusdeve23: {
+                    title: "Strategic Management"
+                },
+                mphilendsusdeve24: {
+                    title: "Project Management"
+                },
+                mphilendsusdeve25: {
+                    title: "Systems Biology"
+                },
+                mphilendsusdeve26: {
+                    title: "Introduction to Technology Policy"
+                },
+                mphilendsusdeve27: {
+                    title: "Political Economy of Technology Policy"
+                },
+                mphilendsusdeve28: {
+                    title: "Globalisation and Big Business"
+                },
+                mphilendsusdeve29: {
+                    title: "Complexity and Negotiations"
+                },
+                mphilendsusdeve30: {
+                    title: "Uncertainty and Real Options in System Design"
+                },
+                mphilendsusdeve31: {
+                    title: "Systems Dynamics"
+                },
+                mphilendsusdeve32: {
+                    title: "Globalisation (Part 2)"
+                },
+                mphilendsusdeve33: {
+                    title: "Environmental Design in Architecture 1"
+                },
+                mphilendsusdeve34: {
+                    title: "Sustainability and Chemical Engineering"
+                },
+                mphilendsusdeve35: {
+                    title: "Environmental Design in Architecture 2"
                 }
             }
         },
+
         mphilinconstructionengineering: {
             title: "MPhil in Construction Engineering",
             children: {
-            	mphilinconstructionengineeringchild: {
-                    title: "MPhil in Construction Engineering"
+                mphilceng1: {
+                    title: "Finance, Planning and Procurement"
+                },
+                mphilceng2: {
+                    title: "Design for Construction"
+                },
+                mphilceng3: {
+                    title: "Advanced Construction Management and Methods"
+                },
+                mphilceng4: {
+                    title: "Advanced Construction Technology"
+                },
+                mphilceng5: {
+                    title: "Functionality, Operation and Performance"
+                },
+                mphilceng6: {
+                    title: "Sector Specialisation"
+                },
+                mphilceng7: {
+                    title: "Innovation, Research and the Future of Construction"
                 }
             }
         },
+
         mresinphotonicssystemsdevelopment: {
-            title: "MRes in Photonics Systems Development",
+            title: "MRes in Photonic Systems Development",
             children: {
-            	mresinphotonicssystemsdevelopmentchild: {
-                    title: "MRes in Photonics Systems Development"
+                mresphotsysdev1: {
+                    title: "Nanotechnology"
+                },
+                mresphotsysdev2: {
+                    title: "Systems Biology"
+                },
+                mresphotsysdev3: {
+                    title: "Advanced Photonic Devices"
+                },
+                mresphotsysdev4: {
+                    title: "Advanced Electronic Devices"
+                },
+                mresphotsysdev5: {
+                    title: "Photonic Sub-Systems"
+                },
+                mresphotsysdev6: {
+                    title: "Broadband Technologies and Components"
+                },
+                mresphotsysdev7: {
+                    title: "Solar Electronic Power: Generation and Distribution"
+                },
+                mresphotsysdev8: {
+                    title: "Photonic Systems"
+                },
+                mresphotsysdev9: {
+                    title: "Solid State Devices and Chemical/Biological Sensors"
+                },
+                mresphotsysdev10: {
+                    title: "Biosensors"
+                },
+                mresphotsysdev11: {
+                    title: "Display Technology"
+                },
+                mresphotsysdev12: {
+                    title: "Computer Vision and Robotics"
+                },
+                mresphotsysdev13: {
+                    title: "Robust and Nonlinear Systems and Control"
+                },
+                mresphotsysdev14: {
+                    title: "Signal Detection and Estimation"
+                },
+                mresphotsysdev15: {
+                    title: "Digital Filters and Spectrum Estimation"
+                },
+                mresphotsysdev16: {
+                    title: "Image Processing and Image Coding"
+                },
+                mresphotsysdev17: {
+                    title: "Optical Transmission Network"
+                },
+                mresphotsysdev18: {
+                    title: "Nanotechnology and Healthcare"
+                },
+                mresphotsysdev19: {
+                    title: "RF Circuits Sub-Systems & Devices"
+                },
+                mresphotsysdev20: {
+                    title: "Software for Network Services and Design"
+                },
+                mresphotsysdev21: {
+                    title: "Physics and Optics of Nanostructures"
+                },
+                mresphotsysdev22: {
+                    title: "Management of Technology"
+                },
+                mresphotsysdev23: {
+                    title: "Technological Innovation"
+                },
+                mresphotsysdev24: {
+                    title: "Telecommunications Business Environment"
                 }
             }
         }
