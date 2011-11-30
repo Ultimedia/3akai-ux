@@ -660,6 +660,9 @@ define(["config/config"], function(config) {
                 },
                 etIa13: {
                     title: "Computing"
+                },
+                etIa14: {
+                    title: "1st Year Coursework"
                 }
             }
         },
