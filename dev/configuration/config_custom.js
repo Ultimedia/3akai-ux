@@ -728,6 +728,9 @@ define(["config/config"], function(config) {
                 },
                 etIb20: {
                     title: "Manufacturing & Management"
+                },
+                etIb21: {
+                    title: "2nd Year Coursework"
                 }
             }
         },
