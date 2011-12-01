@@ -1673,8 +1673,8 @@ define(["config/config"], function(config) {
                 {
                     "id": "teaching-course-template",
                     "title": "Teaching course",
-                    "img": "",
-                    "fullImg": "",
+                    "img": "/dev/images/worldtemplates/teachingcourse.png",
+                    "fullImg": "/dev/images/worldtemplates/teachingcourse-full.png",
                     "perfectFor": "General course organisation, enabling you to list the different course topics and their syllabi. It also lists different timetables, Examples Papers, Coursework and Exam Papers.",
                     "roles": [
                         {
@@ -4172,33 +4172,33 @@ define(["config/config"], function(config) {
             ]
 		},
 		{
-            id: "personal-websites",
-            title: "PERSONAL_WEBSITES",
-            titleSing: "PERSONAL_WEBSITE",
+            id: "personal-collaborations",
+            title: "PERSONAL_COLLABORATIONS",
+            titleSing: "PERSONAL_COLLABORATION",
             templates: [
             {
                     id: "basicwebsite",
                     title: "Personal website",
-                    img: "/dev/images/worldtemplates/researchproject-full.png",
-                    fullImg: "/dev/images/worldtemplates/researchproject.png",
-                    perfectFor: "Basic website",
+                    img: "/dev/images/worldtemplates/personalwebsite-full.png",
+                    fullImg: "/dev/images/worldtemplates/personalwebsite.png",
+                    perfectFor: "Personal website can be used for setting up your own personal website. For example: to showcase your research.",
 					roles: [
                         {
-                            id: "ts",
-                            roleTitle: "Teaching staff",
-                            title: "Teaching staff",
+                            id: "websitemaint",
+                            roleTitle: "Website maintainers",
+                            title: "Website maintainer",
                             allowManage: true
                         },
                         {
-                            id: "observer",
-                            roleTitle: "Observers",
-                            title: "Observer",
+                            id: "partner",
+                            roleTitle: "Partners",
+                            title: "Partner",
                             allowManage: false
                         },
                         {
-                            id: "student",
-                            roleTitle: "Students",
-                            title: "Student",
+                            id: "visitor",
+                            roleTitle: "Visitors",
+                            title: "Visitor",
                             allowManage: false
                         }
 					],
@@ -4238,6 +4238,193 @@ define(["config/config"], function(config) {
                     },
                     joinRole: "observer",
                     creatorRole: "ts"
+                },
+                {
+	                "id": "student-project",
+	                "title": "Student project",
+	                "img": "/dev/images/worldtemplates/studentproject.png",
+	                "fullImg": "/dev/images/worldtemplates/studentproject-full.png",
+	                "perfectFor": "setting up and organising student projects, using an About section, a Planning section and an Interesting materials section.",
+	                "roles": [
+		                {
+			                "id": "ts",
+			                "roleTitle": "Teaching staff",
+			                "title": "Teaching staff",
+			                "allowManage": true
+		                },
+		                {
+			                "id": "observer",
+			                "roleTitle": "Observers",
+			                "title": "Observer",
+			                "allowManage": false
+		                },
+		                {
+			                "id": "student",
+			                "roleTitle": "Students",
+			                "title": "Student",
+			                "allowManage": false
+		                }
+	                ],
+	                "docs": {
+		                "${pid}0": {
+			                "structure0": {
+				                "my-personal-website": {
+					                "_ref": "${refid}0",
+					                "_order": 0,
+					                "_nonEditable": true,
+					                "_title": "My personal website",
+					                "main": {
+						                "_ref": "${refid}0",
+						                "_order": 0,
+						                "_nonEditable": true,
+						                "_title": "My personal website"
+					                }
+				                }
+			                },
+			                "${refid}0": {
+				                "page": "<h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>About</span><br></h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Nulla vehicula sodales sollicitudin. Praesent id diam arcu, tristique auctor sem. Pellentesque non porta lacus. Morbi molestie mauris sed justo vehicula vulputate. Aliquam erat volutpat. Integer placerat tempor nisl id auctor. Vestibulum ac velit in dolor pharetra elementum. Aenean viverra dapibus felis eget cursus. Maecenas suscipit tincidunt vestibulum.<br></p>"
+			                }
+		                },
+		                "${pid}1": {
+			                "structure0": {
+				                "Planning": {
+					                "_title": "Planning",
+					                "_order": 0,
+					                "_ref": "${refid}1",
+					                "_nonEditable": false,
+					                "main": {
+						                "_title": "Planning",
+						                "_order": 0,
+						                "_ref": "${refid}1",
+						                "_nonEditable": false
+					                }
+				                }
+			                },
+			                "${refid}1": {
+				                "page": "<h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Planning</span><br></h1><p><br><strong>1. Title 1:</strong> <br>When: Tuesday X Month, 20XX<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><strong>2. Title 2:</strong> <br>When: Wednesday X Month, 20XX<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><br><img id='widget_comments_${refid}2' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p>"
+			                },
+			                "${refid}2": {
+				                "comments": {
+					                "sakai:notificationaddress": "asd38",
+					                "sakai:marker": "id4268848",
+					                "sakai:allowanonymous": false,
+					                "sakai:type": "comment",
+					                "direction": "comments_FirstUp",
+					                "perPage": 5,
+					                "sling:resourceType": "sakai/settings",
+					                "comments": [],
+					                "message": {
+						                "sling:resourceType": "sakai/messagestore",
+						                "_created": 1322679809821,
+						                "_id": "_aoc0BuFEeG6DXPUfwABAQ+",
+						                "_lastModifiedBy": "asd38",
+						                "_lastModified": 1322679809821,
+						                "_createdBy": "asd38",
+						                "_path": "jlAAGQWoaa/id4268848/comments/message"
+					                }
+				                }
+			                }
+		                },
+		                "${pid}2": {
+			                "structure0": {
+				                "Materials": {
+					                "_title": "Materials",
+					                "_order": 0,
+					                "_ref": "${refid}3",
+					                "_nonEditable": false,
+					                "main": {
+						                "_title": "Materials",
+						                "_order": 0,
+						                "_ref": "${refid}3",
+						                "_nonEditable": false
+					                }
+				                }
+			                },
+			                "${refid}3": {
+				                "page": "<h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Materials</span><br></h1><p><br><strong>1. Books:</strong> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><strong>2. Papers</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><strong>3. Handouts</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><strong>4. Project report</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><br><img id='widget_comments_${refid}4' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br><br></p>"
+			                },
+			                "${refid}4": {
+				                "comments": {
+					                "sakai:notificationaddress": "asd38",
+					                "sakai:marker": "id1866614",
+					                "sakai:allowanonymous": false,
+					                "sakai:type": "comment",
+					                "direction": "comments_FirstUp",
+					                "perPage": 5,
+					                "sling:resourceType": "sakai/settings",
+					                "comments": [],
+					                "message": {
+						                "sling:resourceType": "sakai/messagestore",
+						                "_created": 1322679786599,
+						                "_id": "79K3cBuFEeG6DXPUfwABAQ+",
+						                "_lastModifiedBy": "asd38",
+						                "_lastModified": 1322679786599,
+						                "_createdBy": "asd38",
+						                "_path": "jlMAjMqkym/id1866614/comments/message"
+					                }
+				                }
+			                }
+		                }
+	                },
+	                "structure": {
+		                "my-personal-website": {
+			                "_title": "About",
+			                "_order": 0,
+			                "_nonEditable": false,
+			                "_view": [
+				                "everyone",
+				                "anonymous",
+				                "-student",
+				                "-observer",
+				                "-ts"
+			                ],
+			                "_edit": [
+				                "-ts",
+				                "-oberserver",
+				                "-student"
+			                ],
+			                "_canView": true,
+			                "_canSubedit": true,
+			                "_canEdit": true,
+			                "_docref": "${pid}0"
+		                },
+		                "Planning": {
+			                "_title": "Planning",
+			                "_order": 1,
+			                "_view": [
+				                "everyone",
+				                "-observer",
+				                "-student"
+			                ],
+			                "_edit": [
+				                "-ts"
+			                ],
+			                "_nonEditable": false,
+			                "_canView": true,
+			                "_canSubedit": true,
+			                "_canEdit": true,
+			                "_docref": "${pid}1"
+		                },
+		                "Materials": {
+			                "_title": "Interesting materials",
+			                "_order": 2,
+			                "_view": [
+				                "everyone",
+				                "-observer",
+				                "-student"
+			                ],
+			                "_edit": [
+				                "-ts"
+			                ],
+			                "_nonEditable": false,
+			                "_canView": true,
+			                "_canSubedit": true,
+			                "_canEdit": true,
+			                "_docref": "${pid}2"
+		                }
+	                },
+	                "joinRole": "observer",
+	                "creatorRole": "ts"
                 }
             ]
 		},
