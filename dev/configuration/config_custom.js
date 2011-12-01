@@ -4232,12 +4232,12 @@ define(["config/config"], function(config) {
                             "_order": 4,
                             "_docref": "${pid}0",
                             "_nonEditable": false,
-                            "_view": ["everyone", "anonymous", "-student", "-observer", "-ts"],
-                            "_edit": ["-ts", "-oberserver", "-student"]
+                            "_view": ["everyone", "anonymous", "-visitor", "-partner", "-websitemaint"],
+                            "_edit": ["-websitemaint"]
                         }
                     },
-                    joinRole: "observer",
-                    creatorRole: "ts"
+                    joinRole: "visitor",
+                    creatorRole: "websitemaint"
                 },
                 {
 	                "id": "student-project",
