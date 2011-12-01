@@ -1675,7 +1675,7 @@ define(["config/config"], function(config) {
                     "title": "Teaching course",
                     "img": "/dev/images/worldtemplates/teachingcourse.png",
                     "fullImg": "/dev/images/worldtemplates/teachingcourse-full.png",
-                    "perfectFor": "General course organisation, enabling you to list the different course topics and their syllabi. It also lists different timetables, Examples Papers, Coursework and Exam Papers.",
+                    "perfectFor": "General course organisation, showing course topics and their syllabi, Timetables, Examples Papers, Coursework and Exam Papers.",
                     "roles": [
                         {
                             "id": "ts",
