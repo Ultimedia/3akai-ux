@@ -4179,8 +4179,8 @@ define(["config/config"], function(config) {
                 {
 	                "id": "personal-website",
 	                "title": "Personal website",
-	                "img": "",
-	                "fullImg": "",
+                  "img": "/dev/images/worldtemplates/personalwebsite-full.png",
+                  "fullImg": "/dev/images/worldtemplates/personalwebsite.png",
 	                "perfectFor": "setting up your own personal website. For example: to showcase your research.",
 	                "roles": [
 		                {
