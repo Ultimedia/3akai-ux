@@ -4176,68 +4176,73 @@ define(["config/config"], function(config) {
             title: "PERSONAL_COLLABORATIONS",
             titleSing: "PERSONAL_COLLABORATION",
             templates: [
-            {
-                    id: "basicwebsite",
-                    title: "Personal website",
-                    img: "/dev/images/worldtemplates/personalwebsite-full.png",
-                    fullImg: "/dev/images/worldtemplates/personalwebsite.png",
-                    perfectFor: "Personal website can be used for setting up your own personal website. For example: to showcase your research.",
-					roles: [
-                        {
-                            id: "websitemaint",
-                            roleTitle: "Website maintainers",
-                            title: "Website maintainer",
-                            allowManage: true
-                        },
-                        {
-                            id: "partner",
-                            roleTitle: "Partners",
-                            title: "Partner",
-                            allowManage: false
-                        },
-                        {
-                            id: "visitor",
-                            roleTitle: "Visitors",
-                            title: "Visitor",
-                            allowManage: false
-                        }
-					],
-                    docs: {
-                        "${pid}0": {
-                            structure0: {
-                                "my-personal-website":{
-                                    "_ref":"${refid}0",
-                                    "_order":0,
-                                    "_nonEditable": true,
-                                    "_title":"My personal website",
-                                    "main":{
-                                        "_ref":"${refid}0",
-                                        "_order":0,
-                                        "_nonEditable": true,
-                                        "_title":"My personal website"
-                                    }
-                                }
-                            },
-                            "${refid}0": {
-                                page: "<h1 style=\'font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weigh"+ 
-								"t: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204)"+ 
-								"; padding: 0px 0px 3px;\'><span style=\'color: rgb(29, 95, 144);\'>My personal "+ 
-								"website</span><br></h1>"
-                            }
-                        }
-                    },
-                    structure: {
-                        "my-personal-website": {
-                            "_title": "My personal website",
-                            "_order": 4,
-                            "_docref": "${pid}0",
-                            "_nonEditable": false,
-                            "_view": ["everyone", "anonymous", "-visitor", "-partner", "-websitemaint"],
-                            "_edit": ["-websitemaint"]
-                        }
-                    },
-                    joinRole: "visitor",
-                    creatorRole: "websitemaint"
+                {
+	                "id": "personal-website",
+	                "title": "Personal website",
+	                "img": "",
+	                "fullImg": "",
+	                "perfectFor": "setting up your own personal website. For example: to showcase your research.",
+	                "roles": [
+		                {
+			                "id": "websitemaint",
+			                "roleTitle": "Website maintainers",
+			                "title": "Website maintainer",
+			                "allowManage": true
+		                },
+		                {
+			                "id": "partner",
+			                "roleTitle": "Partners",
+			                "title": "Partner",
+			                "allowManage": false
+		                },
+		                {
+			                "id": "visitor",
+			                "roleTitle": "Visitors",
+			                "title": "Visitor",
+			                "allowManage": false
+		                }
+	                ],
+	                "docs": {
+		                "${pid}0": {
+			                "structure0": {
+				                "my-personal-website": {
+					                "_ref": "${refid}0",
+					                "_order": 0,
+					                "_nonEditable": true,
+					                "_title": "My personal website",
+					                "main": {
+						                "_ref": "${refid}0",
+						                "_order": 0,
+						                "_nonEditable": true,
+						                "_title": "My personal website"
+					                }
+				                }
+			                },
+			                "${refid}0": {
+				                "page": "<h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>My Personal website </span><br></h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Nulla vehicula sodales sollicitudin. Praesent id diam arcu, tristique auctor sem. Pellentesque non porta lacus. Morbi molestie mauris sed justo vehicula vulputate. Aliquam erat volutpat. Integer placerat tempor nisl id auctor. Vestibulum ac velit in dolor pharetra elementum. Aenean viverra dapibus felis eget cursus. Maecenas suscipit tincidunt vestibulum.</p>"
+			                }
+		                }
+	                },
+	                "structure": {
+		                "my-personal-website": {
+			                "_title": "My personal website",
+			                "_order": 4,
+			                "_nonEditable": false,
+			                "_view": [
+				                "everyone",
+				                "anonymous",
+				                "-visitor",
+				                "-partner",
+				                "-websitemaint"
+			                ],
+			                "_edit": [
+				                "-websitemaint"
+			                ],
+			                "_docref": "${pid}0"
+		                }
+	                },
+	                "joinRole": "visitor",
+	                "creatorRole": "websitemaint"
                 },
                 {
 	                "id": "student-project",
