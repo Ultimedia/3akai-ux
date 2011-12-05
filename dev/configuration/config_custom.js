@@ -1671,7 +1671,7 @@ define(["config/config"], function(config) {
             titleSing: "COURSE",
             templates: [
                 {
-                    "id": "teaching-course-template",
+                    "id": "working-course-template",
                     "title": "Teaching course",
                     "img": "/dev/images/worldtemplates/teachingcourse.png",
                     "fullImg": "/dev/images/worldtemplates/teachingcourse-full.png",
