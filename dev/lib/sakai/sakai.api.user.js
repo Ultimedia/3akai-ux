@@ -112,6 +112,71 @@ define(
             });
         },
 
+        /**
+         * Update a user's profile
+         *
+         * @param {String} userid The userid of the user to update their profile
+         * @param {String} section The profile section (ie basic, publications)
+         * @param {Object} data The data to save on this section
+         * @param {Array} tags The tags and categories on this user
+         * @param {Object} sectionData The current data for this section, before any updates.
+         *                             Used for saving tags on the user.
+         * @param {Boolean} multiple If this is a multi-assign section, like publications
+         * @param {Function} callback The callback function for after the data has been saved
+         */
+        updateUserProfile: function( userid, section, data, tags, sectionData, multiple, callback ) {
+            var url = "/~" + userid + "/public/authprofile",
+                saveJSONURL = url + "/" + section + ".profile.json";
+
+            var postData = {
+                elements: {}
+            };
+            $.each( data, function( key, value ) {
+                if ( multiple ) {
+                    postData.elements[ key ] = {};
+                    $.each( value, function( subkey, subvalue ) {
+                        //oOrder is special, save it without a value sub-element
+                        if ( subkey === "order" ) {
+                            postData.elements[ key ][ subkey ] = subvalue;
+                        } else {
+                            postData.elements[ key ][ subkey ] = {
+                                value: subvalue
+                            };
+                        }
+                    });
+                    // TODO set the data nested-like
+                } else {
+                    postData.elements[ key ] = {
+                        value: value
+                    };
+                }
+
+            });
+            var existingTags = sectionData["sakai:tags"] ? sectionData["sakai:tags"].value : false;
+            sakai_util.tagEntity( url, tags, existingTags, function( success, final_tags ) {
+                sectionData["sakai:tags"] = {
+                    value: final_tags
+                };
+                sakai_serv.saveJSON( saveJSONURL, postData, callback, true );
+            });
+
+        },
+
+        deleteUserProfileSection: function( userid, section, subsection, callback ) {
+            var url = "/~" + userid + "/public/authprofile/" + section + "/elements/" + subsection + ".json";
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: {
+                    ":operation": "delete"
+                },
+                success: function( data ) {
+                    if ( $.isFunction( callback ) ) {
+                        callback( data );
+                    }
+                }
+            });
+        },
 
         /**
          * Remove the user credentials in the Sakai3 system.
@@ -360,13 +425,6 @@ define(
                         sakaiUserAPI.setProfileBasicElementValue(sakaiUserAPI.data.me.profile, "lastName", sakaiUserAPI.data.me.profile["rep:userId"]);
                     }
 
-                    // Parse the directory locations
-                    var directory = [];
-                    if(sakaiUserAPI.data.me.profile && sakaiUserAPI.data.me.profile["sakai:tags"]){
-                        directory = sakai_util.getDirectoryTags(sakaiUserAPI.data.me.profile["sakai:tags"].toString());
-                        sakaiUserAPI.data.me.profile.saveddirectory = directory;
-                    }
-
                     // SAKIII-2419 server isn't saving basic access param
                     if (sakaiUserAPI.data.me.profile.basic.access === undefined){
                         sakaiUserAPI.data.me.profile.basic.access = "everybody";
@@ -600,7 +658,6 @@ define(
                         callback(true, data);
                     }
                     if (sakai_global.profile && sakai_global.profile.main && sakai_global.profile.main.mode && sakai_global.profile.main.mode.value !== "view") {
-                        $(window).trigger("lhnav.updateCount", ["contacts", 1]);
                         $(window).trigger("contacts.accepted.sakai");
                     }
                 },
@@ -637,6 +694,9 @@ define(
                             if ($.isFunction(callback)) {
                                 callback(true, data);
                             }
+                            if (sakai_global.profile && sakai_global.profile.main && sakai_global.profile.main.mode && sakai_global.profile.main.mode.value !== "view") {
+                                $(window).trigger("lhnav.updateCount", ["contacts", -1]);
+                            }
                         },
                         error: function() {
                             if ($.isFunction(callback)) {
@@ -667,39 +727,6 @@ define(
                     }
                 }
             });
-        },
-
-        parseDirectory : function(profile){
-            var obj = {"elements":[]};
-            if (profile.main.data["sakai:tags"] && profile.main.data["sakai:tags"].length > 0) {
-                profile.main.data["sakai:tags"].sort(sakai_util.Sorting.naturalSort);
-                for (var i in profile.main.data["sakai:tags"]) {
-                    if (profile.main.data["sakai:tags"].hasOwnProperty(i)) {
-                        var tag = profile.main.data["sakai:tags"][i] + "";
-                        if (tag.substring(0, 10) === "directory/") {
-                            var finalTag = "";
-                            var split = tag.split("/");
-                            for (var ii = 1; ii < split.length; ii++) {
-                                finalTag += sakai_util.getValueForDirectoryKey(split[ii]);
-                                if (ii < split.length - 1) {
-                                    finalTag += "<span class='profilesection_location_divider'>&raquo;</span>";
-                                }
-                            }
-                            obj.elements.push({
-                                "locationtitle": {
-                                    "value": tag,
-                                    "title": finalTag
-                                },
-                                "id": {
-                                    "display": false,
-                                    "value": "" + Math.round(Math.random() * 1000000000)
-                                }
-                            });
-                        }
-                    }
-                }
-            }
-            return obj;
         },
 
         /**
@@ -785,6 +812,70 @@ define(
             } else {
                 return true;
             }
+        },
+
+        /**
+         * Function to process search results for users
+         *
+         * @param {Object} results Search results to process
+         * @param {Object} meData User object for the user
+         * @returns {Object} results Processed results
+         */
+        preparePeopleForRender: function(results, meData) {
+            $.each(results, function(i, item){
+                // The My Contacts feed comes back with everything wrapped inside of
+                // a target object
+                if (item.target){
+                    item = item.profile;
+                }
+                if (item && item["rep:userId"] && item["rep:userId"] !== "anonymous") {
+                    item.id = item["rep:userId"];
+                    item.userid = item["rep:userId"];
+                    item.picture = sakaiUserAPI.getProfilePicture(item);
+                    item.name = sakaiUserAPI.getDisplayName(item);
+                    item.nameShort = sakai_util.applyThreeDots(item.name, 580, {max_rows: 1,whole_word: false}, "s3d-bold", true);
+                    item.nameShorter = sakai_util.applyThreeDots(item.name, 150, {max_rows: 1,whole_word: false}, "s3d-bold", true);
+
+                    // use large default user icon on search page
+                    if (item.picture === sakai_conf.URL.USER_DEFAULT_ICON_URL){
+                        item.pictureLarge = sakai_conf.URL.USER_DEFAULT_ICON_URL_LARGE;
+                    }
+                    if (item["sakai:tags"] && item["sakai:tags"].length > 0){
+                        item.tagsProcessed = sakai_util.formatTags(item["sakai:tags"]);
+                    } else if (item.basic && item.basic.elements && item.basic.elements["sakai:tags"]) {
+                        item.tagsProcessed = sakai_util.formatTags(item.basic.elements["sakai:tags"].value);
+                    }
+
+                    item.connected = false;
+                    item.accepted = false;
+                    item.invited = item.invited !== undefined ? item.invited : false;
+                    // Check if this user is a friend of us already.
+                    var connectionState = false;
+                    if (item["sakai:state"] || results[i]["details"]) {
+                        connectionState = item["sakai:state"] || results[i]["details"]["sakai:state"];
+                        item.connected = true;
+                        // if invited state set invited to true
+                        if(connectionState === "INVITED"){
+                            item.invited = true;
+                        } else if(connectionState === "PENDING"){
+                            item.pending = true;
+                        } else if(connectionState === "ACCEPTED"){
+                            item.accepted = true;
+                        } else if(connectionState === "NONE"){
+                            //user.none = true;
+                            item.connected = false;
+                        }
+                    }
+
+                    // Check if the user you found in the list isn't the current
+                    // logged in user
+                    if (item.userid === meData.user.userid) {
+                        item.isMe = true;
+                    }
+                    results[i] = item;
+                }
+            });
+            return results;
         }
 
     };

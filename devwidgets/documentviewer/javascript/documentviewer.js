@@ -39,7 +39,7 @@ require(["jquery", "sakai/sakai.api.core", "/devwidgets/documentviewer/lib/docum
      * @param {Boolean} showSettings Show the settings of the widget or not
      */
     sakai_global.documentviewer = function(tuid,showSettings,widgetData){
-        
+
         var documentviewerPreview = "#" + tuid + " #documentviewer_preview";
         var $documentviewerPreview = $(documentviewerPreview);
         var templateObject = {};
@@ -120,21 +120,17 @@ require(["jquery", "sakai/sakai.api.core", "/devwidgets/documentviewer/lib/docum
             $("#documentviewer_externalhtml_iframe").attr("frameborder", "0");
         };
 
-         var renderKalturaPlayer = function(data){     
+         var renderKalturaPlayer = function(data){
             var html5FlashCompatibilityURL = sakai.config.kaltura.serverURL +"/p/"+sakai.config.kaltura.partnerId+"/sp/"+sakai.config.kaltura.partnerId+"00/embedIframeJs/uiconf_id/"+sakai.config.kaltura.playerId+"/partner_id/"+sakai.config.kaltura.partnerId;
-            $.getScript(html5FlashCompatibilityURL, function() {                                        
-                var kaltura_id = data["kaltura-id"];            
+            $.getScript(html5FlashCompatibilityURL, function() {
+                var kaltura_id = data["kaltura-id"];
                 var url = sakai.config.kaltura.serverURL + "/kwidget/wid/_"+sakai.config.kaltura.partnerId+"?ui_conf_id="+sakai.config.kaltura.playerId;
-                var so = createSWFObject(url, {}, {});            
+                var so = createSWFObject(url, {}, {});
                 so.addVariable('stretching','uniform');
                 so.addVariable('image', data["kaltura-thumbnail"]);
                 so.addVariable('entryId',kaltura_id);
-                //so.addVariable('uiConfId',sakai.config.kaltura.playerId);
-                //so.addParam('allowscriptaccess', 'always');
-                //swfobject.embedSWF(url, "#documentviewer_video_" + tuid, '100%', '560', "9.0.0", false, flashVars, params);
-
                 so.write("documentviewer_video_" + tuid);
-            });                         
+            });
         };
 
         var renderVideoPlayer = function(url, preview_avatar){
@@ -258,10 +254,10 @@ require(["jquery", "sakai/sakai.api.core", "/devwidgets/documentviewer/lib/docum
         if (sakai.api.Content.hasPreview(widgetData.data)){
             var data = widgetData.data;
             var mimeType = sakai.api.Content.getMimeType(widgetData.data);
-            
-            if (sakai.api.Content.isKalturaPlayerSupportedVideo(mimeType)) {
-                renderKalturaPlayer(data);            
-            } else if (sakai.api.Content.isJwPlayerSupportedVideo(mimeType)){
+
+            if (sakai.api.Content.isKalturaPlayerSupported(mimeType)) {
+                renderKalturaPlayer(data);
+            } else if (sakai.api.Content.isJwPlayerSupportedVideo(mimeType)){            
                 renderVideoPlayer(getPath(data));
             } else if (sakai.api.Content.isJwPlayerSupportedAudio(mimeType)) {
                 renderAudioPlayer(data);
