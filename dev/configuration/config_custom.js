@@ -4515,12 +4515,22 @@ define(["config/config"], function(config) {
     ]
 
     // Kaltura config
-    config.kaltura = {
-        enabled: true,
-        serverURL:  "https://kaltura.ucamoae.caret.cam.ac.uk", // Kaltura Server URL
-        partnerId: 1188888811, // INSERT YOUR PARTNER ID HERE
-        playerId: 1199999911 // INSERT YOUR PLAYER ID (UICONF_ID - from Kaltura Studio tab)
-    };
+    if ( window.location.hostname.indexOf("prelude", 0) > -1 ) {
+        config.kaltura = {
+            enabled: true,
+            serverURL:  "https://kaltura.ucamoae.caret.cam.ac.uk", // Kaltura Server URL
+                partnerId: 102, // INSERT YOUR PARTNER ID HERE
+                playerId:  4421540 // INSERT YOUR PLAYER ID (UICONF_ID - from Kaltura Studio tab)
+        };
+    }
+    else {
+        config.kaltura = {
+            enabled: true,
+            serverURL:  "https://kaltura.ucamoae.caret.cam.ac.uk", // Kaltura Server URL
+                partnerId: 102, // INSERT YOUR PARTNER ID HERE
+                playerId:  4421540 // INSERT YOUR PLAYER ID (UICONF_ID - from Kaltura Studio tab)
+         };
+    }
 
     // Add Kaltura mime-type
     config.MimeTypes["kaltura/video"] = {
@@ -4547,7 +4557,12 @@ define(["config/config"], function(config) {
 
     // Set up Raven / Friends links:
     config.Authentication.allowInternalAccountCreation = false;
-    config.Authentication.internal = false;
+    if ( window.location.hostname.indexOf("admin", 0) > -1 ) {
+        config.Authentication.internal = true;
+    }
+    else {
+        config.Authentication.internal = false;
+    }
     config.Authentication.external = [{
         label: "Raven",
         url: "/system/ucam/auth/raven"
