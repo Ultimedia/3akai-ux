@@ -1,0 +1,13 @@
+{
+    "id":"acceptterms",
+    "i18n": {
+        "default": {
+            "bundle":      "/devwidgets/acceptterms/bundles/default.properties",
+            "description": "Accept Terms and Conditions widget",
+            "name":        "Accept Terms Widget"
+        }
+    },
+    "type":"ucam",
+    "enabled":true,
+    "url":"/devwidgets/acceptterms/acceptterms.html"
+}
