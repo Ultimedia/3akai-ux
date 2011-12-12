@@ -584,7 +584,7 @@
                             }
                         },
                         "${pid}6": {
-                            structure0: {
+                            "structure0": {
                                 "talks":{
                                     "_ref":"${refid}28",
                                     "_order":0,
@@ -667,7 +667,7 @@
                                 "p><br></p><p><br></p>"
                             },
                             "${refid}32": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
@@ -713,7 +713,7 @@
                                 " sodales sollicitudin. Praesent id diam arcu, tristique \nauctor sem.</p>"
                             },
                             "${refid}34": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
@@ -759,7 +759,7 @@
                                 " sem. </p>"
                             },
                             "${refid}36": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
@@ -805,7 +805,7 @@
                                 "istique \nauctor sem. </p>"
                             },
                             "${refid}37": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
@@ -829,7 +829,7 @@
                             }
                         },
                         "${pid}7": {
-                            structure0: {
+                            "structure0": {
                                 "project-meetings":{
                                     "_ref":"${refid}38",
                                     "_order":5,
@@ -847,7 +847,7 @@
                                 page: "<p></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Management Meetings</span><br></h1><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit<strong>.<br></strong></span></p><p style=\"padding-left: 30px;\"><img id=\"widget_embedcontent_${refid}39\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/embedcontent/images/content.png\" data-mce-src=\"devwidgets/embedcontent/images/content.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong></strong></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br><br></span></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Steering Committee Meetings</span><br></h1>\n<p><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p style=\"padding-left: 30px;\"><img id=\"widget_embedcontent_${refid}40\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/embedcontent/images/content.png\" data-mce-src=\"devwidgets/embedcontent/images/content.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p style=\"padding-left: 30px;\" data-mce-style=\"padding-left: 30px;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><br><br></span></p><h1 style=\"font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;\"><span style=\"color: rgb(29, 95, 144);\">Progress Meetings</span><br></h1>\n<p><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem.<br><br></span><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 1: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p style=\"padding-left: 30px;\"><img id=\"widget_embedcontent_${refid}41\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/embedcontent/images/content.png\" data-mce-src=\"devwidgets/embedcontent/images/content.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p><br></p><p style=\"\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"><strong>Meeting 2: 'Date'</strong><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p><p style=\"\" data-mce-style=\"\"><br><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: #000000;\"></span></p><p><br></p>"
                             },
                             "${refid}39": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
@@ -870,7 +870,7 @@
                                 }
                             },
                             "${refid}40": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
@@ -893,7 +893,7 @@
                                 }
                             },
                              "${refid}41": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
@@ -918,7 +918,7 @@
                             }
                         },
                         "${pid}8": {
-                            structure0: {
+                            "structure0": {
                                 "funding":{
                                     "_ref":"${refid}43",
                                     "_order":5,
@@ -965,7 +965,7 @@
                                 "mce-style=\'color: #000000;\'><br><br><br></span></p><p><br></p>"
                             },
                             "${refid}44": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
@@ -988,7 +988,7 @@
                                 }
                             },
                             "${refid}45": {
-                                embedcontent:{
+                                "embedcontent":{
                                     "embedmethod": "thumbnail",
                                     "sakai:indexed-fields": "title,description",
                                     "download": false,
