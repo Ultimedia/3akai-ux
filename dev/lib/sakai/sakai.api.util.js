@@ -30,6 +30,7 @@ define(
         "jquery",
         "sakai/sakai.api.server",
         "sakai/sakai.api.l10n",
+        "sakai/sakai.api.i18n",
         "config/config_custom",
         "misc/trimpath.template",
         "misc/underscore",
@@ -37,7 +38,7 @@ define(
         "jquery-plugins/jquery.validate",
         "jquery-ui"
     ],
-    function($, sakai_serv, sakai_l10n, sakai_conf) {
+    function($, sakai_serv, sakai_l10n, sakai_i18n, sakai_conf) {
 
     var sakai_util = {
 
@@ -253,7 +254,7 @@ define(
                                 value: sakai_util.Security.safeOutput(tag),
                                 tagShort: sakai_util.applyThreeDots(tag, 680, {max_rows: 1, whole_word: true}, ""),
                                 tagShorter: sakai_util.applyThreeDots(tag, 125, {max_rows: 1, whole_word: true}, ""),
-                                link: "/search#q=" + sakai_util.safeURL(tag),
+                                link: "/search#q=&refine=" + sakai_util.safeURL(tag),
                                 linkTitle: sakai_i18n.getValueForKey("SEARCH_CONTENT_TAGGED_WITH") + " " + sakai_util.Security.safeOutput(tag)
                             };
                         }
@@ -417,14 +418,14 @@ define(
         applyThreeDots : function(body, width, params, optClass, alreadySecure){
             body = sakai_util.Security.safeOutput(body);
             // IE7 and IE6 have trouble with width
-            if(!jQuery.support.leadingWhitespace){
-                width = width - 10;
+            if(!jQuery.support.leadingWhitespace || jQuery.browser.webkit){
+                width = width - 15;
             } else {
                 width = width - 5;
             }
 
             // Create elements to apply threedots
-            $container = $("<div class=\"" + optClass + "\" style=\"width:" + width + "px; ; word-wrap:break-word; visibility:hidden;\"><span style=\"word-wrap:break-word;\" class=\"ellipsis_text\">" + body + "</span></div>");
+            var $container = $("<div class=\"" + optClass + "\" style=\"width:" + width + "px; ; word-wrap:break-word; visibility:hidden;\"><span style=\"word-wrap:break-word;\" class=\"ellipsis_text\">" + body + "</span></div>");
             $("body").append($container);
 
             // There seems to be a race condition where the
@@ -529,7 +530,11 @@ define(
                         picture_name = profile.picture.name;
                     } else {
                         //change string to json object and get name from picture object
-                        picture_name = $.parseJSON(profile.picture).name;
+                        try {
+                            picture_name = $.parseJSON(profile.picture).name;
+                        } catch (e) {
+                            picture_name = profile.picture;
+                        }
                     }
                     imgUrl = "/~" + sakai_util.safeURL(id) + "/public/profile/" + sakai_util.safeURL(picture_name);
                 } else if (profile.basic && profile.basic.elements && profile.basic.elements.picture && profile.basic.elements.picture.value) {
@@ -658,6 +663,48 @@ define(
                  */
                 ERROR : $.extend(true, {}, sakai_conf.notification.type.ERROR)
                 }
+        },
+
+        /**
+         * Allows you to show a progress indicator on the screen. Example of where this is done are the Add Content
+         * and the Create World widgets
+         */
+        progressIndicator: {
+
+            /**
+             * Show the progress indicator on the screen
+             * @param {Object} title    Title of the indicator screen
+             * @param {Object} body     Additional text to be shown in the indicator
+             */
+            showProgressIndicator: function(title, body){
+                // Create the HTML for the progress indicator if it doesn't exist yet
+                if ($("#sakai_progressindicator").length === 0){
+                    var htmlCode = '<div id="sakai_progressindicator" class="s3d-dialog s3d-dialog-container" style="display:none;">';
+                    htmlCode += '<h1 id="sakai_progressindicator_title" class="s3d-dialog-header"></h1><p id="sakai_progressindicator_body"></p>';
+                    htmlCode += '<div class="s3d-inset-shadow-container"><img src="/dev/images/progress_bar.gif"/></div></div>';
+                    var notification = $(htmlCode);
+                    $('body').append(notification);
+                    $("#sakai_progressindicator").jqm({
+                        modal: true,
+                        overlay: 20,
+                        zIndex: 40003,
+                        toTop: true
+                    });
+                }
+                // Fill out the title and the body
+                $("#sakai_progressindicator_title").html(title);
+                $("#sakai_progressindicator_body").html(body);
+                // Show the indicator
+                $("#sakai_progressindicator").jqmShow();
+            },
+
+            /**
+             * Hide the existing progress indicator (if there is one)
+             */
+            hideProgressIndicator: function(){
+                $("#sakai_progressindicator").jqmHide();
+            }            
+
         },
 
         /**
@@ -825,21 +872,6 @@ define(
 
             return return_string;
         },
-
-
-        /**
-         * Sets the chat bullets after update of status by
-         * adding the right status css class on an element.
-         * @param {Object} element the jquery element you wish to add the class to
-         * @param {Object} status the status
-         */
-        updateChatStatusElement : function(element, chatstatus) {
-            element.removeClass("chat_available_status_online");
-            element.removeClass("chat_available_status_busy");
-            element.removeClass("chat_available_status_offline");
-            element.addClass("chat_available_status_" + chatstatus);
-        },
-
 
         include : {
             /**
@@ -1329,6 +1361,87 @@ define(
          */
         templateCache : [],
 
+        macroCache : { macros: {}},
+        
+        trimpathModifiers : {
+            safeURL: function(str) {
+                return sakai_util.safeURL(str);
+            },
+            escapeHTML: function(str) {
+                return sakai_util.Security.escapeHTML(str);
+            },
+            saneHTML: function(str) {
+                return sakai_util.Security.saneHTML(str);
+            },
+            safeOutput: function(str) {
+                return sakai_util.Security.safeOutput(str);
+            }
+        },
+
+        /**
+          * Process trimpath macros in html file at url, which will then be available 
+          * with the macro function inside regular rendering. The optional asyncreq option allows
+          * the request to be syncronous, which would mostly be for on-demand loading (because
+          * that is happening during rendering and it needs the template to continue. )
+          * @function
+          * @param {String} url with macros to load
+          * @param {Boolean} Optional parameter to distinguish whether the loading should happen
+          * syncronously. Default is true (async)
+          */
+        processMacros : function (url, asyncreq) {
+            var asyncsetting = true;
+            if (asyncreq === false) {
+                asyncsetting = asyncreq;
+            }
+            var mc = this.macroCache;
+            $.ajax({
+                url: url, 
+                async: asyncsetting, // Sometimes we need to immediately return this value for on-demand loading.
+                success: function(data) { 
+                  mc._MODIFIERS = sakai_util.trimpathModifiers; 
+                  sakai_i18n.General.process(data).process(mc);
+                }
+            });
+        },
+
+        /**
+          * While the processMacros function allows a way to make macros that can
+          * be shared and discovered between widgets automatically, this function
+          * allows for a simpler use case where a widget developer may just want some
+          * macros for their specific widget. In this case they can put all their
+          * macros in a template element ( similar to regular template elements),
+          * and then get a macro set back that can be used in between the rest of
+          * the templates they have defined in their page. 
+          *
+          * @param {String|jQuery} Raw String or jQuery element containing the 
+          * text of the macro definitions.
+          * @return An object containing the macro functions. This can be added to the
+          * context of subsequent TemplateRenderers and called like regular trimpath
+          * macros.
+          */
+        processLocalMacros : function(templateElement) {
+            var templateStr = "";
+            if (templateElement instanceof jQuery && templateElement.length){
+                var firstNode = templateElement.contents(":first-child");
+                if (firstNode.length) {
+                    var firstNodeDomElem = firstNode.get(0);
+                    if (firstNodeDomElem.nodeType === 8 || firstNodeDomElem.nodeType === 4) {
+                        templateStr = firstNodeDomElem.data;
+                    }
+                    else {
+                        templateStr = templateElement.html();
+                    }
+                }
+            }
+            else if (_.isString(templateElement)) {
+                templateStr = templateElement;
+            }
+            var contextdata = { macros: {} };
+            contextdata._MODIFIERS = sakai_util.trimpathModifiers;
+            sakai_i18n.General.process(templateStr).process(contextdata);
+            return contextdata.macros;
+        },
+
         /**
         * Trimpath Template Renderer: Renders the template with the given JSON object, inserts it into a certain HTML
         * element if required, and returns the rendered HTML string
@@ -1395,21 +1508,27 @@ define(
             if (templateData._MODIFIERS) {
                 debug.error("Someone has passed data to sakai.api.util.TemplateRenderer with _MODIFIERS");
             }
-            templateData._MODIFIERS = {
-                safeURL: function(str) {
-                    return sakai_util.safeURL(str);
-                },
-                escapeHTML: function(str) {
-                    return sakai_util.Security.escapeHTML(str);
-                },
-                saneHTML: function(str) {
-                    return sakai_util.Security.saneHTML(str);
-                },
-                safeOutput: function(str) {
-                    return sakai_util.Security.safeOutput(str);
-                },
-                saneHTMLAttribute: function(str) {
-                    return sakai_util.saneHTMLAttribute(str);
+            templateData._MODIFIERS = sakai_util.trimpathModifiers;
+            if (templateData.macro) {
+                debug.error("Someone has passed data to sakai.api.util.TemplateRenderer with macro()");
+            }
+            templateData.macro = function() {
+                var macroname = arguments[0];
+                var args = []; 
+                for (var i = 1; i < arguments.length; i++) {
+                    args.push(arguments[i]);
+                }
+                if (!sakai_util.macroCache.macros[macroname]) {
+                    var dot = macroname.lastIndexOf('.');
+                    if (dot > -1) { 
+                        sakai_util.processMacros('/dev/macros/'+macroname.slice(0,dot)+'.html',false);
+                        if (sakai_util.macroCache.macros[macroname]) {
+                            return sakai_util.macroCache.macros[macroname].apply(this, args);
+                        }
+                    }
+                }
+                else {
+                    return sakai_util.macroCache.macros[macroname].apply(this, args);
                 }
             };
 
@@ -1422,6 +1541,7 @@ define(
             }
 
             delete templateData._MODIFIERS;
+            delete templateData.macro;
 
             // Run the rendered html through the sanitizer
             if (sanitize) {
@@ -2199,7 +2319,7 @@ define(
                         });
                     }
                     // Get the closest-previous label in the DOM
-                    var $prevLabel = $("label[for='" + $element.attr("id") + "']");
+                    var $prevLabel = $form.find("label[for='" + $element.attr("id") + "']");
                     $error.attr("id", $element.attr("name") + "_error");
                     $element.attr("aria-describedby", $element.attr("name") + "_error");
                     if (insertAfterLabel) {
@@ -2265,7 +2385,7 @@ define(
                 } else {
                     draggableData.push(helper.children().data());
                 }
-                return [draggableData];
+                return draggableData;
             },
             /**
              * Sets and overrides default parameters for the jQuery Droppable plugin
@@ -2316,16 +2436,18 @@ define(
              * @param {Object} $container Optional container element to add draggables, defaults to $("html") if not set
              */
             setupDraggable: function(params, $container){
-                $.each($(".s3d-draggable-container", $container), function(index, draggable){
-                    if(!$(draggable).hasClass("ui-draggable")){
-                        // HTML overrides default, JS overrides HTML
-                        // Override default parameters with attribute defined parameters
-                        var htmlParams =  $.extend(true, sakai_util.Draggable.setDraggableParameters(), $(draggable).data());
-                        // Override attribute defined parameters with JS defined ones
-                        params = $.extend(true, htmlParams, params);
-                        $(".s3d-draggable-container", $container || $("html")).draggable(params);
-                    }
-                });
+                if (!require("sakai/sakai.api.user").data.me.user.anon) {
+                    $(".s3d-draggable-container", $container).each(function(index, draggable){
+                        if (!$(draggable).hasClass("ui-draggable")) {
+                            // HTML overrides default, JS overrides HTML
+                            // Override default parameters with attribute defined parameters
+                            var htmlParams = $.extend(true, sakai_util.Draggable.setDraggableParameters(), $(draggable).data());
+                            // Override attribute defined parameters with JS defined ones
+                            params = $.extend(true, htmlParams, params);
+                            $(".s3d-draggable-container", $container || $("html")).draggable(params);
+                        }
+                    });
+                }
             }
         },
         Droppable: {
@@ -2340,12 +2462,12 @@ define(
                     drop: function(event, ui) {
                         $(".s3d-draggable-draggingitems").remove();
                         if($(this).data("dropevent")){
-                            $(window).trigger($(this).data("dropevent"), sakai_util.Draggable.getDraggableData(ui.helper));
+                            $(window).trigger($(this).data("dropevent"), [sakai_util.Draggable.getDraggableData(ui.helper), $(this)]);
                         }
                     },
                     over: function(event, ui) {
                         if($(this).data("overdropevent")){
-                            $(window).trigger($(this).data("overdropevent"), sakai_util.Draggable.getDraggableData(ui.helper));
+                            $(window).trigger($(this).data("overdropevent"), [sakai_util.Draggable.getDraggableData(ui.helper), $(this)]);
                         }
                     }
                 };
@@ -2356,16 +2478,18 @@ define(
              * @param {Object} $container Optional container element to add droppables, defaults to $("html") if not set
              */
             setupDroppable: function(params, $container){
-                $.each($(".s3d-droppable-container", $container), function(index, droppable){
-                    if(!$(droppable).hasClass("ui-droppable")){
-                        // HTML overrides default, JS overrides HTML
-                        // Override default parameters with attribute defined parameters
-                        var htmlParams =  $.extend(true, sakai_util.Droppable.setDroppableParameters(), $(droppable).data());
-                        // Override attribute defined parameters with JS defined ones
-                        params = $.extend(true, htmlParams, params);
-                        $(".s3d-droppable-container", $container || $("html")).droppable(params);
-                    }
-                });
+                if (!require("sakai/sakai.api.user").data.me.user.anon) {
+                    $(".s3d-droppable-container", $container).each(function(index, droppable){
+                        if (!$(droppable).hasClass("ui-droppable")) {
+                            // HTML overrides default, JS overrides HTML
+                            // Override default parameters with attribute defined parameters
+                            var htmlParams = $.extend(true, sakai_util.Droppable.setDroppableParameters(), $(droppable).data());
+                            // Override attribute defined parameters with JS defined ones
+                            params = $.extend(true, htmlParams, params);
+                            $(".s3d-droppable-container", $container || $("html")).droppable(params);
+                        }
+                    });
+                }
             }
         }
     };

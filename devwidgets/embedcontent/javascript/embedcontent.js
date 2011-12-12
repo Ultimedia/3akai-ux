@@ -120,6 +120,10 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
             wData.showDefaultContent = false;
             var docData = {};
             $.each(wData.items, function(index, value) {
+                if (value.description){
+                    value.description = sakai.api.Util.applyThreeDots(value.description, 680, {max_rows: 3});
+                }
+                
                 if (value.fullresult) {
                     var placement = "ecDocViewer" + tuid + value["_path"] + index;
                     wData.items[index].placement = placement;
@@ -180,11 +184,15 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 "description": result["sakai:description"] || "",
                 "path": "/p/" + (name || result['_path']),
                 "fileSize": sakai.api.Util.convertToHumanReadableFileSize(result["_length"]),
-                "link": sakai.api.Util.safeURL((name || result['_path'])) + "/" + sakai.api.Security.safeOutput(result['sakai:pooled-content-file-name']),
                 "_path": result['_path'],
                 "_mimeType/page1-small": result["_mimeType/page1-small"],
                 "fullresult" : result
             };
+            if (dataObj._mimeType === "x-sakai/link"){
+                dataObj.link = result["sakai:pooled-content-url"];
+            } else {
+                dataObj.link = sakai.api.Util.safeURL((name || result['_path'])) + "/" + sakai.api.Security.safeOutput(result['sakai:pooled-content-file-name']);
+            }
 
             // if the type is application need to auto check the display name so set ispreviewexist false
             if(dataObj.filetype === "application") {
@@ -596,9 +604,9 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
         });
         
         var renderDefaultContent = function(){
-            $("#embedcontent_content", $rootel).html(sakai.api.Util.TemplateRenderer("embedcontent_content_html_template", {
+            sakai.api.Util.TemplateRenderer("embedcontent_content_html_template", {
                 "showDefaultContent": true
-            }));
+            }, $("#embedcontent_content", $rootel));
         };
 
         var doInit = function() {

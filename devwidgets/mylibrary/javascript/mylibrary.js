@@ -210,7 +210,10 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                     "sakai": sakai,
                     "isMe": mylibrary.isOwnerViewing
                 });
-            }, handleEmptyLibrary, sakai.config.URL.INFINITE_LOADING_ICON, handleLibraryItems, sakai.api.Content.getNewList(mylibrary.contextId));
+            }, handleEmptyLibrary, sakai.config.URL.INFINITE_LOADING_ICON, handleLibraryItems, function(){
+                // Initialize content draggable
+                sakai.api.Util.Draggable.setupDraggable({}, $mylibrary_items);
+            }, sakai.api.Content.getNewList(mylibrary.contextId));
         };
 
         ////////////////////
@@ -326,7 +329,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 if ($checked.length) {
                     var paths = [];
                     $checked.each(function () {
-                        paths.push(this.id.split("mylibrary_check_")[1]);
+                        paths.push($(this).data("entityid"));
                     });
                     $(window).trigger('init.deletecontent.sakai', [{
                         paths: paths,
@@ -371,10 +374,10 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 var sortSelection = $(this).val();
                 if (sortSelection === "desc") {
                     mylibrary.sortOrder = "desc";
-                    mylibrary.sortBy = "sakai:pooled-content-file-name";
+                    mylibrary.sortBy = "filename";
                 } else if (sortSelection === "asc") {
                     mylibrary.sortOrder = "asc";
-                    mylibrary.sortBy = "sakai:pooled-content-file-name";
+                    mylibrary.sortBy = "filename";
                 } else {
                     mylibrary.sortOrder = "modified";
                     mylibrary.sortBy = "_lastModified";

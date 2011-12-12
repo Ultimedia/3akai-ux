@@ -104,7 +104,6 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
 
             var json = {
                 "files": contentObj.data,
-                "me": sakai.data.me,
                 "context": contentObj.context,
                 "libraryHasIt": contentObj.libraryHasIt,
                 "groups": contentObj.memberOfGroups,
@@ -126,10 +125,10 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
         /**
          * Checks if the content is a part of my library
          */
-        var selectedAlreadyLibraryMember = function(){
+        var selectedAlreadyMyLibraryMember = function(){
             contentObj.libraryHasIt = true;
             $.each(contentObj.data, function(i, content){
-                if(!sakai.api.Content.isContentInLibrary(content.body, sakai.data.me.user.userid)){
+                if(!sakai.api.Content.isContentInLibrary(content.body, sakai.data.me.user.userid) && !sakai.api.Content.Collections.isCollectionInMyLibrary(content.body)){
                     contentObj.libraryHasIt = false;
                 }
             });
@@ -140,16 +139,17 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
          * Determines if the selected content items are a part of any groups
          */
         var selectAlreadyInGroup = function(){
-            $.each(contentObj.data, function(i, selectedContent){
-                $.each(contentObj.memberOfGroups.entry, function(j, memberOfGroup){
-                    // Check if content is part of the group
-                    var isContentInGroup = sakai.api.Content.isContentInLibrary(selectedContent.body, memberOfGroup["sakai:group-id"]);
+            $.each(contentObj.memberOfGroups.entry, function(j, memberOfGroup){
+                memberOfGroup.alreadyHasIt = true;
+                $.each(contentObj.data, function(i, selectedContent){
+                    var contentItem = selectedContent.body;
+                    var isContentInGroup = sakai.api.Content.isContentInLibrary(contentItem, memberOfGroup["sakai:group-id"]);
                     if (!isContentInGroup){
-                        memberOfGroup.overrideAllSelectedAMember = true;
+                        memberOfGroup.alreadyHasIt = false;
                     }
                 });
             });
-            selectedAlreadyLibraryMember();
+            selectedAlreadyMyLibraryMember();
         };
 
         /**
@@ -157,36 +157,57 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
          * Hides the widget
          */
         var hideSavecontent = function() {
+            $(window).trigger("hiding.savecontent.sakai");
             $savecontent_widget.jqmHide();
         };
 
         /**
          * saveContent
          * Saves the content to the selected group
-         * @param {String} id ID of the group we want to add as a viewer
+         * @param {String} id     ID of the group we want to add as a viewer
          */
         var saveContent = function(id){
             if(!$("#savecontent_select option:selected", $rootel).data("redirect") === true){
                 $savecontent_save.attr("disabled", "disabled");
                 $.each(contentObj.data, function(i, content){
-                    sakai.api.Content.addToLibrary(content.body["_path"], id, false, function(contentId, entityId) {
-                        if (sakai_global.content_profile) {
-                            sakai_global.content_profile.content_data.members.viewers.push({
-                                "userid": entityId
-                            });
-                        }
-                    });
+                    if (sakai.api.Content.Collections.isCollection(content.body)){
+                        sakai.api.Content.Collections.shareCollection(content.body["_path"], id, false, function(){
+                            finishSaveContent(content.body["_path"], id);
+                        });
+                    } else {
+                        sakai.api.Content.addToLibrary(content.body["_path"], id, false, finishSaveContent);
+                    }
                 });
                 $(window).trigger("done.newaddcontent.sakai");
-                var notificationBody = decodeURIComponent($("#savecontent_group_add_library_body").html());
-                notificationBody = notificationBody.replace("${groupid}", sakai.api.Security.safeOutput(id));
-                notificationBody = notificationBody.replace("${grouplibrary}", sakai.api.Security.safeOutput($("#savecontent_select option:selected", $rootel).text()));
-                sakai.api.Util.notification.show($("#savecontent_group_add_library_title").html(), notificationBody);
+                var notificationBody = false;
+                var notificationTitle = false;
+                if (sakai.api.Content.Collections.isCollection(id)){
+                    notificationBody = decodeURIComponent($("#savecontent_collection_add_library_body").html());
+                    notificationBody = notificationBody.replace("${collectionid}", sakai.api.Security.safeOutput(sakai.api.Content.Collections.getCollectionPoolId(id)));
+                    notificationBody = notificationBody.replace("${collectiontitle}", sakai.api.Security.safeOutput($("#savecontent_select option:selected", $rootel).text()));
+                    notificationTitle = $("#savecontent_collection_add_library_title").html();
+                } else {
+                    notificationBody = decodeURIComponent($("#savecontent_group_add_library_body").html());
+                    notificationBody = notificationBody.replace("${groupid}", sakai.api.Security.safeOutput(id));
+                    notificationBody = notificationBody.replace("${grouplibrary}", sakai.api.Security.safeOutput($("#savecontent_select option:selected", $rootel).text()));
+                    notificationTitle = $("#savecontent_group_add_library_title").html();
+                }
+                sakai.api.Util.notification.show(notificationTitle, notificationBody);
                 hideSavecontent();
             } else {
                 document.location = "/create#l=" + $("#savecontent_select", $rootel).val() + "&contentToAdd=" + getFileIDs().toString();
             }
         };
+
+        var finishSaveContent = function(contentId, entityId){
+            // cache the content locally
+            if (sakai_global.content_profile) {
+                sakai_global.content_profile.content_data.members.viewers.push({
+                    "userid": entityId
+                });
+            }
+            $(window).trigger("sakai.entity.updateOwnCounts", {contentId:contentId,entityID:entityId});
+        }
 
         enableDisableAddButton = function(){
             var dropdownSelection = $("#savecontent_select option:selected", $rootel);
@@ -205,7 +226,14 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
         // bind savecontent save button
         $savecontent_save.live("click", function(){
             var dropdownSelection = $("#savecontent_select option:selected", $rootel);
-            if (!dropdownSelection.attr("disabled") && dropdownSelection.val()) {
+            if (dropdownSelection.val() === "new_collection"){
+                var contentToAdd = [];
+                $.each(contentObj.data, function(index, item){
+                    contentToAdd.push(item.body);
+                });
+                hideSavecontent();
+                $(window).trigger("create.collections.sakai", [contentToAdd]);
+            } else if (!dropdownSelection.is(":disabled") && dropdownSelection.val()) {
                 saveContent(dropdownSelection.val());
             }
         });
@@ -218,12 +246,14 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
 
         $(".savecontent_trigger").live("click", function(el){
             clickedEl = $(this);
-            contentObj.memberOfGroups = $.extend(true, {}, sakai.api.Groups.getMemberships(sakai.data.me.groups));
-            contentObj.context = $(el.currentTarget).attr("data-entitycontext") || false;
-            var idArr = $(".savecontent_trigger:visible").attr("data-entityid");
+            idArr = clickedEl.attr("data-entityid");
             if(idArr.length > 1 && !$.isArray(idArr)){
                 idArr = idArr.split(",");
             }
+
+            contentObj.memberOfGroups = $.extend(true, {}, sakai.api.Groups.getMemberships(sakai.data.me.groups, true));
+            contentObj.context = $(el.currentTarget).attr("data-entitycontext") || false;
+
             var batchRequests = [];
             $.each(idArr, function(i, id){
                 batchRequests.push({

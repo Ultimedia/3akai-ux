@@ -142,7 +142,7 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/content_profile.js"]
         var renderName = function(mode){
             if (mode === "edit") {
                 $("#entity_name").hide();
-                $("#entity_name_text").val($.trim($("#entity_name").text()));
+                $("#entity_name_text").val($.trim($("#entity_name").attr("data-original-title") || $("#entity_name").text()));
                 $("#entity_name_edit").show();
                 $("#entity_name_text").focus();
             }
@@ -150,8 +150,12 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/content_profile.js"]
             $("#entity_name_text").bind("blur", function(){
                 $("#entity_name_edit").hide();
                 var newTitle = $("#entity_name_text").val();
+                var newDottedTitle = sakai.api.Util.applyThreeDots(newTitle, 800, {
+                    whole_word: false
+                }, "");
                 if ($.trim(newTitle)) {
-                    $("#entity_name").text(newTitle);
+                    $("#entity_name").text(newDottedTitle);
+                    $("#entity_name").attr("data-original-title", newTitle);
                     $("#entity_name").show();
                     $.ajax({
                         url: "/p/" + sakai_global.content_profile.content_data.data["_path"] + ".html",
@@ -161,13 +165,28 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/content_profile.js"]
                             "sakai:pooled-content-file-name": newTitle
                         },
                         success: function(){
-                            sakai_global.content_profile.content_data.data["sakai:pooled-content-file-name"] = sakai.api.Security.escapeHTML(newTitle);
-                            // Export as IMS Package
-                            if (sakai.api.Content.getMimeType(sakai_global.content_profile.content_data.data) === "x-sakai/document"){
-                                $("#contentpreview_download_button").attr("href", "/imscp/" + sakai_global.content_profile.content_data.data["_path"] + "/" + encodeURIComponent(sakai_global.content_profile.content_data.data["sakai:pooled-content-file-name"]) + ".zip");
-                            // Download as a normal file
+                            if (sakai.api.Content.Collections.isCollection(sakai_global.content_profile.content_data.data)){
+                                // Change the group title as well
+                                var groupId = sakai.api.Content.Collections.getCollectionGroupId(sakai_global.content_profile.content_data.data);
+                                $.ajax({
+                                    "url": "/system/userManager/group/" + groupId + ".update.json",
+                                    "type": "POST",
+                                    "data": {
+                                        "sakai:group-title": newTitle
+                                    },
+                                    "success": function(){
+                                        // Update the me object
+                                        var memberships = sakai.api.Groups.getMemberships(sakai.data.me.groups, true);
+                                        $.each(memberships.entry, function(index, membership){
+                                            if (membership["sakai:group-id"] === groupId){
+                                                membership["sakai:group-title"] = newTitle;
+                                            }
+                                        });
+                                        finishChangeTitle(newTitle);
+                                    }
+                                });
                             } else {
-                                $("#contentpreview_download_button").attr("href", sakai_global.content_profile.content_data.smallPath + "/" + encodeURIComponent(sakai_global.content_profile.content_data.data["sakai:pooled-content-file-name"]));
+                                finishChangeTitle(newTitle);
                             }
                         }
                     });
@@ -178,6 +197,17 @@ require(["jquery", "sakai/sakai.api.core", "/dev/javascript/content_profile.js"]
                 }
             });
         };
+
+        var finishChangeTitle = function(newTitle){
+            sakai_global.content_profile.content_data.data["sakai:pooled-content-file-name"] = sakai.api.Security.safeOutput(newTitle);
+            // Export as IMS Package
+            if (sakai.api.Content.getMimeType(sakai_global.content_profile.content_data.data) === "x-sakai/document"){
+                $("#contentpreview_download_button").attr("href", "/imscp/" + sakai_global.content_profile.content_data.data["_path"] + "/" + sakai.api.Util.safeURL(sakai_global.content_profile.content_data.data["sakai:pooled-content-file-name"]) + ".zip");
+            // Download as a normal file
+            } else {
+                $("#contentpreview_download_button").attr("href", sakai_global.content_profile.content_data.smallPath + "/" + sakai.api.Util.safeURL(sakai_global.content_profile.content_data.data["sakai:pooled-content-file-name"]));
+            }
+        }
 
         /**
          * Render the Tags template

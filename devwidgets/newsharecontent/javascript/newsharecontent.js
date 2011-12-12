@@ -81,19 +81,23 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
                 hash.w.show();
             }
             var tbx = $('#toolbox');
-            if(tbx.find('a').length===0){
-                var svcs = {facebook: 'Facebook', twitter: 'Twitter', delicious:'Delicious', stumbleupon: 'StumbleUpon', blogger:'Blogger', wordpress:'Wordpress', google:'Google', expanded: 'More'};
-                for (var s in svcs) {
-                    tbx.append('<a class="addthis_button_'+s+'" addthis:url="'+contentObj.shareUrl+'"></a>');
-                }
-                addthis.toolbox("#toolbox");
+            if (tbx.find("a").length !==0) {
+                tbx.find("a").remove();
             }
+            var svcs = {facebook: 'Facebook', twitter: 'Twitter', delicious:'Delicious', stumbleupon: 'StumbleUpon', blogger:'Blogger', wordpress:'Wordpress', google:'Google', expanded: 'More'};
+            for (var s in svcs) {
+                tbx.append('<a class="addthis_button_'+s+'" addthis:url="'+contentObj.shareUrl+'"></a>');
+            }
+            addthis.toolbox("#toolbox");
         };
 
         var resetWidget = function(hash){
+            $newsharecontentMessageContainer.hide();
+            $newsharecontentMessageArrow.removeClass('arrow_down');
             $newsharecontentMessage.removeClass(newsharecontentRequiredClass);
             $(newsharecontentShareListContainer).removeClass(newsharecontentRequiredClass);
             sakai.api.Util.AutoSuggest.reset($newsharecontentSharelist);
+            $(window).trigger("hiding.newsharecontent.sakai");
             hash.w.hide();
         };
 
@@ -138,7 +142,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
             });
         };
 
-        var doShare = function(event, userlist, message, contentobj){
+        var doShare = function(event, userlist, message, contentobj, canmanage){
             var userList = userlist || getSelectedList();
             var messageText = message || $.trim($newsharecontentMessage.val());
             contentObj = contentobj || contentObj;
@@ -150,7 +154,11 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
                 if (toAddList.length) {
                     sakai.api.Communication.sendMessage(userList.list, sakai.data.me, sakai.api.i18n.getValueForKey("I_WANT_TO_SHARE", "newsharecontent") + sakai.api.Util.TemplateRenderer("newsharecontent_filenames_template", {"files": contentObj.data}), messageText, "message", false, false, true, "shared_content");
                     $.each(contentObj.data, function(i, content){
-                        sakai.api.Content.addToLibrary(content.body["_path"], toAddList, content.canManage);
+                        if (sakai.api.Content.Collections.isCollection(content.body)){
+                            sakai.api.Content.Collections.shareCollection(content.body["_path"], toAddList, canmanage);
+                        } else {
+                            sakai.api.Content.addToLibrary(content.body["_path"], toAddList, canmanage);
+                        }
                     });
                     sakai.api.Util.notification.show(false, $("#newsharecontent_users_added_text").text() + " " + userList.toAddNames.join(", "), "");
                     createActivity("__MSG__ADDED_A_MEMBER__");
@@ -187,6 +195,9 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
             });
 
             $('.share_trigger_click').live('click',function(){
+                if($newsharecontentContainer.is(":visible")){
+                    $newsharecontentContainer.jqmHide();
+                }
                 sakai.api.Util.Forms.clearValidation($newsharecontent_form);
                 var idArr = $(this).attr("data-entityid");
                 if(idArr.length > 1 && !$.isArray(idArr)){
@@ -203,12 +214,20 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai){
                     });
                 });
                 sakai.api.Server.batch(batchRequests, function(success, data) {
-                    if (success) {
-                        $.each(data.results, function(i, result){
-                            data.results[i].body = $.parseJSON(data.results[i].body);
-                        });
-                        contentObj = {
-                            "data": data.results
+                    if (success && data) {
+                        if (data.results) {
+                            $.each(data.results, function(i, result){
+                                data.results[i].body = $.parseJSON(data.results[i].body);
+                            });
+                            contentObj = {
+                                data: data.results,
+                                shareUrl: sakai.api.Content.createContentURL(data.results[0].body)
+                            };
+                        } else if (data.url) {
+                            contentObj = {
+                                data: [data],
+                                shareUrl:  sakai.api.Content.createContentURL(data)
+                            };
                         }
                         if (window["addthis"]) {
                             $newsharecontentContainer.jqmShow();
