@@ -1,0 +1,7 @@
+{
+    "id": "people-list",
+    "title" : "PEOPLE_LIST",
+    "titlePlural": "PEOPLE_LISTS",
+    "menuLabel" : "CREATE_PEOPLE_LISTS",
+    "order": 4
+}

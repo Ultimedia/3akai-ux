@@ -1,0 +1,7 @@
+{
+    "id": "research-collaborations",
+    "title" : "RESEARCH_COLLABORATION",
+    "titlePlural": "RESEARCH_COLLABORATIONS",
+    "menuLabel" : "CREATE_RESEARCH_COLLABORATIONS",
+    "order": 2
+}

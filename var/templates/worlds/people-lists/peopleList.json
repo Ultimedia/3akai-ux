@@ -1,0 +1,63 @@
+{
+                        id: "peopleList",
+                        title: "People list",
+                        img: "",
+                        fullImg: "",
+                        perfectFor: "",
+                        "order": 1,
+                        roles: [
+                            {
+                                id: "member",
+                                roleTitle: "member",
+                                title: "member",
+                                allowManage: false
+                            },
+                            {
+                                id: "manager",
+                                roleTitle: "manager",
+                                title: "manager",
+                                allowManage: true
+                            }
+                        ],
+                        docs: {
+                            "${pid}0": {
+                                structure0: {
+                                    "participants":{
+                                        "_ref":"${refid}0",
+                                        "_order":0,
+                                        "_title":"Participants",
+                                        "_nonEditable": true,
+                                        "main":{
+                                            "_ref":"${refid}0",
+                                            "_order":0,
+                                            "_nonEditable": true,
+                                            "_title":"Participants"
+                                        }
+                                    }
+                                },
+                                "${refid}0": {
+                                    page: "<img id='widget_participants_${refid}1' class='widget_inline' style='display: "+
+                                    "block; padding: 10px; margin: 4px;' src='/devwidgets/participants/images/partic"+
+                                    "ipants.png' data-mce-src='/devwidgets/participants/images/participants.png' dat"+
+                                    "a-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p>"
+                                },
+                                "${refid}1": {
+                                    participants: {
+                                        "groupid": "${groupid}"
+                                    }
+                                }
+                            }
+                        },
+                        structure: {
+                            "participants": {
+                                "_title": "Participants",
+                                "_order": 0,
+                                "_docref": "${pid}0",
+                                "_nonEditable": true,
+                                "_view": ["everyone", "anonymous", "-member"],
+                                "_edit": ["-manager"]
+                            }
+                        },
+                        joinRole: "member",
+                        creatorRole: "manager"
+}

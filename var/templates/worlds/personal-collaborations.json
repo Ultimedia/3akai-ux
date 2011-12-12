@@ -1,0 +1,7 @@
+{
+    "id": "personal-collaborations",
+    "title" : "PERSONAL_COLLABORATION",
+    "titlePlural": "PERSONAL_COLLABORATIONS",
+    "menuLabel" : "CREATE_PERSONAL_COLLABORATIONS",
+    "order": 3
+}

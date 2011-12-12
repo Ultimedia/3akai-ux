@@ -1,0 +1,569 @@
+{
+                    "id": "supervision-outline",
+                    "title": "Supervision outline",
+                    "img": "/dev/images/worldtemplates/supervision-full.png",
+                    "fullImg": "/dev/images/worldtemplates/supervision.png",
+                    "perfectFor": "Organising supervisions, using an About section, a Schedule page, an overview of the supervision sessions and Participants. ",
+                    "order": 2,
+                    "roles": [
+                        {
+                            "id": "student",
+                            "roleTitle": "Students",
+                            "title": "Student",
+                            "allowManage": false
+                        },
+                        {
+                            "id": "observer",
+                            "roleTitle": "Observers",
+                            "title": "Observer",
+                            "allowManage": false
+                        },
+                        {
+                            "id": "supervisor",
+                            "roleTitle": "Supervisors",
+                            "title": "Supervisor",
+                            "allowManage": true
+                        }
+                    ],
+                    "docs": {
+                        "${pid}0": {
+                            "structure0": {
+                                "participants": {
+                                    "_ref": "${refid}0",
+                                    "_order": 0,
+                                    "_nonEditable": true,
+                                    "_title": "Participants",
+                                    "main": {
+                                        "_ref": "${refid}0",
+                                        "_order": 0,
+                                        "_nonEditable": true,
+                                        "_title": "Participants"
+                                    }
+                                }
+                            },
+                            "${refid}0": {
+                                "page": "<img id='widget_participants_${refid}1' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/participants/images/participants.png' data-mce-src='/devwidgets/participants/images/participants.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br><p></p>"
+                            },
+                            "${refid}1": {
+                                "participants": {
+                                    "groupid": "${groupid}"
+                                }
+                            }
+                        },
+                        "${pid}1": {
+                            "structure0": {
+                                "about": {
+                                    "_ref": "${refid}2",
+                                    "_order": 0,
+                                    "_title": "About",
+                                    "main": {
+                                        "_ref": "${refid}2",
+                                        "_order": 0,
+                                        "_title": "About"
+                                    }
+                                }
+                            },
+                            "${refid}2": {
+                                "page": "<h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>About</span><br></h1><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);'><img src='http://www.eng.cam.ac.uk/admissions/images/yr2a.jpg' alt='2nd year lab' class='pic_right block_image_right' style='border: 1px solid rgb(204, 102, 51); margin: 0px 0px 5px 8px; float: right;' align='right' height='119' width='183'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Nulla vehicula sodales sollicitudin. Praesent id diam arcu, tristique auctor sem. Pellentesque non porta lacus. Morbi molestie mauris sed justo vehicula vulputate. Aliquam erat volutpat. Integer placerat tempor nisl id auctor. Vestibulum ac velit in dolor pharetra elementum. Aenean viverra dapibus felis eget cursus. Maecenas suscipit tincidunt vestibulum.<br><br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana, Arial, Helvetica, sans-serif; font-size: small; color: #000000;'><br><meta charset='utf-8'><span class='Apple-style-span' style='line-height: normal; font-size: medium;'></span></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>When</span><br></h1><p>E.g. Every Tuesday and Thursday from 1.30 pm until 5.30 pm,<br>or Group 1, 2 and 3 on Tuesdays, Group 4 and 5 on Thursdays.<br>To determine your timeslot, please have a look at 'Schedule'.<br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);'><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Where</span><br></h1><p style=''>E.g. Austin Building, Room 1 <br>XXX College<br></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}3' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Contact</span><br></h1><p style=''>Supervisors' First and Last Name<br>E.g. Austin Building, Room 1 <br>XXX College<br><span style='color: rgb(128, 128, 128);'><em>(to deliver your homework or to ask urgent questions)</em></span><br></p><p style=''>Mobile: 0123 456 789<br><span style='color: rgb(128, 128, 128);'><em>(if you ever need me in a hurry)</em></span><br><br><br></p><p><br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);'><br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);'>&nbsp;<br><br></p>"
+                            },
+                            "${refid}3": {
+                                "embedcontent": {
+                                    "embedmethod": "original",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": false,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319194856146,
+                                        "_id": "82fEEPvTEeCQ2wzTfwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319194856146,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ifcXiOOo9E",
+                                        "_path": "ioIcyhk1A/id4316837/embedcontent/items"
+                                    }
+                                }
+                            }
+                        },
+                        "${pid}2": {
+                            "structure0": {
+                                "guidelines-for-supervisors": {
+                                    "_ref": "${refid}4",
+                                    "_order": 1,
+                                    "_title": "Guidelines-for-supervisors",
+                                    "main": {
+                                        "_ref": "${refid}4",
+                                        "_order": 1,
+                                        "_title": "Guidelines-for-supervisors"
+                                    }
+                                }
+                            },
+                            "${refid}4": {
+                                "page": "<p><img src='/devwidgets/remotecontent/images/remotecontent.png' id='widget_remotecontent_${refid}5' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' border='1'></p><p></p><p></p><p></p>"
+                            },
+                            "${refid}5": {
+                                "remotecontent": {
+                                    "width_unit": "%",
+                                    "height": "650",
+                                    "width": "100",
+                                    "border_color": "cccccc",
+                                    "url": "http://www.eng.cam.ac.uk/teaching/teachoff/NewSupsGuide.html",
+                                    "border_size": 0
+                                }
+                            }
+                        },
+                        "${pid}3": {
+                            "structure0": {
+                                "schedule": {
+                                    "_ref": "${refid}6",
+                                    "_order": 2,
+                                    "_title": "Schedule",
+                                    "main": {
+                                        "_ref": "${refid}6",
+                                        "_order": 2,
+                                        "_title": "Schedule"
+                                    }
+                                }
+                            },
+                            "${refid}6": {
+                                "page": "<p>Please sign up for supervisions below by choosing 'Edit page', then replacing '&lt;names&gt;' with your name(s), then choosing 'Save'.<br><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Title Session 1 </span><br></h1><p><strong><br>When:</strong> Tuesday X Month, 20XX<br><strong>Where:</strong> at Austin Building, Room 1, XXX College</p><table style='width: 706px; height: 101px; border: 1px solid rgb(141, 144, 141);' frame='border' rules='all' border='1'><tbody><tr><td><strong>Timeslot</strong><br data-mce-bogus='1'></td><td><strong>Your names</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br data-mce-bogus='1'></td></tr><tr><td>1:30 pm<br data-mce-bogus='1'></td><td>&lt;names&gt;<br data-mce-bogus='1'></td></tr><tr><td>2:30 pm</td><td>&lt;names&gt;</td></tr><tr><td>3:30 pm</td><td>&lt;names&gt;</td></tr><tr><td>4:30 pm</td><td>&lt;names&gt;</td></tr></tbody></table><p><br><br><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Title Session 2</span><br></h1><p><strong><br>When:</strong> Tuesday X Month, 20XX<br><strong>Where:</strong> at Austin Building, Room 1, XXX College<br></p><table style='width: 706px; height: 101px; border: 1px solid rgb(141, 144, 141);' frame='border' rules='all' border='1'><tbody><tr><td><strong>Timeslot</strong><br data-mce-bogus='1'></td><td><strong>Your names</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br data-mce-bogus='1'></td></tr><tr><td>1:30 pm<br data-mce-bogus='1'></td><td>&lt;names&gt;<br data-mce-bogus='1'></td></tr><tr><td>2:30 pm</td><td>&lt;names&gt;</td></tr><tr><td>3:30 pm</td><td>&lt;names&gt;</td></tr><tr><td>4:30 pm</td><td>&lt;names&gt;</td></tr></tbody></table><p><br></p><p><br><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Comments &amp; Questions</span><br></h1><p>If you have any comments or questions about arranging the time slots, you can ask them here.<br><br><img id='widget_comments_${refid}7' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><p><br><br></p>"
+                            },
+                            "${refid}7": {
+                                "comments": {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5,
+                                    "message": {
+                                        "sling:resourceType": "sakai/messagestore",
+                                        "_created": 1319195243501,
+                                        "_id": "2kmZ0PvUEeCQ2wzTfwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319195243501,
+                                        "_createdBy": "exporttemplate",
+                                        "_path": "ioIcqViQaa/id57517877/comments/message"
+                                    }
+                                }
+                            }
+                        },
+                        "${pid}4": {
+                            "structure0": {
+                                "session1": {
+                                    "_ref": "${refid}8",
+                                    "_order": 3,
+                                    "_title": "Title Session 1",
+                                    "main": {
+                                        "_ref": "${refid}8",
+                                        "_order": 0,
+                                        "_title": "Title Session 1"
+                                    }
+                                },
+                                "session2": {
+                                    "_ref": "${refid}14",
+                                    "_order": 3,
+                                    "_title": "Title Session 2",
+                                    "main": {
+                                        "_ref": "${refid}14",
+                                        "_order": 0,
+                                        "_title": "Title Session 2"
+                                    }
+                                },
+                                "session3": {
+                                    "_ref": "${refid}20",
+                                    "_order": 3,
+                                    "_title": "Title Session 3",
+                                    "main": {
+                                        "_ref": "${refid}20",
+                                        "_order": 0,
+                                        "_title": "Title Session 3"
+                                    }
+                                }
+                            },
+                            "${refid}8": {
+                                "page": "<h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>&lt;Title Session 1&gt; (e.g. Paper/Set of questions of that paper etc) </span><br></h1><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><br><br></p><table class='mceItemTable' style='background-color: rgb(232, 241, 248); width: 699px; height: 138px;' border='0'><tbody><tr><td style='padding-left: 30px;'><strong>When:</strong> Tuesday X Month, 20XX<br><br><strong>Where:</strong> at Austin Building, Room 1, XXX College<br><br><strong>Times:</strong> cf. 'Schedule'<br><br><strong>Prerequisites:</strong> Bring Handbook XXX, Make sure you've read 1.1 (p5-15)</td></tr></tbody></table><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><br><br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Nulla vehicula sodales sollicitudin. Praesent id diam arcu, tristique auctor sem. Pellentesque non porta lacus. Morbi molestie mauris sed justo vehicula vulputate. Aliquam erat volutpat. Integer placerat tempor nisl id auctor. Vestibulum ac velit in dolor pharetra elementum. Aenean viverra dapibus felis eget cursus. Maecenas suscipit tincidunt vestibulum.<br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><img id='widget_embedcontent_${refid}9' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Homework for &lt;Title session 1&gt;</span><br></h1><p><br><br>Answer questions 7 and 8 from the past papers, and complete the C section of the practical exam. <br>Please hand in work by Xday, 10 pm at my college (don't forget to mention my name to the porter), or email it to me by that same time.<br><br> <br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Related Materials</span><br></h1><p style=''><br><br><span style='color: rgb(128, 128, 128); font-size: large;'>Related Lecture Notes</span><br><br></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}10' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><p style=''><span style='color: rgb(32, 89, 141);'></span><span style='color: rgb(128, 128, 128); font-size: large;'>Past exam papers</span><span style='color: rgb(32, 89, 141);'><br><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}11' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><p style=''><span style='color: rgb(32, 89, 141);'></span><span style='color: rgb(128, 128, 128); font-size: large;'>Other Useful Information<br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}12' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><span style='color: rgb(128, 128, 128); font-size: large;' data-mce-style='color: #808080; font-size: large;'><br></span></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Comments &amp; Questions</span><br></h1><p>If you have any comments or questions about the exam papers or homework, you can mention them here.<br><br></p><p style='' data-mce-style=''><img id='widget_comments_${refid}13' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><p><br></p>"
+                            },
+                            "${refid}9": {
+                                "embedcontent": {
+                                    "embedmethod": "original",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": false,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319211428841,
+                                        "_id": "iYB9kPv6EeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319211428841,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/iomSvowpaa",
+                                        "_path": "ioIcm12iaa/id2582837/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}10": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319198495291,
+                                        "_id": "bIFgsPvcEeCQ2wzTfwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319198495291,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/if3tdfegJ",
+                                        "_path": "ioIcm12iaa/id1166976/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}11": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319198538731,
+                                        "_id": "hmXLsPvcEeCQ2wzTfwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319198538731,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/if3M8Dc70",
+                                        "_path": "ioIcm12iaa/id1158040/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}12": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319198588073,
+                                        "_id": "o87JkPvcEeCQ2wzTfwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319198588073,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilWoDpYQ2",
+                                        "_path": "ioIcm12iaa/id5856020/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}13": {
+                                "comments": {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5,
+                                    "message": {
+                                    }
+                                }
+                            },
+                            "${refid}14": {
+                                "page": "<h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>&lt;Title Session 2&gt; (e.g. Paper/Set of questions of that paper etc) </span><br></h1><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><br><br></p><table class='mceItemTable' style='background-color: rgb(232, 241, 248); width: 699px; height: 138px;' border='0'><tbody><tr><td style='padding-left: 30px;'><strong>When:</strong> Thursday X Month, 20XX<br><br><strong>Where:</strong> at Austin Building, Room 1, XXX College<br><br><strong>Times:</strong> cf. 'Schedule'<br><br><strong>Prerequisites:</strong> Bring Handbook XXX, Make sure you've read 1.2 (p15-25)</td></tr></tbody></table><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><br><br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Nulla vehicula sodales sollicitudin. Praesent id diam arcu, tristique auctor sem. Pellentesque non porta lacus. Morbi molestie mauris sed justo vehicula vulputate. Aliquam erat volutpat. Integer placerat tempor nisl id auctor. Vestibulum ac velit in dolor pharetra elementum. Aenean viverra dapibus felis eget cursus. Maecenas suscipit tincidunt vestibulum.</p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><img id='widget_embedcontent_${refid}15' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);'><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Homework for &lt;Title session 2&gt;</span><br></h1><p><br><br>Answer questions 9 and 10 from the past papers, and complete the D section of the practical exam. <br>Please hand in work by Xday, 10 pm at my college (don't forget to mention my name to the porter), or email it to me by that same time.<br><br><strong>Extra question to discuss with your group members:</strong><br><br>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie? <br><br> <br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Related Materials</span><br></h1><p style=''><br><br><span style='color: rgb(128, 128, 128); font-size: large;'>Related Lecture Notes</span><br><br></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}16' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br><span style='color: rgb(32, 89, 141);' data-mce-style='color: #20598d;'></span></p><p style=''><span style='color: rgb(32, 89, 141);'></span><span style='color: rgb(128, 128, 128); font-size: large;'>Past exam papers</span><br></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}17' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><span style='color: rgb(32, 89, 141);' data-mce-style='color: #20598d;'><br></span></p><p style=''><span style='color: rgb(32, 89, 141);'></span><span style='color: rgb(128, 128, 128); font-size: large;'>Other Useful Information<br><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><span style='color: rgb(128, 128, 128); font-size: large;' data-mce-style='color: #808080; font-size: large;'><img id='widget_embedcontent_${refid}18' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><br><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Comments &amp; Questions</span><br></h1><p>If you have any comments or questions about the exam papers or homework, you can mention them here.<br><br></p><p style=''><img id='widget_comments_${refid}19' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br><br></p><p><br></p>"
+                            },
+                            "${refid}15": {
+                                "embedcontent": {
+                                    "embedmethod": "original",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": false,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319201439389,
+                                        "_id": "R1MU0PvjEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319201439389,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/il95OV9cH",
+                                        "_path": "ioIcm12iaa/id2885827/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}16": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319201473322,
+                                        "_id": "W4zYoPvjEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319201473322,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ile50swEV",
+                                        "_path": "ioIcm12iaa/id2505989/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}17": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319201535951,
+                                        "_id": "gOFF8PvjEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319201535951,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/if3M8Dc70",
+                                        "_path": "ioIcm12iaa/id8004247/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}18": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319201588163,
+                                        "_id": "oAAxMPvjEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319201588163,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilWoDpYQ2",
+                                        "_path": "ioIcm12iaa/id7101562/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}19": {
+                                "comments": {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5,
+                                    "message": {
+                                    }
+                                }
+                            },
+                            "${refid}20": {
+                                "page": "<h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>&lt;Title Session 3&gt; (e.g. Paper/Set of questions of that paper etc) </span><br></h1><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><br><br></p><table class='mceItemTable' style='background-color: rgb(232, 241, 248); width: 699px; height: 138px;' border='0'><tbody><tr><td style='padding-left: 30px;'><strong>When:</strong> Tuesday X Month, 20XX<br><br><strong>Where:</strong> at Austin Building, Room 1, XXX College<br><br><strong>Times:</strong> cf. 'Schedule'<br><br><strong>Prerequisites:</strong> Bring Handbook XXX, Make sure you've read 1.3 (p25-36)</td></tr></tbody></table><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><br><br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo dignissim quam ac fermentum. Quisque aliquam tristique mi at molestie. Mauris vitae sapien mauris. Ut pulvinar sapien lorem, eu auctor sem. Nulla vehicula sodales sollicitudin. Praesent id diam arcu, tristique auctor sem. Pellentesque non porta lacus. Morbi molestie mauris sed justo vehicula vulputate. Aliquam erat volutpat. Integer placerat tempor nisl id auctor. Vestibulum ac velit in dolor pharetra elementum. Aenean viverra dapibus felis eget cursus. Maecenas suscipit tincidunt vestibulum.<br><br><br></p><p style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(0, 0, 0);' data-mce-style='font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: #000000;'><img id='widget_embedcontent_${refid}21' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br><br><span class='Apple-style-span' style='line-height: normal; font-size: medium;' data-mce-style='line-height: normal; font-size: medium;'></span></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Homework for &lt;Title session 3&gt;</span><br></h1><p><br><br>Answer questions 3 and 4 from the past papers, and complete the A section of the practical exam. <br>Please hand in work by Xday, 10 pm at my college (don't forget to mention my name to the porter), or email it to me by that same time.<br><br> <br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Related Materials</span><br></h1><p style=''><br><br><span style='color: rgb(128, 128, 128); font-size: large;'>Related Lecture Notes</span><br><br></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}22' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><p style=''><span style='color: rgb(32, 89, 141);'></span><span style='color: rgb(128, 128, 128); font-size: large;'>Past exam papers</span><span style='color: rgb(32, 89, 141);'><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}23' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><p style=''><span style='color: rgb(32, 89, 141);'></span><span style='color: rgb(128, 128, 128); font-size: large;'>Other Useful Information<br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><img id='widget_embedcontent_${refid}24' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/embedcontent/images/content.png' data-mce-src='devwidgets/embedcontent/images/content.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><span style='color: rgb(128, 128, 128); font-size: large;' data-mce-style='color: #808080; font-size: large;'><br></span></p><p style='padding-left: 30px;' data-mce-style='padding-left: 30px;'><span style='color: rgb(32, 89, 141);' data-mce-style='color: #20598d;'></span><br><br></p><h1 style='font-family: Arial,Helvetica,sans-serif; font-size: 21px; font-weight: bold; color: rgb(204, 102, 51); border-bottom: thin dotted rgb(204, 204, 204); padding: 0px 0px 3px;'><span style='color: rgb(29, 95, 144);'>Comments &amp; Questions</span><br></h1><p>If you have any comments or questions about the exam papers or homework, you can mention them here.<br><br></p><p style='' data-mce-style=''><img id='widget_comments_${refid}25' class='widget_inline' style='display: block; padding: 10px; margin: 4px;' src='/devwidgets/comments/images/comments.png' data-mce-src='devwidgets/comments/images/comments.png' data-mce-style='display: block; padding: 10px; margin: 4px;' border='1'><br></p><p><br></p>"
+                            },
+                            "${refid}21": {
+                                "embedcontent": {
+                                    "embedmethod": "original",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": false,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319201737787,
+                                        "_id": "-S8AsPvjEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319201737787,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilecQq6aa",
+                                        "_path": "ioIcm12iaa/id8214394/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}22": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319201774602,
+                                        "_id": "DyCGoPvkEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319201774602,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilecyUEaa",
+                                        "_path": "ioIcm12iaa/id9189170/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}23": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319201802878,
+                                        "_id": "H_sZ4PvkEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319201802878,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/if3M8Dc70",
+                                        "_path": "ioIcm12iaa/id4396756/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}24": {
+                                "embedcontent": {
+                                    "embedmethod": "thumbnail",
+                                    "sakai:indexed-fields": "title,description",
+                                    "download": false,
+                                    "sling:resourceType": "sakai/widget-data",
+                                    "title": "",
+                                    "details": false,
+                                    "description": "",
+                                    "name": true,
+                                    "layout": "single",
+                                    "items": {
+                                        "_created": 1319201835542,
+                                        "_id": "M3M7YPvkEeCV4eV1fwABAQ+",
+                                        "_lastModifiedBy": "exporttemplate",
+                                        "_lastModified": 1319201835542,
+                                        "_createdBy": "exporttemplate",
+                                        "__array__0__": "/p/ilWoDpYQ2",
+                                        "_path": "ioIcm12iaa/id9650702/embedcontent/items"
+                                    }
+                                }
+                            },
+                            "${refid}25": {
+                                "comments": {
+                                    "sakai:allowanonymous": false,
+                                    "sakai:type": "comment",
+                                    "direction": "comments_FirstUp",
+                                    "perPage": 5,
+                                    "message": {
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "structure": {
+                        "participants": {
+                            "_title": "Participants",
+                            "_order": 4,
+                            "_nonEditable": true,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-supervisor"
+                            ],
+                            "_edit": [
+                                "-supervisor"
+                            ],
+                            "_docref": "${pid}0"
+                        },
+                        "about": {
+                            "_title": "About",
+                            "_order": 0,
+                            "_nonEditable": false,
+                            "_view": [
+                                "anonymous",
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-supervisor"
+                            ],
+                            "_edit": [
+                                "-supervisor"
+                            ],
+                            "_docref": "${pid}1"
+                        },
+                        "guidelines-for-supervisors": {
+                            "_title": "Guidelines-for-supervisors",
+                            "_order": 1,
+                            "_nonEditable": false,
+                            "_view": [
+                                "-supervisor"
+                            ],
+                            "_edit": [
+                                "-supervisor"
+                            ],
+                            "_docref": "${pid}2"
+                        },
+                        "schedule": {
+                            "_title": "Schedule",
+                            "_order": 2,
+                            "_nonEditable": false,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-supervisor"
+                            ],
+                            "_edit": [
+                                "-student",
+                                "-supervisor"
+                            ],
+                            "_docref": "${pid}3"
+                        },
+                        "supervision-sessions": {
+                            "_title": "Supervision-Sessions",
+                            "_order": 3,
+                            "_nonEditable": false,
+                            "_view": [
+                                "everyone",
+                                "-student",
+                                "-observer",
+                                "-supervisor"
+                            ],
+                            "_edit": [
+                                "-supervisor"
+                            ],
+                            "_docref": "${pid}4"
+                        }
+                    },
+                    "joinRole": "student",
+                    "creatorRole": "supervisor"
+}
