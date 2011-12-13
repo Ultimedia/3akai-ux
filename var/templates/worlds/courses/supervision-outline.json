@@ -6,24 +6,25 @@
                     "perfectFor": "Organising supervisions, using an About section, a Schedule page, an overview of the supervision sessions and Participants. ",
                     "order": 2,
                     "roles": [
-                        {
-                            "id": "student",
-                            "roleTitle": "Students",
-                            "title": "Student",
-                            "allowManage": false
-                        },
-                        {
-                            "id": "observer",
-                            "roleTitle": "Observers",
-                            "title": "Observer",
-                            "allowManage": false
-                        },
-                        {
-                            "id": "supervisor",
-                            "roleTitle": "Supervisors",
-                            "title": "Supervisor",
-                            "allowManage": true
-                        }
+                        "{
+                            \"id\": \"student\",
+                            \"title\": \"Student\",
+                            \"titlePlural\": \"Students\",
+                            \"isManagerRole\": \"false\"
+                        }",
+                        "{
+                            \"id\": \"observer\",
+                            \"title\": \"Observer\",
+                            \"titlePlural\": \"Observers\",
+                            \"isManagerRole\": \"false\"
+                        }",
+                        "{
+                            \"id\": \"supervisor\",
+                            \"title\": \"Supervisor\",
+                            \"titlePlural\": \"Supervisors\",
+                            \"isManagerRole\": \"true\",
+                            \"manages\":[\"observer\",\"student\"]
+                        }"
                     ],
                     "docs": {
                         "${pid}0": {

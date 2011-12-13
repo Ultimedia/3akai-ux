@@ -6,24 +6,25 @@
 	                "perfectFor": "setting up your own personal website. For example: to showcase your research.",
                   "order": 1,
 	                "roles": [
-		                {
-			                "id": "websitemaint",
-			                "roleTitle": "Website maintainers",
-			                "title": "Website maintainer",
-			                "allowManage": true
-		                },
-		                {
-			                "id": "partner",
-			                "roleTitle": "Partners",
-			                "title": "Partner",
-			                "allowManage": false
-		                },
-		                {
-			                "id": "visitor",
-			                "roleTitle": "Visitors",
-			                "title": "Visitor",
-			                "allowManage": false
-		                }
+		                "{
+			                \"id\": \"websitemaint\",
+			                \"title\": \"Website maintainer\",
+			                \"titlePlural\": \"Website maintainers\",
+			                \"isManagerRole\": \"true\",
+                      \"manages\":[\"partner\",\"visitor\"]
+		                }",
+		                "{
+			                \"id\": \"partner\",
+			                \"title\": \"Partner\",
+			                \"titlePlural\": \"Partners\",
+			                \"isManagerRole\": \"false\"
+		                }",
+		                "{
+			                \"id\": \"visitor\",
+			                \"title\": \"Visitor\",
+			                \"titlePlural\": \"Visitors\",
+			                \"isManagerRole\": \"false\"
+		                }"
 	                ],
 	                "docs": {
 		                "${pid}0": {

@@ -6,18 +6,19 @@
                         "perfectFor": "",
                         "order": 1,
                         "roles": [
-                            {
-                                "id": "member",
-                                "roleTitle": "member",
-                                "title": "member",
-                                "allowManage": false
-                            },
-                            {
-                                "id": "manager",
-                                "roleTitle": "manager",
-                                "title": "manager",
-                                "allowManage": "true"
-                            }
+                            "{
+                                \"id\": \"member\",
+                                \"title\": \"member\",
+                                \"titlePlural\": \"member\",
+                                \"isManagerRole\": \"false\"
+                            }",
+                            "{
+                                \"id\": \"manager\",
+                                \"title\": \"manager\",
+                                \"titlePlural\": \"managers\",
+                                \"isManagerRole\": \"true\",
+                                \"manages\": [\"member\"]
+                            }"
                         ],
                         "docs": {
                             "${pid}0": {

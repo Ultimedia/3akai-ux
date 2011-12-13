@@ -6,30 +6,31 @@
                     "perfectFor": "Group collaborations and sharing, using sections to describe your research on it internally, to list Events and Meetings and collaborate on Funding.",
                     "order": 1,
                     "roles": [
-                        {
-                            "id": "lead",
-                            "roleTitle": "Lead",
-                            "title": "Lead",
-                            "allowManage": true
-                        },
-                        {
-                            "id": "researcher",
-                            "roleTitle": "Researchers",
-                            "title": "Researcher",
-                            "allowManage": false
-                        },
-                        {
-                            "id": "mentor",
-                            "roleTitle": "Mentors",
-                            "title": "Mentor",
-                            "allowManage": false
-                        },
-                        {
-                            "id": "observer",
-                            "roleTitle": "Observers",
-                            "title": "Observer",
-                            "allowManage": false
-                        }
+                        "{
+                            \"id\": \"lead\",
+                            \"titlePlural\": \"Leads\",
+                            \"title\": \"Lead\",
+                            \"isManagerRole\": \"true\",
+                            \"manages\":[\"researcher\",\"mentor\",\"observer\"]
+                        }",
+                        "{
+                            \"id\": \"researcher\",
+                            \"titlePlural\": \"Researchers\",
+                            \"title\": \"Researcher\",
+                            \"isManagerRole\": \"false\"
+                        }",
+                        "{
+                            \"id\": \"mentor\",
+                            \"titlePlural\": \"Mentors\",
+                            \"title\": \"Mentor\",
+                            \"isManagerRole\": \"false\"
+                        }",
+                        "{
+                            \"id\": \"observer\",
+                            \"titlePlural\": \"Observers\",
+                            \"title\": \"Observer\",
+                            \"isManagerRole\": \"false\"
+                        }"
                     ],
                     "docs": {
                         "${pid}0": {
