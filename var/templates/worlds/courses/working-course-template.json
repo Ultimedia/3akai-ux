@@ -78,7 +78,7 @@
                                         "_title": "Page 1",
                                         "_order": 0,
                                         "_ref": "${refid}3",
-                                        "_nonEditable": "false",
+                                        "_nonEditable": "false"
                                     }
                                 },
                                 "id2281431": {
@@ -90,7 +90,7 @@
                                         "_title": "Page 2",
                                         "_order": 0,
                                         "_ref": "${refid}5",
-                                        "_nonEditable": "false",
+                                        "_nonEditable": "false"
                                     }
                                 },
                                 "id2180014": {
@@ -102,7 +102,7 @@
                                         "_title": "Page 3",
                                         "_order": 0,
                                         "_ref": "${refid}6",
-                                        "_nonEditable": "false",
+                                        "_nonEditable": "false"
                                     }
                                 }
                             },
@@ -315,7 +315,7 @@
                                         "_title": "Page 1",
                                         "_order": 0,
                                         "_ref": "${refid}20",
-                                        "_nonEditable": "false",
+                                        "_nonEditable": "false"
                                     }
                                 },
                                 "id568167": {
