@@ -141,7 +141,7 @@ define(function(){
                     "url": "/categories"
                 }, {
                     "title": "VIEW_THE_INSTITUTION_WEBSITE",
-                    "url": "http://sakaiproject.org/"
+                    "url": "http://www.eng.cam.ac.uk/"
                 }, {
                     "title": "VISIT_THE_SUPPORT_FORUM",
                     "url": "http://sakaiproject.org/"
