@@ -16,7 +16,18 @@
  * specific language governing permissions and limitations under the License.
  */
 .welcome_widget .s3d-regular-links {color:#2683BC;font-size:11px;}
-.welcome_widget img {float:left;margin-right:12px;}
-.welcome_widget span {color:#424242;margin-bottom:12px;font-size:11px;}
+.welcome_widget span {color:#424242;padding-bottom:30px;font-size:11px;}
 .welcome_widget h1 {font-weight:normal;color:#424242;font-size:24px;}
-.welcome_widget h2 {font-size: 14px;font-weight:normal;color:#777;margin:5px 0 0;}
+.welcome_widget h2 {font-size: 14px;font-weight:normal;color:#777;margin:5px 0 5px 0;}
+
+.welcome_widget ul{ margin: 0 0 15px 0; }
+.welcome_widget ul li{ list-style-type: none; }
+.welcome_widget li{ margin-bottom:7px; }
+
+.welcome_widget #welcome_widget_gallery{ position:relative; min-width: 355px; min-height: 248px; display: inline-block; background:#e1e1e1; float:left; margin-right:12px; }
+.welcome_widget #welcome_widget_gallery_footer{ position:relative; height: 34px; background: url('../images/menuBar.png'); width:100%; position:absolute; bottom: 0; }
+.welcome_widget #welcome_widget_next_button{ background: url('../images/nextButton.png'); width: 36px; height: 32px; position: absolute; right: 0; cursor:pointer; display: inline-block; }
+.welcome_widget #welcome_widget_next_button:hover{ background: url('../images/nextButtonHover.png'); }
+.welcome_widget #welcome_widget_image_caption{ width: 300px; color: #fff; font-weight: bold; font-family: Arial; margin: 10px 0 0 10px; display: inline-block; overflow: hidden; }
+.welcome_widget #welcome_widget_image_caption a{ color: #fff; font-weight: bold; font-family: Arial; display: inline-block; overflow: hidden; }
+.welcome_widget #welcomeWidgetImage{ max-width: 355px; max-height: 248px; display: none; }

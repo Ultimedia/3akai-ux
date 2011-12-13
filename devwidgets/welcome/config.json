@@ -16,5 +16,10 @@
     "type":               "sakai",
     "url":                "/devwidgets/welcome/welcome.html",
     "userdashboard":      false,
-    "userpages":          false
+    "userpages":          false,
+    "defaultConfiguration": {
+        "welcomewidget": {
+            
+        }
+    }
 }

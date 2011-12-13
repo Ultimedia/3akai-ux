@@ -19,6 +19,84 @@
 // load the master sakai object to access all Sakai OAE API methods
 require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
 
+    var $welcomeWidget = $(".welcome_widget");
+    var $welcomeWidgetGalleryImage;
+    var $welcomeWidgetNextButton;
+    var $welcomeWidgetCaption;
+    var $addContentButton;
+    
+    var welcomeTemplate = "welcome_template";
+    var welcomeWidgetData = {};        
+        welcomeWidgetData.config = {};
+        
+        // timer for the gallery (milisec)
+        welcomeWidgetData.config.galleryTimer = 3000;
+
+    var renderWidget = function(){
+        $welcomeWidget.html(sakai.api.Util.TemplateRenderer(welcomeTemplate, {
+            "anon": sakai.data.me.user.anon || false,
+            "system": sakai.api.i18n.getValueForKey("SAKAI")
+        }));
+        
+        // Jquery select the main elements
+        $welcomeWidgetGalleryImage = $('#welcomeWidgetImage');
+        $welcomeWidgetGalleryLink = $('#welcomeWidgetLink');
+
+        $welcomeWidgetNextButton = $('#welcome_widget_next_button');
+        $welcomeWidgetCaption = $('#welcome_widget_image_caption');
+        
+        $addContentButton = $('#addContentLink');
+        $addContentButton.click(function(){
+            $(window).trigger("init.newaddcontent.sakai");
+            return false;
+        });
+    
+        initGallery();
+    };
+    
+    /**
+     * Load the JSON and set up the gallery
+     */
+    var initGallery = function(){
+        $welcomeWidgetNextButton.click(function(){
+            // show the next image
+            nextImage();
+        });
+        
+        $.getJSON('devwidgets/welcome/gallery/gallery.json', function(data) {
+            welcomeWidgetData.gallery = data.images;
+            welcomeWidgetData.galleryIndex = 0;
+            loadImage();
+        });    
+
+    };
+
+    /**
+     * Load an image
+     */
+    var loadImage = function(){
+        var imageObject = welcomeWidgetData.gallery[welcomeWidgetData.galleryIndex];
+
+        $welcomeWidgetGalleryLink.attr('href', imageObject.link);
+        $welcomeWidgetCaption.html('<a href="' + imageObject.link + '">' + imageObject.caption + '</a>');
+        $welcomeWidgetGalleryImage.attr('src', imageObject.url).fadeIn(1000).delay(welcomeWidgetData.config.galleryTimer).fadeOut(400, function(){
+            nextImage();
+        });
+    };
+    
+    /**
+     * Prepare the next image
+     */
+    var nextImage = function(){
+        if(welcomeWidgetData.galleryIndex === (welcomeWidgetData.gallery.length-1)){
+            welcomeWidgetData.galleryIndex = 0;
+        }else{
+            welcomeWidgetData.galleryIndex++;
+        }
+        loadImage();
+    }
+    
+   
     /**
      * @name sakai_global.welcome
      *
@@ -29,18 +107,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
      * @param {Boolean} showSettings Show the settings of the widget or not
      */
     sakai_global.welcome = function (tuid, showSettings) {
-
-        var $welcomeWidget = $(".welcome_widget");
-        var welcomeTemplate = "welcome_template";
-
-        var renderWidget = function(){
-            $welcomeWidget.html(sakai.api.Util.TemplateRenderer(welcomeTemplate, {
-                "anon": sakai.data.me.user.anon || false
-            }));
-        };
-
         renderWidget();
-
     };
 
     sakai.api.Widgets.widgetLoader.informOnLoad("welcome");
