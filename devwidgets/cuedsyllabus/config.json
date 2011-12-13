@@ -1,0 +1,23 @@
+{
+    "sakaidocs": false,
+    "ca":true,
+    "hasSettings": true,
+    "id":"cuedsyllabus",
+    "i18n": {
+        "default": {
+            "bundle":      "/devwidgets/cuedsyllabus/bundles/default.properties",
+            "description": "CUED Syllabus Widget",
+            "name":        "CUED Syllabus"
+        }
+    },
+    "img":"/devwidgets/cuedsyllabus/images/cuedsyllabus.png",
+    "type":"sakai",
+    "enabled":true,
+    "url":"/devwidgets/cuedsyllabus/cuedsyllabus.html",
+    "userpages": true,
+    "userdashboard": true,
+    "grouppages": true,
+    "groupdashboard": true,
+    "showinsakaigoodies": true,
+    "sakaidocs": true
+}
