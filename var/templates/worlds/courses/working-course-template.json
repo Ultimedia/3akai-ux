@@ -6,25 +6,9 @@
                     "perfectFor": "General course organisation, showing course topics and their syllabi, Timetables, Examples Papers, Coursework and Exam Papers.",
                     "order": 1,
                     "roles": [
-                        "{
-                            \"id\": \"ts\",
-                            \"title\": \"Teaching staff\",
-                            \"titlePlural\": \"Teaching staff\",
-                            \"isManagerRole\": \"true\",
-                            \"manages\":[\"observer\",\"student\"]
-                        }",
-                        "{
-                            \"id\": \"observer\",
-                            \"title\": \"Observer\",
-                            \"titlePlural\": \"Observers\",
-                            \"isManagerRole\": \"false\"
-                        }",
-                        "{
-                            \"id\": \"student\",
-                            \"title\": \"Student\",
-                            \"titlePlural\": \"Student\",
-                            \"isManagerRole\": \"false\"
-                        }"
+                        "{\"id\": \"ts\",\"title\": \"Teaching staff\",\"titlePlural\": \"Teaching staff\",\"isManagerRole\": \"true\",\"manages\":[\"observer\",\"student\"]}",
+                        "{\"id\": \"observer\",\"title\": \"Observer\",\"titlePlural\": \"Observers\",\"isManagerRole\": \"false\"}",
+                        "{\"id\": \"student\",\"title\": \"Student\",\"titlePlural\": \"Student\",\"isManagerRole\": \"false\"}"
                     ],
                     "docs": {
                         "${pid}0": {

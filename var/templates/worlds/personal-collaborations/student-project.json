@@ -6,25 +6,9 @@
 	                "perfectFor": "setting up and organising student projects, using an About section, a Planning section and an Interesting materials section.",
                   "order": 2,
 	                "roles": [
-		                "{
-			                \"id\": \"ts\",
-			                \"title\": \"Teaching staff\",
-			                \"titlePlural\": \"Teaching staff\",
-			                \"isManagerRole\": \"true\",
-                      \"manages\":[\"observer\",\"student\"]
-		                }",
-		                "{
-			                \"id\": \"observer\",
-			                \"title\": \"Observer\",
-			                \"titlePlural\": \"Observers\",
-			                \"isManagerRole\": \"false\"
-		                }",
-		                "{
-			                \"id\": \"student\",
-			                \"title\": \"Student\",
-			                \"titlePlural\": \"Students\",
-			                \"isManagerRole\": \"false\"
-		                }"
+		                "{\"id\": \"ts\",\"title\": \"Teaching staff\",\"titlePlural\": \"Teaching staff\",\"isManagerRole\": \"true\", \"manages\":[\"observer\",\"student\"]}",
+		                "{\"id\": \"observer\",\"title\": \"Observer\",\"titlePlural\": \"Observers\",\"isManagerRole\": \"false\"}",
+		                "{\"id\": \"student\",\"title\": \"Student\",\"titlePlural\": \"Students\",\"isManagerRole\": \"false\"}"
 	                ],
 	                "docs": {
 		                "${pid}0": {
