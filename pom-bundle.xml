@@ -21,11 +21,7 @@
   <groupId>org.sakaiproject.nakamura</groupId>
   <artifactId>org.sakaiproject.nakamura.uxloader</artifactId>
   <packaging>bundle</packaging>
-<<<<<<< HEAD:pom-bundle.xml
   <version>1.2.54.vcam_3akai-ux</version>
-=======
-  <version>1.1</version>
->>>>>>> 1.1:pom-bundle.xml
   <name>Sakai 3 UX Loader</name>
   <description>Loads the Sakai 3 UI into the JCR</description>
   <url>http://github.com/sakaiproject/3akai-ux</url>
@@ -267,11 +263,7 @@
     <dependency>
       <groupId>org.sakaiproject.nakamura</groupId>
       <artifactId>org.sakaiproject.nakamura.hashfiles</artifactId>
-<<<<<<< HEAD:pom-bundle.xml
       <version>1.2.54.vcam_3akai-ux</version>
-=======
-      <version>1.1</version>
->>>>>>> 1.1:pom-bundle.xml
     </dependency>
   </dependencies>
 </project>
