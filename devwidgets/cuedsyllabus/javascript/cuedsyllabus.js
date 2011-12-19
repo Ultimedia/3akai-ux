@@ -23,7 +23,7 @@
  * /dev/lib/misc/trimpath.template.js (TrimpathTemplates)
  */
 
-require(["jquery", "sakai/sakai.api.core", "sakai/sakai.api.widgets"], function($, sakai, sakaiWidgetsAPI) {
+require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
 
     /**
      * @name sakai_global.cuedsyllabus
@@ -82,8 +82,8 @@ require(["jquery", "sakai/sakai.api.core", "sakai/sakai.api.widgets"], function(
         ];
 
         var defaultUrl = "/var/proxy/ucam/eng_teaching?y=" +
-            sakai.api.i18n.Widgets.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR") + "&c=" +
-            sakai.api.i18n.Widgets.getValueForKey("cuedsyllabus", false, "DEFAULT_CLASS");
+            sakai.api.i18n.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR") + "&c=" +
+            sakai.api.i18n.getValueForKey("cuedsyllabus", false, "DEFAULT_CLASS");
                         
 
         ///////////////////////
@@ -182,7 +182,7 @@ require(["jquery", "sakai/sakai.api.core", "sakai/sakai.api.widgets"], function(
                     		loadresult.saneurl = json.saneurl;
                     		loadresult.cause = e;
                         	$(cuedsyllabusPreviewContainer,rootel).html(sakai.api.Util.TemplateRenderer($cuedsyllabusPreviewErrorTemplate, loadresult));
-    	                    sakai.api.Util.notification.show("", sakai.api.i18n.Widgets.getValueForKey("cuedsyllabus", false, "ERROR_LOADING_CONTENT"),
+    	                    sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("cuedsyllabus", false, "ERROR_LOADING_CONTENT"),
     	                            sakai.api.Util.notification.type.ERROR);
                     	} else{
                             displaySettings(null, false);                    		
@@ -215,7 +215,7 @@ require(["jquery", "sakai/sakai.api.core", "sakai/sakai.api.widgets"], function(
                 saveContentAjax(json);
             }
             else {
-                sakai.api.Util.notification.show("", sakai.api.i18n.Widgets.getValueForKey("cuedsyllabus", false, "PLEASE_SPECIFY_A_URL"),
+                sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("cuedsyllabus", false, "PLEASE_SPECIFY_A_URL"),
                                                  sakai.api.Util.notification.type.ERROR);
             }
         };
@@ -239,7 +239,7 @@ require(["jquery", "sakai/sakai.api.core", "sakai/sakai.api.widgets"], function(
 	                    json.saneurl = urlValue;
 	                } else {
 	                	json.saneurl = ""
-	                    sakai.api.Util.notification.show("", sakai.api.i18n.Widgets.getValueForKey("cuedsyllabus", false, "PLEASE_SPECIFY_A_URL"),
+	                    sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("cuedsyllabus", false, "PLEASE_SPECIFY_A_URL"),
 	                            sakai.api.Util.notification.type.ERROR);
 	                }
 	            });
@@ -341,7 +341,7 @@ require(["jquery", "sakai/sakai.api.core", "sakai/sakai.api.widgets"], function(
                 json = {
                     saneurl: defaultUrl,
                     remoteurl: "",
-                    option1: sakai.api.i18n.Widgets.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR"),
+                    option1: sakai.api.i18n.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR"),
                     option2: defaultUrl
                 };
             }
@@ -397,7 +397,7 @@ require(["jquery", "sakai/sakai.api.core", "sakai/sakai.api.widgets"], function(
                         json = {
                             saneurl: defaultUrl,
                             remoteurl: "",
-                            option1: sakai.api.i18n.Widgets.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR"),
+                            option1: sakai.api.i18n.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR"),
                             option2: defaultUrl
                         };
                         saveRemoteContent();
