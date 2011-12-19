@@ -438,13 +438,6 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 $('#entity_groupsettings_dropdown').jqmHide();
             });
 
-			// templateGenerator
-            $('#ew_group_export_as_template_link').click(function(e){
-				e.preventDefault();
-				$(window).trigger("init.templategenerator.sakai");
-				$('#entity_groupsettings_dropdown').jqmHide();
-            });
-
             $('#ew_upload').click(function(e){
                 e.preventDefault();
                 $(window).trigger("init.uploadnewversion.sakai");
