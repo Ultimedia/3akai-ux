@@ -15,8 +15,16 @@ if [ "${BUILD_STEP}" = "pre" ] ; then
     fi
 else
     if [ "${BUILD_STEP}" = "post" ] ; then
+        # Pushing uxloader to maven repo:
         echo "INFO: Running post build setup for version: ${VERSION}";
         NAME="org/sakaiproject/nakamura/org.sakaiproject.nakamura.uxloader"
+        URL="maven2.caret.cam.ac.uk"
+        echo "INFO: Making directory /var/www/${URL}/htdocs/${NAME}/${VERSION} on ${URL}";
+        ssh ${URL} "mkdir -p /var/www/${URL}/htdocs/${NAME}/${VERSION}";
+        echo "INFO: Synching ~/.m2/repository/${NAME}/${VERSION} to ${URL}:/var/www/${URL}/htdocs/${NAME}/";
+        rsync -av --delete ~/.m2/repository/${NAME}/${VERSION} ${URL}:/var/www/${URL}/htdocs/${NAME}/
+        # Pushing hashfiles to maven repo:
+        NAME="org/sakaiproject/nakamura/org.sakaiproject.nakamura.hashfiles"
         URL="maven2.caret.cam.ac.uk"
         echo "INFO: Making directory /var/www/${URL}/htdocs/${NAME}/${VERSION} on ${URL}";
         ssh ${URL} "mkdir -p /var/www/${URL}/htdocs/${NAME}/${VERSION}";
