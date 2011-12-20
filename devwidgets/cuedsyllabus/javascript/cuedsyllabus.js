@@ -82,8 +82,8 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
         ];
 
         var defaultUrl = "/var/proxy/ucam/eng_teaching?y=" +
-            sakai.api.i18n.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR") + "&c=" +
-            sakai.api.i18n.getValueForKey("cuedsyllabus", false, "DEFAULT_CLASS");
+            sakai.api.i18n.getValueForKey("DEFAULT_YEAR","cuedsyllabus") + "&c=" +
+            sakai.api.i18n.getValueForKey("DEFAULT_CLASS","cuedsyllabus");
                         
 
         ///////////////////////
@@ -182,7 +182,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                     		loadresult.saneurl = json.saneurl;
                     		loadresult.cause = e;
                         	$(cuedsyllabusPreviewContainer,rootel).html(sakai.api.Util.TemplateRenderer($cuedsyllabusPreviewErrorTemplate, loadresult));
-    	                    sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("cuedsyllabus", false, "ERROR_LOADING_CONTENT"),
+    	                    sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("ERROR_LOADING_CONTENT","cuedsyllabus"),
     	                            sakai.api.Util.notification.type.ERROR);
                     	} else{
                             displaySettings(null, false);                    		
@@ -197,7 +197,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
          */
         var saveRemoteContent = function(){
             var  saveContentAjax = function(json_data) {
-                var url = sakaiWidgetsAPI.widgetLoader.widgets[tuid].placement;
+            var url = sakai.api.Widgets.widgetLoader.widgets[tuid].placement;
                 $.ajax({
                     type: "POST",
                     url: url,
@@ -215,7 +215,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 saveContentAjax(json);
             }
             else {
-                sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("cuedsyllabus", false, "PLEASE_SPECIFY_A_URL"),
+                sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("PLEASE_SPECIFY_A_URL","cuedsyllabus"),
                                                  sakai.api.Util.notification.type.ERROR);
             }
         };
@@ -239,7 +239,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
 	                    json.saneurl = urlValue;
 	                } else {
 	                	json.saneurl = ""
-	                    sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("cuedsyllabus", false, "PLEASE_SPECIFY_A_URL"),
+	                    sakai.api.Util.notification.show("", sakai.api.i18n.getValueForKey("PLEASE_SPECIFY_A_URL","cuedsyllabus"),
 	                            sakai.api.Util.notification.type.ERROR);
 	                }
 	            });
@@ -341,7 +341,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                 json = {
                     saneurl: defaultUrl,
                     remoteurl: "",
-                    option1: sakai.api.i18n.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR"),
+                    option1: sakai.api.i18n.getValueForKey("DEFAULT_YEAR","cuedsyllabus"),
                     option2: defaultUrl
                 };
             }
@@ -372,7 +372,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
             // we need to interact directly with the LiteBasicLTI servlet. It's 
             // also not a recursive servlet so we can't use the default .infinity.json
             // that is used under the covers for most of the calls.
-            var url = sakaiWidgetsAPI.widgetLoader.widgets[tuid].placement + ".json";
+            var url = sakai.api.Widgets.widgetLoader.widgets[tuid].placement + ".json";
             $.ajax({
                 type: "GET",
                 url: url,
@@ -397,7 +397,7 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                         json = {
                             saneurl: defaultUrl,
                             remoteurl: "",
-                            option1: sakai.api.i18n.getValueForKey("cuedsyllabus", false, "DEFAULT_YEAR"),
+                            option1: sakai.api.i18n.getValueForKey("DEFAULT_YEAR","cuedsyllabus"),
                             option2: defaultUrl
                         };
                         saveRemoteContent();

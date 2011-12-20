@@ -98,14 +98,14 @@ require(["jquery", "sakai/sakai.api.core"], function($, sakai) {
                             "sn" : $acceptterms_sn.val()},
                      success : function(data) {
                             sakai.api.Util.notification.show($acceptterms_accepted.html(),
-                                sakai.api.i18n.getValueForKey("acceptterms","","TERMS_ACCEPTED"));
+                                sakai.api.i18n.getValueForKey("TERMS_ACCEPTED","acceptterms"));
                             if( changedUserData == "updated" ) {
                                 location.reload();
                             }
                      },
                      error : function(status) {
                             sakai.api.Util.notification.show($acceptterms_not_accepted.html(),
-                                sakai.api.i18n.getValueForKey("acceptterms","","ITEMS_NOT_ACCEPTED"));
+                                sakai.api.i18n.getValueForKey("ITEMS_NOT_ACCEPTED","acceptterms"));
                      }
                 });
                 $acceptterms_dialog.jqmHide();
