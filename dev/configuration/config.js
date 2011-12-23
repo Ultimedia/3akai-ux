@@ -144,14 +144,11 @@ define(function(){
                     "url": "http://www.eng.cam.ac.uk/"
                 }, {
                     "title": "VISIT_THE_SUPPORT_FORUM",
-                    "url": "http://sakaiproject.org/"
+                    "url": "/~help-support"
                 }],
                 getInTouch: [{
-                    "title": "SEND_US_YOUR_FEEDBACK",
-                    "url": "http://sakaiproject.org/"
-                }, {
-                    "title": "CONTACT_SUPPORT",
-                    "url": "http://sakaiproject.org/"
+                    "title": "oaepilot@caret.cam.ac.uk",
+                    "url": "mailto:oaepilot@caret.cam.ac.uk"
                 }]
             }
         },
