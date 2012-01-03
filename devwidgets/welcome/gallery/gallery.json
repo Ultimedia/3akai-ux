@@ -3,17 +3,17 @@
         {
             "url":"/devwidgets/welcome/gallery/1.jpg",
             "caption":"Photography Competition (2008 winning photo)",
-            "link":"https://l8admin.ucamoae.caret.cam.ac.uk:7070/content#p=jKgXo6Qsie/sf386_10_large.jpg"
+            "link":"/content#p=jKgXo6Qsie/sf386_10_large.jpg"
         },
         {
             "url":"/devwidgets/welcome/gallery/2.jpg",
             "caption":"Photography Competition (2007 winning photo)",
-            "link":"https://l8admin.ucamoae.caret.cam.ac.uk:7070/content#p=jKgXMU7aa/hmh33_2_large.jpg"
+            "link":"/content#p=jKgXMU7aa/hmh33_2_large.jpg"
         },
         {
             "url":"/devwidgets/welcome/gallery/3.jpg",
             "caption":"Photography Competition (2006 winning photo)",
-            "link":"https://l8admin.ucamoae.caret.cam.ac.uk:7070/content#p=jKgXCiwaa/sdh35_1_large.jpg"
+            "link":"/content#p=jKgXCiwaa/sdh35_1_large.jpg"
         }
     ]
 }

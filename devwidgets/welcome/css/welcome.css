@@ -26,7 +26,7 @@
 
 .welcome_widget #welcome_widget_gallery{ position:relative; min-width: 355px; min-height: 248px; display: inline-block; background:#e1e1e1; float:left; margin-right:12px; }
 .welcome_widget #welcome_widget_gallery_footer{ position:relative; height: 34px; background: url('../images/menuBar.png'); width:100%; position:absolute; bottom: 0; }
-.welcome_widget #welcome_widget_next_button{ background: url('../images/nextButton.png'); width: 36px; height: 32px; position: absolute; right: 0; cursor:pointer; display: inline-block; }
+.welcome_widget #welcome_widget_next_button{ background: url('../images/nextButton.png'); width: 36px; height: 32px; position: absolute; right: 0; top: 0; cursor:pointer; display: inline-block; }
 .welcome_widget #welcome_widget_next_button:hover{ background: url('../images/nextButtonHover.png'); }
 .welcome_widget #welcome_widget_image_caption{ width: 300px; color: #fff; font-weight: bold; font-family: Arial; margin: 10px 0 0 10px; display: inline-block; overflow: hidden; }
 .welcome_widget #welcome_widget_image_caption a{ color: #fff; font-weight: bold; font-family: Arial; display: inline-block; overflow: hidden; }
