@@ -1674,6 +1674,34 @@ define(["config/config"], function(config) {
         }
     };
     
+    // Footer config
+    config.Footer = {
+        leftLinks : [{
+            "title" : "__MSG__COPYRIGHT__",
+            "href" : "http://sakaiproject.org/foundation-licenses",
+            "newWindow" : true
+        }, {
+            "title" : "__MSG__HELP__",
+            "href" : "/~help-support",
+            "newWindow" : false
+        }, {
+            "title" : "__MSG__ACKNOWLEDGEMENTS__",
+            "href" : "/acknowledgements"
+        }, {
+            "title" : "__MSG__SUGGEST_AN_IMPROVEMENT__",
+            "href" : "http://sakaioae.idea.informer.com/",
+            "newWindow" : true
+        }],
+        rightLinks : [{
+            "title" : "__MSG__BROWSE__",
+            "href" : "/categories"
+        }, {
+            "title" : "__MSG__EXPLORE__",
+            "href" : "/"
+        }]
+    }
+
+    
     // Kaltura config
     if ( window.location.hostname.indexOf("prelude", 0) > -1 ) {
         config.kaltura = {
