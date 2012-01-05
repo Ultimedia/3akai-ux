@@ -1,76 +1,669 @@
-### YEAR 1 (Oct09 - Sep10)
+### ---------------------
+FFFTITLE Part IA Feedback
+### ---------------------
 
-FFFTITLE 1A Feedback 
 
-FFFMENU Lectures 
-Kinematics and Dynamics (Hunt) =hemh@eng.cam.ac.uk 
-Mechanical Vibrations (Langley) =rsl21@eng.cam.ac.uk 
-Thermofluid Mechanics (Davidson) =pad3@eng.cam.ac.uk 
-Thermofluid Mechanics (White) =ajw36@eng.cam.ac.uk 
-Structural Mechanics (Middleton) =crm@eng.cam.ac.uk 
-Structural Mechanics (Lees) =jml2@eng.cam.ac.uk 
-Materials (Shercliff) =hrs@eng.cam.ac.uk 
-Materials (Markaki) =am253@eng.cam.ac.uk 
-Materials (Fleck) =naf1@eng.cam.ac.uk 
-Phys. Principles (Wilkinson) =tdw@eng.cam.ac.uk 
-Linear Circuits (Durkan) =cd229@eng.cam.ac.uk 
-Linear Circuits (Udrea) =fu@eng.cam.ac.uk 
-Electromagnetics (Wilkinson) =tdw@eng.cam.ac.uk 
-Digital Circuits (Penty) =rvp11@eng.cam.ac.uk 
-Maths (Hynes) =tph@eng.cam.ac.uk 
-Maths (Young_JB) =jby@eng.cam.ac.uk 
-Maths (Juniper) =mpj1001@eng.cam.ac.uk 
-Maths (Wells) =gnw20@eng.cam.ac.uk 
-Maths (Prager) =rwp@eng.cam.ac.uk 
-Maths (Smith MC) =mcs@eng.cam.ac.uk 
-Dimensional Analysis (Parks) =gtp@eng.cam.ac.uk 
-Computing (Csanyi) =gc121@eng.cam.ac.uk 
-Drawing (Crilly) =nc266@eng.cam.ac.uk 
-Drawing (Long) =pjgl2@eng.cam.ac.uk 
-Drawing (Moultrie) =jm329@eng.cam.ac.uk 
-Drawing (Johnson) =alj3@eng.cam.ac.uk 
-Engineer in Society (Minshall) =thwm100@eng.cam.ac.uk 
-Product Design (Clarkson) =pjc10@eng.cam.ac.uk 
-Product Design (Crilly) =nc266@eng.cam.ac.uk 
-Engineering Applications (Long) =pjgl2@eng.cam.ac.uk 
+FFFMENU Part IA Lectures
+Kinematics and Dynamics (Cebon) =dc@eng.cam.ac.uk
+Kinematics and Dynamics (Hunt) =hemh@eng.cam.ac.uk
+Mechanical Vibrations (Langley) =rsl21@eng.cam.ac.uk
+Thermofluid Mechanics (Babinsky) =hb@eng.cam.ac.uk
+Thermofluid Mechanics (Collings) =nc@eng.cam.ac.uk
+Thermofluid Mechanics (White) =ajw36@eng.cam.ac.uk
+Structural Mechanics (DeJong) =mjd97@eng.cam.ac.uk
+Structural Mechanics (Lees) =jml2@eng.cam.ac.uk
+Materials (Shercliff) =hrs@eng.cam.ac.uk
+Materials (Markaki) =am253@eng.cam.ac.uk
+Materials (Fleck) =naf1@eng.cam.ac.uk
+Phys. Principles (Wilkinson) =tdw@eng.cam.ac.uk
+Linear Circuits (Durkan) =cd229@eng.cam.ac.uk
+Linear Circuits (Udrea) =fu@eng.cam.ac.uk
+Electromagnetics (Wilkinson) =tdw@eng.cam.ac.uk
+Digital Circuits (Penty) =rvp11@eng.cam.ac.uk
+Maths (Davidson) =pad3@eng.cam.ac.uk
+Maths (Juniper) =mpj1001@eng.cam.ac.uk
+Maths (Longley) =jpl@eng.cam.ac.uk
+Maths (Wells) =gnw20@eng.cam.ac.uk
+Maths (Prager) =rwp@eng.cam.ac.uk
+Maths (Smith MC) =mcs@eng.cam.ac.uk
+Dimensional Analysis (Parks) =gtp@eng.cam.ac.uk
+Computing (Csanyi) =gc121@eng.cam.ac.uk
+Drawing (Crilly) =nc266@eng.cam.ac.uk
+Drawing (Long) =pjgl2@eng.cam.ac.uk
+Drawing (Moultrie) =jm329@eng.cam.ac.uk
+Drawing (Johnson) =alj3@eng.cam.ac.uk
+Engineer in Society (Minshall) =thwm100@eng.cam.ac.uk
+Product Design (Clarkson) =pjc10@eng.cam.ac.uk
+Product Design (Crilly) =nc266@eng.cam.ac.uk
+Engineering Applications (Long) =pjgl2@eng.cam.ac.uk
 
-FFFMENU Coursework 
-Computing =tpl@eng.cam.ac.uk 
-Drawing =alj3@eng.cam.ac.uk 
-Dim. Analysis (Fluids) =gtp@eng.cam.ac.uk 
-Dim. Analysis (Structures) =cjb@eng.cam.ac.uk 
-Elect. Instrumentation =ajf@eng.cam.ac.uk 
-Microprocessors =twd20@eng.cam.ac.uk 
-Exposition =dc135@eng.cam.ac.uk 
-Statics Exp. =cjb@eng.cam.ac.uk 
-Struc. Design Proj. =crm11@cam.ac.uk 
-Electrical =ajf@eng.cam.ac.uk 
-Information = sss40@eng.cam.ac.uk 
-Materials =am253@eng.cam.ac.uk 
-Mechanics =gnw20@eng.cam.ac.uk 
-Structures =fc286@eng.cam.ac.uk 
-Thermo/Fluids =jby@eng.cam.ac.uk 
-Engine Strip =gtp@eng.cam.ac.uk 
-Workshop Skills =gtp@eng.cam.ac.uk 
-Computer Build =tdw@eng.cam.ac.uk 
-Language (French) =cd237@eng.cam.ac.uk 
-Language (German) =cd237@eng.cam.ac.uk 
-Language (Japanese) =cd237@eng.cam.ac.uk 
-Language (Spanish) =cd237@eng.cam.ac.uk 
+FFFMENU Part IA Coursework
+Lego Mindstorms =ahg@eng.cam.ac.uk
+Computing =tpl@eng.cam.ac.uk
+Drawing =alj3@eng.cam.ac.uk
+Dim. Analysis (Fluids) =gtp@eng.cam.ac.uk
+Dim. Analysis (Structures) =fam@eng.cam.ac.uk
+Microprocessors =gmt11@eng.cam.ac.uk
+Exposition =dc135@eng.cam.ac.uk
+Statics Exp. =jml2@eng.cam.ac.uk
+Struc. Design Proj. =rc488@cam.ac.uk
+Int. Elec. Proj. =tjf@eng.cam.ac.uk
+Electrical =ajf@eng.cam.ac.uk
+Information = ajf@eng.cam.ac.uk
+Materials =am253@eng.cam.ac.uk
+Mechanics =djc13@eng.cam.ac.uk
+Structures =fc286@eng.cam.ac.uk
+Thermo/Fluids =em257@eng.cam.ac.uk
+Engine Strip =gtp@eng.cam.ac.uk
+Workshop Skills =gtp@eng.cam.ac.uk
+Computer Build =tdw@eng.cam.ac.uk
+Language (French) =cd237@eng.cam.ac.uk
+Language (German) =cd237@eng.cam.ac.uk
+Language (Japanese) =cd237@eng.cam.ac.uk
+Language (Spanish) =cd237@eng.cam.ac.uk
 
-FFFMENU Education 
-Study Skills =hrs@eng.cam.ac.uk 
-Exams Skills =hrs@eng.cam.ac.uk 
-Examples Classes =hrs@eng.cam.ac.uk 
-Lab. Experiments =rsc10@eng.cam.ac.uk 
-Supervisions =hrs@eng.cam.ac.uk 
-Exams =hrs@eng.cam.ac.uk 
-Computing =tpl@eng.cam.ac.uk 
-Computing help =sjm@eng.cam.ac.uk 
-Course as a Whole =hrs@eng.cam.ac.uk 
+FFFMENU Part IA Education
+Study Skills =hrs@eng.cam.ac.uk
+Exams Skills =hrs@eng.cam.ac.uk
+Examples Classes =hrs@eng.cam.ac.uk
+Lab. Experiments =rsc10@eng.cam.ac.uk
+Supervisions =hrs@eng.cam.ac.uk
+Exams =hrs@eng.cam.ac.uk
+Computing =tpl@eng.cam.ac.uk
+Course as a Whole =hrs@eng.cam.ac.uk
 
-FFFMENU General 
-Cycling Facilities =rmt23@eng.cam.ac.uk 
-CUES =chairman@cues.org.uk 
-SSJC = hrs@eng.cam.ac.uk 
-Unclassifiable =hrs@eng.cam.ac.uk 
+FFFMENU Part IA General
+CUES =chairman@cues.org.uk
+SSJC = hrs@eng.cam.ac.uk
+Unclassifiable =hrs@eng.cam.ac.uk
+
+### ---------------------
+FFFTITLE Part IB Feedback
+### ---------------------
+
+FFFMENU Part IB Lectures
+Mechanics (Cebon) =dc@eng.cam.ac.uk
+Structures (Guest SD) =sdg@eng.cam.ac.uk
+Materials (Sutcliffe) =mpfs@eng.cam.ac.uk
+Materials (McShane) =gjm31@eng.cam.ac.uk
+Thermofluid Mechanics (Juniper) =mpj1001@eng.cam.ac.uk
+Thermofluid Mechanics (Miller) =rjm76@eng.cam.ac.uk
+Thermofluid Mechanics (Scott) =sas37@eng.cam.ac.uk
+Linear Circuits & Devices (McMahon) =ram1@eng.cam.ac.uk
+Electrical Power (Coombs) =tac1000@cam.ac.uk
+Electromagnetic Fields & Waves (Ferrari) =acf26@eng.cam.ac.uk
+Linear Systems & Control (Vinnicombe) =gv@eng.cam.ac.uk
+Fourier Trans./Sig. & Data Analysis (Godsill) =sjg@eng.cam.ac.uk
+Communications (Fabregas) =ag495@eng.cam.ac.uk
+Vector Calculus (Woodhouse) =jw12@eng.cam.ac.uk
+Linear Algebra (Hynes) =tph@eng.cam.ac.uk
+Probability (Rasmussen) =cer54@eng.cam.ac.uk
+Engineering Applications (Long) =pjgl2@eng.cam.ac.uk
+Intro. Business Economics (Kitson) =mk24@cam.ac.uk
+Elective - Aerothermal (Pullan) =gp10006@eng.cam.ac.uk
+Elective - Aerothermal (Hall CA) =cah1003@eng.cam.ac.uk
+Elective - Mechanical (Symons) =dds11@eng.cam.ac.uk
+Elective - Mechanical (Sutcliffe) =mpfs@eng.cam.ac.uk
+Elective - Mechanical (Flack) =tjf@eng.cam.ac.uk
+Elective - Civil (Mair) =rjm50@eng.cam.ac.uk
+Elective - Civil (Burgoyne) =cjb@eng.cam.ac.uk
+Elective - Information (Cipolla) =cipolla@eng.cam.ac.uk
+Elective - Information (Ghahramani) =zg201@cam.ac.uk
+Elective - Information (Kingsbury) =ngk@eng.cam.ac.uk
+Elective - Electrical (Milne) =wim@eng.cam.ac.uk
+Elective - Electrical (Robertson J) =jr@eng.cam.ac.uk
+Elective - Eng. for Life Sciences (Wolpert) =wolpert@eng.cam.ac.uk
+Elective - Eng. for Life Sciences (Lengyel) =ml468@eng.cam.ac.uk
+Elective - Eng. for Life Sciences (Sutcliffe) =mpfs@eng.cam.ac.uk
+Elective - Manufacturing (Hutchings) =imh2@eng.cam.ac.uk
+Elective - Manufacturing (Minshall) =thwm100@eng.cam.ac.uk
+Elective - Manufacturing (Moultrie) =jm329@eng.cam.ac.uk
+
+
+FFFMENU Part IB Coursework
+Computing (Matlab) =sss40@eng.cam.ac.uk
+Computing (C++) =cipolla@eng.cam.ac.uk
+Electrical (all) =dmh@eng.cam.ac.uk
+Thermofluids (Peltier) =lpx1@eng.cam.ac.uk
+Thermofluids (Pipe flow) =pgt23@eng.cam.ac.uk
+Thermofluids (B. Layer) =lpx1@eng.cam.ac.uk
+Thermofluids (Heat trans.) =lpx1@eng.cam.ac.uk
+Information (Spec. Analysis) =jl@eng.cam.ac.uk
+Information (Control) =gv@eng.cam.ac.uk
+Materials (Steels) =pwrb@eng.cam.ac.uk
+Materials characterisation =gjm31@eng.cam.ac.uk
+Materials (Torsion) =gjm31@eng.cam.ac.uk
+Mechanics (Rotor dynamics) =alj3@eng.cam.ac.uk
+Structures (Plas. collapse) =sdg@eng.cam.ac.uk
+Int. CW (Vibration absorber) =alj3@eng.cam.ac.uk
+Int. CW (Model structures) =fam@eng.cam.ac.uk
+Int. CW (Soil mechanics)=skh20@eng.cam.ac.uk
+Int. CW (Signals) =jl@eng.cam.ac.uk
+Int. Coursework (overall) =hrs@eng.cam.ac.uk
+Integrated Design Project =jmrm@eng.cam.ac.uk
+Workshop Skills =gtp@eng.cam.ac.uk
+Computer Build =tdw@eng.cam.ac.uk
+Language (French) =cd237@eng.cam.ac.uk
+Language (German) =cd237@eng.cam.ac.uk
+Language (Japanese) =cd237@eng.cam.ac.uk
+Language (Spanish) =cd237@eng.cam.ac.uk
+
+
+FFFMENU Part IB Education
+Exam Skills =hrs@eng.cam.ac.uk
+Examples Classes =hrs@eng.cam.ac.uk
+Lab. Experiments =ram1@eng.cam.ac.uk
+Supervisions =hrs@eng.cam.ac.uk
+Exams =hrs@eng.cam.ac.uk
+Computing =tpl@eng.cam.ac.uk
+Course as a Whole =hrs@eng.cam.ac.uk
+
+
+FFFMENU Part IB General
+Cycling Facilities =rmt23@eng.cam.ac.uk
+CUES =chairman@cues.org.uk
+SSJC =hrs@eng.cam.ac.uk
+Unclassifiable =hrs@eng.cam.ac.uk
+
+### ---------------------
+FFFTITLE Part IIA Feedback
+### ---------------------
+
+### Part IIA Lectures
+
+FFFMENU Part IIA Group A: Energy, Fluid Mechanics and Turbomachinery
+3A1 Flow Measurement (Babinsky) =hb@eng.cam.ac.uk
+3A1 Incompressible Flow (Hynes) =tph@eng.cam.ac.uk
+3A1 Boundary Layer Flows (Dawson) =jrd37@eng.cam.ac.uk
+3A1 Applications to External Flows (Dawes) =wnd@eng.cam.ac.uk
+3A3 One-dimensional Compressible Flow (Cant) =rsc10@eng.cam.ac.uk
+3A3 Two-dimensional Compressible Flow (Jarrett) =jpj1001@eng.cam.ac.uk
+3A3 Eqns. of Fluid Flow/Numerical Soln. (Cant) =rsc10@eng.cam.ac.uk
+3A3 Turbomachinery (Longley) =jpl@eng.cam.ac.uk
+3A5 Thermo./Power Generation (Young) =jby@eng.cam.ac.uk
+3A5 Steam Cycles & Gas Turbines (Hall) =cah1003@cam.ac.uk
+3A6 Conduction and Radiation (Hochgreb) =sh372@eng.cam.ac.uk
+3A6 Convective Heat & Mass Transfer (Swaminathan) =ns341@eng.cam.ac.uk
+3A6 Convective Heat & Mass Transfer (Atkins) =nra27@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Group B: Electrical Engineering
+3B1 Radio Frequency Electronics (Robertson P) =par10@eng.cam.ac.uk
+3B2 Integrated Digital Electronics (Udrea) =fu@eng.cam.ac.uk
+3B2 Integrated Digital Electronics (Holburn) =dmh@eng.cam.ac.uk
+3B3 Switch-Mode Electronics (Palmer) =prp@eng.cam.ac.uk
+3B4 Electric Drive Systems (Palmer) =prp@eng.cam.ac.uk
+3B5 Semiconductor Engineering (Migliorato) =pm@eng.cam.ac.uk
+3B5 Semiconductor Engineering (Hofmann) =sh315@eng.cam.ac.uk
+3B6 Photonic Technology (White) =ihw3@eng.cam.ac.uk
+3B6 Photonic Technology (Penty) =rvp11@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Group C: Mechanics, Materials and Design
+3C1 Materials Processing & Design (Barlow) =cyb@eng.cam.ac.uk
+3C1 Materials Processing & Design (Shercliff) =hrs@eng.cam.ac.uk
+3C1 Materials Processing & Design (Hutchings) =imh2@eng.cam.ac.uk
+3C5 Rigid-body Dynamics (Hunt) =hemh@eng.cam.ac.uk
+3C5 Lagrangian Mechanics (Langley) =rsl21@eng.cam.ac.uk
+3C6 Vibration - Continuous Systems (Langley) =rsl21@eng.cam.ac.uk
+3C6 Vibration - Discrete Systems (Cebon) =dc@eng.cam.ac.uk
+3C7 Two-Dimensional Elasticity (Guest) =sdg@eng.cam.ac.uk
+3C7 Torsion, Stress Functions & Plasticity (Deshpande) =vsd@eng.cam.ac.uk
+3C8 Machine Design (Cole) =djc13eng.cam.ac.uk
+3C8 Machine Design (Sutcliffe) =mpfs@eng.cam.ac.uk
+3C9 Fracture Mechanics (Fleck) =naf1@eng.cam.ac.uk
+3C9 Fracture Mechanics (Deshpande) =vsd@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Group D: Civil, Structural and Environmental Engineering
+3D1 Geotechnical Engineering I (Bolton) =mdb@eng.cam.ac.uk
+3D1 Geotechnical Engineering I (Haigh) =skh20@eng.cam.ac.uk
+3D2 Geotechnical Engineering II (Soga) =ks@eng.cam.ac.uk
+3D2 Geotechnical Engineering II (Mair) =rjm50@eng.cam.ac.uk
+3D3 Struc. Mats. & Design (Overend) =mo318@eng.cam.ac.uk
+3D4 Elastic Theory (Cirak) =fc286@eng.cam.ac.uk
+3D4 Stability & Buckling (McRobie) =fam@eng.cam.ac.uk
+3D5 Hydrology (McRobie) =fam@eng.cam.ac.uk
+3D5 Free Surface Flow & Water Treatment (Liang) =dl359@eng.cam.ac.uk
+3D6 Environmental Engineering (Al-Tabbaa) =aa22@eng.cam.ac.uk
+3D7 Finite Element Methods (Wells) =gnw20@eng.cam.ac.uk
+3D7 Finite Element Methods (Cirak) =fc286@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Group E: Management and Manufacturing
+3E1 Business Economics (Kitson) =mk24@cam.ac.uk
+3E1 Business Economics (Faulkner) =pbf1000@cam.ac.uk
+3E2 Marketing (Mak) =wsvm1@cam.ac.uk
+3E3 Modelling Risk (Oriaopoulos) =no245@cam.ac.uk
+3E5 Human Resource Management (Richter) =ar557@cam.ac.uk
+3E6 Organisational Behaviour & Change (Menges) =jm736@cam.ac.uk
+3E10 Ops. Management for Engineers (Holweg) =mh399@cam.ac.uk
+
+
+FFFMENU Part IIA Group F: Information Engineering
+3F1 Signals & Systems (Lestas) =icl20@cam.ac.uk
+3F1 Signals & Systems (Kingsbury) =ngk@eng.cam.ac.uk
+3F2 Systems & Control (Maciejowski) =jmm@eng.cam.ac.uk
+3F3 Signal & Pattern Processing (Ghahramani) =zg201@eng.cam.ac.uk
+3F3 Signal & Pattern Processing (Godsill) =sjg@eng.cam.ac.uk
+3F4 Baseband Transmission (Wassell) =ijw24@eng.cam.ac.uk
+3F4 Digital Modulation (Kingsbury) =ngk@eng.cam.ac.uk
+3F5 Computer & Network Systems (Gee) =ahg@eng.cam.ac.uk
+3F5 Computer & Network Systems (Wilkinson) =tdw@eng.cam.ac.uk
+3F6 Software Engineering & Design (Rosten) =er258@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Group G: Engineering for Life Sciences
+3G1 Intro. to Bioscience (Micklem) =gm263@cam.ac.uk
+3G1 Intro. to Bioscience (Ajioka) =jwa@mole.bio.cam.ac.uk
+3G2 Mathematical Physiology (Kabla) =ajk61@eng.cam.ac.uk
+3G2 Mathematical Physiology (Lengyel) =ml468@cam.ac.uk
+3G3 Intro. to Neuroscience (Lengyel) =ml468@eng.cam.ac.uk
+3G4 Medical imaging & 3D graphics (Gee) =ahg@eng.cam.ac.uk
+3G4 Medical imaging & 3D graphics (Prager) =rwp@eng.cam.ac.uk
+3G4 Medical imaging & 3D graphics (Treece) =gmt11@eng.cam.ac.uk
+3G5 Biomaterials (Oyen) = mlo29@eng.cam.ac.uk
+3G5 Biomaterials (Markaki) = am253@eng.cam.ac.uk
+3G5 Biomaterials (Busch) = rb468@cam.ac.uk
+
+
+FFFMENU Part IIA Group I: Imported Modules
+3I1 Data Structures & Algorithms (Norman) =acn1@cam.ac.uk
+
+
+FFFMENU Part IIA Group S: Modules Shared with Part IIB
+4C4 Design Tools (Clarkson) =pjc10@eng.cam.ac.uk
+4C4 Systems Eng. & Risk Management (Crilly) =nc266@eng.cam.ac.uk
+4D16 Construction & Management (Al-Tabbaa) =aa22@eng.cam.ac.uk
+4M12 Partial Diff. Eqns. (Hynes) =tph@eng.cam.ac.uk
+4M12 Partial Diff. Eqns. (Woodhouse) =jw12@eng.cam.ac.uk
+4M12 Notation & Variational Methods (Wells) =gnw20@eng.cam.ac.uk
+4M13 Complex Analysis (Csanyi) =gc121@eng.cam.ac.uk
+4M13 Optimisation (Parks) =gtp@eng.cam.ac.uk
+4M16 Health Physics & Fuel Processing (Skelton) =rls1@cheng.cam.ac.uk
+4M16 Reactor Physics, Design & Operation (Parks) =gtp@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Coursework
+3A1 Coursework (Turb. b/layer) =jrd37@eng.cam.ac.uk
+3A1 Coursework (Flow/bodies of rev.) =tph@eng.cam.ac.uk
+3A3 Coursework (Nozzle/s/sonic tunnel) =rsc10@eng.cam.ac.uk
+3A3 Coursework (Turbomachinery) = lpx1@eng.cam.ac.uk
+3A5 Coursework (Cycle simulation) =lpx1@eng.cam.ac.uk
+3A6 Coursework (Catalytic Oxid.) =nc@eng.cam.ac.uk
+3B1 Coursework (Superhet radio) =par10@eng.cam.ac.uk
+3B2 Coursework (Logic analysers) =dmh@eng.cam.ac.uk
+3B2 Coursework (Digital IC applic.) =dmh@eng.cam.ac.uk
+3B3 Coursework (Thyristors) =prp@eng.cam.ac.uk
+3B4 Coursework (Robotic steering) =tac1000@cam.ac.uk
+3B5 Coursework (Schottky barrier) =sh315@eng.cam.ac.uk
+3B6 Coursework (Semiconductor laser) =ihw3@eng.cam.ac.uk
+3C1 Coursework (Hardenability) =hrs@eng.cam.ac.uk
+3C5 Coursework (Gyroscopes) =hemh@eng.cam.ac.uk
+3C6 Coursework (Dig. vibration) =dc@eng.cam.ac.uk
+3C7 Coursework (Stress/strain meas.) =mjd97@eng.cam.ac.uk
+3C8 Coursework (Machine design) =djc13@eng.cam.ac.uk
+3C9 Coursework (Fracture) =pwrb@eng.cam.ac.uk
+3D1 Coursework (Soil class'n.) =skh20@eng.cam.ac.uk
+3D2 Coursework (Clay) =ks@eng.cam.ac.uk
+3D3 Coursework (Concrete) =mo318@eng.cam.ac.uk
+3D4 Coursework (Buckling) =fam@eng.cam.ac.uk
+3D5 Coursework (Sediment transport) =dl359@eng.cam.ac.uk
+3D6 Coursework (Groundwater) =aa22@eng.cam.ac.uk
+3D7 Coursework (Finite elements) =gnw20@eng.cam.ac.uk
+3E1 Coursework =mk24@cam.ac.uk
+3E2 Coursework =wsvm1@eng.cam.ac.uk 
+3E3 Coursework =no245@eng.cam.ac.uk 
+3E5 Coursework =ar557@cam.ac.uk
+3E6 Coursework =jm736@eng.cam.ac.uk
+3E10 Coursework =mh399@cam.ac.uk
+3F1 Coursework (Flight control) =mcs@eng.cam.ac.uk
+3F2 Coursework (Ball and beam) =jmm@eng.cam.ac.uk
+3F2 Coursework (Inverted pendulum) =jmm@eng.cam.ac.uk
+3F3 Coursework (Signal processing) =sjg@eng.cam.ac.uk
+3F4 Coursework (Dig. transmission) =ag495@eng.cam.ac.uk
+3F5 Coursework (Cache memory) =tpl@eng.cam.ac.uk
+3F6 Coursework (Software) =ad465@eng.cam.ac.uk
+3G1 Coursework (Bioscience) =gm263@cam.ac.uk 
+3G2 Coursework (Math. Phys.) =ajk61@eng.cam.ac.uk
+3G3 Coursework (Neuroscience) =ml468@eng.cam.ac.uk
+3G4 Coursework (Med. Imaging) =gmt11@eng.cam.ac.uk
+3G5 Coursework (Biomaterials) =mlo29@eng.cam.ac.uk
+4D16 Coursework =aa22@eng.cam.ac.uk
+
+EAA Surveying Course =alj3@eng.cam.ac.uk
+EAA Flow Visualisation =nra27@eng.cam.ac.uk
+EAA IC Engine =nc@eng.cam.ac.uk
+EAA Failure Analysis =am253@eng.cam.ac.uk
+EAA Power Pack =djc13@eng.cam.ac.uk
+EAA CD Player =prp@eng.cam.ac.uk
+EAA Life Sciences =ajk61@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Projects
+Advanced Power Generation =gtp@eng.cam.ac.uk
+Turbo-Expander =pgt23@eng.cam.ac.uk
+Heat Exchanger = rjm76@eng.cam.ac.uk
+Aircraft Wing Analysis =wrg@eng.cam.ac.uk
+Optical Fibre Link =tdw@eng.cam.ac.uk
+Electrical Power =tac1000@eng.cam.ac.uk
+VLSI =dmh@eng.cam.ac.uk
+Data Logger =sh315@eng.cam.ac.uk
+Mechanical CAD/CAM =pjgl2@eng.cam.ac.uk
+Light Aircraft Design =nc266@cam.ac.uk
+Automotive Suspension =djc13@eng.cam.ac.uk
+Bicycle Design =dc135@eng.cam.ac.uk
+Vibration Modelling =dc@eng.cam.ac.uk
+Constructionarium =mo318@eng.cam.ac.uk
+Structural Modelling =fam@eng.cam.ac.uk
+Civil Engineering Design =mdb@eng.cam.ac.uk
+Civil Engineering Field =dl359@eng.cam.ac.uk
+Surveying =alj3@eng.cam.ac.uk
+Control Systems =gv@eng.cam.ac.uk
+Software =ahg@eng.cam.ac.uk
+Data Analysis =wjf@eng.cam.ac.uk
+Image Processing =gmt11@eng.cam.ac.uk
+Atomic Force Microscope =jmg77@eng.cam.ac.uk
+Microfluidics =ajk61@eng.cam.ac.uk
+French =cd237@eng.cam.ac.uk
+German =mk596@eng.cam.ac.uk
+Spanish =asb49@eng.cam.ac.uk
+Japanese =ma214@eng.cam.ac.uk
+Chinese =cd237@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Education
+Exams =hrs@eng.cam.ac.uk
+Exams (MET) =jm329@eng.cam.ac.uk
+Coursework (all EAs) =mpfs@eng.cam.ac.uk
+Coursework (MET) =jm329@eng.cam.ac.uk
+Projects =hrs@eng.cam.ac.uk
+Computing =tpl@eng.cam.ac.uk
+Course as a Whole =hrs@eng.cam.ac.uk
+
+
+FFFMENU Part IIA Supervisions
+3A1 Supervisions =tph@eng.cam.ac.uk
+3A3 Supervisions =rsc10@cam.ac.uk
+3A5 Supervisions =jby@eng.cam.ac.uk
+3A6 Supervisions =sh372@eng.cam.ac.uk
+3B1 Supervisions =par10@eng.cam.ac.uk
+3B2 Supervisions =fu@eng.cam.ac.uk
+3B3 Supervisions =prp@eng.cam.ac.uk
+3B4 Supervisions =prp@eng.cam.ac.uk
+3B5 Supervisions =ajf@eng.cam.ac.uk
+3B6 Supervisions =ihw3@eng.cam.ac.uk
+3C1 Supervisions =hrs@eng.cam.ac.uk
+3C5 Supervisions =hemh@eng.cam.ac.uk
+3C6 Supervisions =dc@eng.cam.ac.uk
+3C7 Supervisions =sdg@eng.cam.ac.uk
+3C8 Supervisions =djc13@eng.cam.ac.uk
+3C9 Supervisions =naf1@eng.cam.ac.uk
+3D1 Supervisions =mdb@eng.cam.ac.uk
+3D2 Supervisions =ks@eng.cam.ac.uk
+3D3 Supervisions =mo318@eng.cam.ac.uk
+3D4 Supervisions =fam@eng.cam.ac.uk
+3D5 Supervisions =dl359@eng.cam.ac.uk
+3D6 Supervisions =aa22@eng.cam.ac.uk
+3D7 Supervisions =gnw20@eng.cam.ac.uk
+3E1 Supervisions =mk24@cam.ac.uk
+3E2 Supervisions =wsvm1@cam.ac.uk
+3E3 Supervisions =no245@cam.ac.uk
+3E5 Supervisions =ar557@cam.ac.uk
+3E6 Supervisions =jm736@cam.ac.uk
+3E10 Supervisions =mh399@cam.ac.uk
+3F1 Supervisions =ngk@eng.cam.ac.uk
+3F2 Supervisions =jmm@eng.cam.ac.uk
+3F3 Supervisions =sjg@eng.cam.ac.uk
+3F4 Supervisions =ijw24@eng.cam.ac.uk
+3F5 Supervisions =ahg@eng.cam.ac.uk
+3F6 Supervisions =er258@eng.cam.ac.uk
+3G1 Supervisions =gm263@cam.ac.uk
+3G2 Supervisions =ajk61@cam.ac.uk
+3G3 Supervisions =ml468@eng.cam.ac.uk
+3G4 Supervisions =ahg@eng.cam.ac.uk
+3G5 Supervisions =mlo29@eng.cam.ac.uk
+3I1 Supervisions =acn1@cam.ac.uk
+
+
+FFFMENU Part IIA General
+CUES =chairman@cues.org.uk
+SSJC =hrs@eng.cam.ac.uk
+Unclassifiable =hrs@eng.cam.ac.uk
+
+### ---------------------
+FFFTITLE Part IIB Feedback
+### ---------------------
+
+### Part IIB Lectures
+
+
+FFFMENU Part IIB Group A: Fluid Mechanics and Thermodynamics
+4A2 Computational Fluid Dynamics (Tucker) =pgt23@cam.ac.uk
+4A2 Computational Fluid Dynamics (Dawes) =wnd@eng.cam.ac.uk
+4A3 Turbomachinery I (Hall) =cah1003@cam.ac.uk
+4A3 Turbomachinery I (Tucker) =pgt23@cam.ac.uk
+4A7 Transonic Wings & Aerofoil Design (Bruce) =pjkb2@eng.cam.ac.uk
+4A7 Advanced Aerodynamics (Jarrett) = jpj1001@eng.cam.ac.uk
+4A7 Greener by Design (Dawes) = wnd@eng.cam.ac.uk
+4A8 Environmental Fluid Mechanics (Swaminathan) =ns341@eng.cam.ac.uk
+4A8 Environmental Fluid Mechanics (Mastorakos) =em257@eng.cam.ac.uk
+4A10 Flow Instability (Juniper) =mpj1001@eng.cam.ac.uk
+4A10 Fluid-structure Interaction (Agarwal) =aa406@eng.cam.ac.uk
+4A11 Turbomachinery II (Pullan) =gp10006@eng.cam.ac.uk
+4A11 Turbomachinery II (Xu) =lpx1@eng.cam.ac.uk
+4A12 Vorticity dynamics (Davidson) =pad3@eng.cam.ac.uk
+4A12 Turbulence (Mastorakos) =em257@eng.cam.ac.uk
+4A13 Combustion (Hochgreb) =sh372@eng.cam.ac.uk
+4A13 IC engines (Collings) =nc@eng.cam.ac.uk
+
+
+FFFMENU Part IIB Group B: Electrical Engineering
+4B2 Power Microelectronics (Udrea) =fu@eng.cam.ac.uk
+4B5 Nanotechnology (Durkan) =cd229@eng.cam.ac.uk
+4B6 Solid State Devices (Chu) =dpc31@eng.cam.ac.uk
+4B6 Solid State Devices (Migliorato) =pm@eng.cam.ac.uk
+4B7 VLSI Design & CAD of MOS Integrated Circuits (Holburn) =dmh@eng.cam.ac.uk
+4B7 Integrated Devices & VLSI Technology (Kelly) =mjk1@eng.cam.ac.uk
+4B11 Photonic Systems (Wilkinson) =tdw@eng.cam.ac.uk
+4B13 Sensors (Robertson P) =par10@eng.cam.ac.uk
+4B14 Solar electronic power (Amaratunga) =ga@eng.cam.ac.uk
+4B14 Solar electronic power (Flewitt) =ajf@eng.cam.ac.uk
+4B15 Advanced Telecomms. Networks (Wilkinson) =tdw@eng.cam.ac.uk
+4B18 Advanced Electronic Devices (Kelly) =mjk1@eng.cam.ac.uk
+4B19 Renewable Electric Power (Flack) =tjf@eng.cam.ac.uk
+4B19 Renewable Electric Power (McMahon) =ram1@eng.cam.ac.uk
+
+
+FFFMENU Part IIB Group C: Mechanics and Materials Engineering
+4C2 Stress Analysis of Laminates (Markaki) =am253@eng.cam.ac.uk
+4C2 Laminate Design & Processing (Sutcliffe) =mpfs@eng.cam.ac.uk
+4C3 Bulk Materials, Properties & Applications (Cardwell) =dc135@eng.cam.ac.uk
+4C3 Thin Film Technology (Hofmann) =sh315@eng.cam.ac.uk
+4C3 Microcircuits (Robertson_J) =jr@eng.cam.ac.uk
+4C4 Design Tools (Clarkson) =pjc10@eng.cam.ac.uk
+4C4 Systems Eng. & Risk Management (Crilly) =nc266@eng.cam.ac.uk
+4C5 Design Case`Studies (Clarkson) =pjc10@cam.ac.uk
+4C5 Design Case`Studies (Crilly) =nc266@cam.ac.uk
+4C6 Measurement Methods & Modal Analysis (Hunt) =hemh@eng.cam.ac.uk
+4C6 Damped Systems, Components & Coupling (Woodhouse) =jw12@eng.cam.ac.uk
+4C7 Non-linear & Self-excited Vibration (Seshia) =aas41@eng.cam.ac.uk
+4C7 Random Vibration (Langley) =rsl21@eng.cam.ac.uk
+4C8 Satellite Dynamics (Johnson) =alj3@eng.cam.ac.uk
+4C8 Vehicle Dynamics (Cebon) =dc@eng.cam.ac.uk
+4C9 Elasticity (Deshpande) =vsd@eng.cam.ac.uk
+4C9 Plasticity (Fleck) =naf1@eng.cam.ac.uk
+4C15 MEMS - Design (Seshia) =aas41@eng.cam.ac.uk
+4C16 Advanced Machine Design (Cole) =djc13@eng.cam.ac.uk
+4C16 Advanced Machine Design (Sutcliffe) =mpfs@eng.cam.ac.uk
+
+
+FFFMENU Part IIB Group D: Civil, Structural and Environmental Engineering
+4D4 Ground Engineering (Mair) =rjm50@cam.ac.uk
+4D4 Ground Engineering (Bennett) =pjb65@cam.ac.uk
+4D5 Foundation Engineering (Haigh) =skh20@cam.ac.uk
+4D5 Foundation Engineering (Bolton) =mdb@eng.cam.ac.uk
+4D6 Dynamics in Civil Engineering (McRobie) =fam@eng.cam.ac.uk
+4D6 Dynamics in Civil Engineering (Haigh) =skh20@eng.cam.ac.uk
+4D6 Dynamics in Civil Engineering (DeJong) =mjd97@eng.cam.ac.uk
+4D7 Concrete & Masonry Structures (Lees) =jml2@eng.cam.ac.uk
+4D7 Concrete & Masonry Structures (Morley) =ctm1@eng.cam.ac.uk
+4D10 Structural Steelwork (McRobie) =fam@eng.cam.ac.uk
+4D10 Structural Steelwork (Symons) =dds11@eng.cam.ac.uk
+4D11 Building Physics (Overend) =mo318@eng.cam.ac.uk
+4D11 Building Physics (Choudhary) =rc488@eng.cam.ac.uk
+4D11 Building Physics (McRobie) =fam@eng.cam.ac.uk
+4D13 Architectural Engineering (Choudhary) =rc488@eng.cam.ac.uk
+4D15 Sustainable Water Engineering (Fenner) =raf37@eng.cam.ac.uk
+4D16 Construction & Management (Al-Tabbaa) =aa22@eng.cam.ac.uk
+
+
+FFFMENU Part IIB Group E: Management and Manufacturing
+4E1 Technological Innovation (Minshall) =thwm100@eng.cam.ac.uk
+4E1 Technological Innovation (Garnsey) =ewg@eng.cam.ac.uk
+4E4 Management of Technology (Minshall) =thwm100@eng.cam.ac.uk
+4E5 International Business Economics (Zhang_J) =jz208@cam.ac.uk
+4E6 Accounting & Finance (Szilagyi) =ps469@cam.ac.uk
+4E11 Strategic Management (Zyglidopoulos) =scz20@cam.ac.uk
+4E12 Project Management (Heffernan) =pbh24@cam.ac.uk
+
+
+FFFMENU Part IIB Group F: Information Engineering
+4F1 Control System Design (Smith) =mcs@eng.cam.ac.uk
+4F2 Robust Multivariable Control (Goncalves) =jmg77@eng.cam.ac.uk
+4F2 Robust Multivariable Control (Maciejowski) =jmm@eng.cam.ac.uk
+4F5 Advanced Wireless Comms. (Fabregas) =ag495@eng.cam.ac.uk
+4F6 Signal Detection & Estimation (Fitzgerald) =wjf@eng.cam.ac.uk
+4F7 Digital Filters & Spectrum Estimation (Singh) =sss40@eng.cam.ac.uk
+4F8 Image Processing (Lasenby) =jl@eng.cam.ac.uk
+4F8 Image Coding (Kingsbury) =ngk@eng.cam.ac.uk
+4F10 Statistical Pattern Processing (Gales) =mjfg@eng.cam.ac.uk
+4F11 Speech & Language Processing (de Gispert) =ad465@cam.ac.uk
+4F11 Speech & Language Processing (Woodland) =pcw@eng.cam.ac.uk
+4F12 Computer Vision & Robotics (Cipolla) =cipolla@eng.cam.ac.uk
+4F13 Machine Learning (Ghahramani) =zg201@eng.cam.ac.uk
+4F13 Machine Learning (Rasmussen) =cer54@eng.cam.ac.uk
+
+
+FFFMENU Part IIB Group G: Engineering for Life Sciences
+4G2 Biosensors (Seshia) =aas41@cam.ac.uk
+4G2 Biosensors (Hall_L) =eah16@cam.ac.uk
+4G3 Computational Neuroscience (Lengyel) =ml468@eng.cam.ac.uk
+4G3 Computational Neuroscience (Wolpert) =dw304@eng.cam.ac.uk
+4G3 Computational Neuroscience (Eglen) =sje30@cam.ac.uk
+4G3 Computational Neuroscience (Laughlin) =sl104@cam.ac.uk
+4G4 Biomimetics (Oyen) =mlo29@eng.cam.ac.uk
+4G4 Biomimetics (Steiner) =u.steiner@bss.phy.cam.ac.uk
+4G4 Biomimetics (Juniper) =mpj1001@eng.cam.ac.uk
+4G4 Biomimetics (Federle) =wf222@cam.ac.uk
+4G5 Biomolecular Modelling (Csanyi) =gc121@eng.cam.ac.uk
+4G6 Cellular Mol. Bio. (Fleck) =naf@eng.cam.ac.uk
+4G6 Cellular Mol. Bio. (Deshpande) =vsd@eng.cam.ac.uk
+
+FFFMENU Part IIB Group I: Imported Modules
+4I1 Stratetgic valuation (Jiang) =hj231@cam.ac.uk
+4I5 Nuclear Materials (Greer) =alg3@cam.ac.uk
+4I5 Nuclear Materials (Farnan) =if203@cam.ac.uk
+4I6 Synthetic Biology (Kabla) =ajk61@eng.cam.ac.uk
+4I7 Electricity and environment (Nuttall) =wjn21@cam.ac.uk
+4I8 Medical Physics (Ansorge) =rea1@cam.ac.uk
+
+FFFMENU Part IIB Group M: Multidisciplinary Modules
+4M1 French (d'Angelo) =cd237@eng.cam.ac.uk
+4M2 German (Kranert) =mk596@eng.cam.ac.uk
+4M3 Spanish (Bianchi) =asb49@eng.cam.ac.uk
+4M4 Japanese (Ashikari) =ma214@eng.cam.ac.uk
+4M6 Mats. And procs. For MEMS (Flewitt) =ajf@eng.cam.ac.uk
+4M9 Surveying Field Course (Johnson) =alj3@eng.cam.ac.uk
+4M12 Partial Diff. Eqns. (Hynes) =tph@eng.cam.ac.uk
+4M12 Partial Diff. Eqns. (Woodhouse) =jw12@eng.cam.ac.uk
+4M12 Variational Methods (Wells) =gnw20@eng.cam.ac.uk
+4M13 Complex Analysis (Csanyi) =gc121@eng.cam.ac.uk
+4M13 Optimisation (Parks) =gtp@eng.cam.ac.uk
+4M14 Sustainable Development (Guthrie) =pmg31@eng.cam.ac.uk
+4M14 Sustainable Development (Nuttall) =wjn21@eng.cam.ac.uk
+4M15 Sustainable Energy (Scott) =sas37@cam.ac.uk
+4M15 Sustainable Energy (Collings) =nc@eng.cam.ac.uk
+4M15 Sustainable Energy (Nuttall) =wjn21@eng.cam.ac.uk
+4M16 Health Physics & Fuel Processing (Skelton) =rls1@cheng.cam.ac.uk
+4M16 Reactor Physics, Design & Operation (Parks) =gtp@eng.cam.ac.uk
+
+
+FFFMENU Part IIB Group R: Graduate Modules
+5R1 Stochastic Optimisation Methods (Parks) =gtp@eng.cam.ac.uk
+5R1 Stochastic Processes (Fitzgerald) =wjf@eng.cam.ac.uk
+
+
+FFFMENU Part IIB Group Coursework
+Project =ahg@eng.cam.ac.uk
+
+FFFMENU Part IIB Group Education
+Coursework =hrs@eng.cam.ac.uk
+Exams =hrs@eng.cam.ac.uk
+Computing =tpl@eng.cam.ac.uk
+Course as a Whole =hrs@eng.cam.ac.uk
+
+FFFMENU Part IIB Group General
+CUES =chairman@cues.org.uk
+SSJC =hrs@eng.cam.ac.uk
+Unclassifiable =hrs@eng.cam.ac.uk
+
+### ---------------------
+FFFTITLE MET Feedback
+### ---------------------
+
+### METI Fast Feedback
+
+FFFMENU MET Lectures
+3P1 Materials into Products (Barlow) =cyb@eng.cam.ac.uk
+3P1 Materials into Products (Shercliff) =hrs@eng.cam.ac.uk
+3P1 Materials into Products (Hutchings) =imh2@eng.cam.ac.uk
+3P2 Machines and Systems (Parlikad) =aknp2@eng.cam.ac.uk
+3P2 Machines and Systems (O'Neill) =wo207@eng.cam.ac.uk
+3P3 Product Design (Moultrie) =jm329@eng.cam.ac.uk
+3P4 Operations Management (Parlikad) =aknp2@eng.cam.ac.uk 
+3P5 Industrial Engineering (Platts KW) =kwp@eng.cam.ac.uk 
+3P5 Industrial Engineering (Davies) =kwp@eng.cam.ac.uk 
+3P6 Organisational Behaviour (Trevor) =jpt28@cam.ac.uk
+3P6 Organisational Behaviour (Heffernan) =pbh24@cam.ac.uk
+3P7 Managing Bus. And People (Heffernan) =pbh24@cam.ac.uk 
+3P7 Managing Bus. And People (Minshall) =thwm100@cam.ac.uk 
+3P7 Managing Bus. And People (Hanby) =tch20@cam.ac.uk 
+3P8 Financial and Man. Accounting (Cosh) =adc1@cam.ac.uk 
+3P9 Industrial Economics (Cosh) =adc1@cam.ac.uk
+3P10 Issues in manuf. (Barlow) =cyb@eng.cam.ac.uk
+3P10 Issues in manuf. (Oyen) =mlo29@eng.cam.ac.uk
+
+FFFMENU MET Coursework
+3P1 Coursework =imh2@eng.cam.ac.uk
+3P2 Coursework =aknp2@eng.cam.ac.uk 
+3P3 Coursework =jm329@eng.cam.ac.uk
+3P4 Coursework =aknp2@eng.cam.ac.uk
+3P5 Coursework =kwp@eng.cam.ac.uk
+3P6 Coursework =jpt28@eng.cam.ac.uk
+3P7 Coursework =pbh24@cam.ac.uk 
+3P8 Coursework =adc1@eng.cam.ac.uk
+3P9 Coursework =adc1@eng.cam.ac.uk
+3P10 Coursework =cyb@eng.cam.ac.uk
+
+FFFMENU MET Education
+Exams =jm329@eng.cam.ac.uk
+Computing =jm329@eng.cam.ac.uk
+Course as a Whole =jm329@eng.cam.ac.uk
+
+FFFMENU MET Supervisions
+3P1 Supervisions =hrs@eng.cam.ac.uk
+3P2 Supervisions =aknp2@eng.cam.ac.uk 
+3P3 Supervisions =jm329@eng.cam.ac.uk
+3P4 Supervisions =aknp2@eng.cam.ac.uk
+3P5 Supervisions =kwp@eng.cam.ac.uk
+3P6 Supervisions =jpt28@eng.cam.ac.uk
+3P7 Supervisions =pbh24@eng.cam.ac.uk
+3P8 Supervisions =adc1@eng.cam.ac.uk
+3P9 Supervisions =adc1@eng.cam.ac.uk
+3P10 Supervisions =cyb@eng.cam.ac.uk
+
+FFFMENU MET General
+CUES =chairman@cues.org.uk
+SSJC =hrs@eng.cam.ac.uk
+Unclassifiable =jm329@eng.cam.ac.uk
