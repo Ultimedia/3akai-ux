@@ -27,7 +27,7 @@ Maths (Wells) =gnw20@eng.cam.ac.uk
 Maths (Prager) =rwp@eng.cam.ac.uk
 Maths (Smith MC) =mcs@eng.cam.ac.uk
 Dimensional Analysis (Parks) =gtp@eng.cam.ac.uk
-Computing (Csanyi) =gc121@eng.cam.ac.uk
+IA Computing (Csanyi) =gc121@eng.cam.ac.uk
 Drawing (Crilly) =nc266@eng.cam.ac.uk
 Drawing (Long) =pjgl2@eng.cam.ac.uk
 Drawing (Moultrie) =jm329@eng.cam.ac.uk
@@ -38,9 +38,9 @@ Product Design (Crilly) =nc266@eng.cam.ac.uk
 Engineering Applications (Long) =pjgl2@eng.cam.ac.uk
 
 FFFMENU Part IA Coursework
+IA Computing (C++) =cipolla@eng.cam.ac.uk
 Lego Mindstorms =ahg@eng.cam.ac.uk
-Computing =tpl@eng.cam.ac.uk
-Drawing =alj3@eng.cam.ac.uk
+Computing (general) =tpl@eng.cam.ac.uk
 Dim. Analysis (Fluids) =gtp@eng.cam.ac.uk
 Dim. Analysis (Structures) =fam@eng.cam.ac.uk
 Microprocessors =gmt11@eng.cam.ac.uk
@@ -48,10 +48,6 @@ Exposition =dc135@eng.cam.ac.uk
 Statics Exp. =jml2@eng.cam.ac.uk
 Struc. Design Proj. =rc488@cam.ac.uk
 Int. Elec. Proj. =tjf@eng.cam.ac.uk
-Electrical =ajf@eng.cam.ac.uk
-Information = ajf@eng.cam.ac.uk
-Materials =am253@eng.cam.ac.uk
-Mechanics =djc13@eng.cam.ac.uk
 Structures =fc286@eng.cam.ac.uk
 Thermo/Fluids =em257@eng.cam.ac.uk
 Engine Strip =gtp@eng.cam.ac.uk
@@ -68,9 +64,8 @@ Exams Skills =hrs@eng.cam.ac.uk
 Examples Classes =hrs@eng.cam.ac.uk
 Lab. Experiments =rsc10@eng.cam.ac.uk
 Supervisions =hrs@eng.cam.ac.uk
-Exams =hrs@eng.cam.ac.uk
-Computing =tpl@eng.cam.ac.uk
-Course as a Whole =hrs@eng.cam.ac.uk
+Exams (IA) =hrs@eng.cam.ac.uk
+IA Course as a Whole =hrs@eng.cam.ac.uk
 
 FFFMENU Part IA General
 CUES =chairman@cues.org.uk
@@ -121,8 +116,8 @@ Elective - Manufacturing (Moultrie) =jm329@eng.cam.ac.uk
 
 
 FFFMENU Part IB Coursework
-Computing (Matlab) =sss40@eng.cam.ac.uk
-Computing (C++) =cipolla@eng.cam.ac.uk
+IB Computing (Matlab) =sss40@eng.cam.ac.uk
+IB Computing (C++) =cipolla@eng.cam.ac.uk
 Electrical (all) =dmh@eng.cam.ac.uk
 Thermofluids (Peltier) =lpx1@eng.cam.ac.uk
 Thermofluids (Pipe flow) =pgt23@eng.cam.ac.uk
@@ -141,29 +136,16 @@ Int. CW (Soil mechanics)=skh20@eng.cam.ac.uk
 Int. CW (Signals) =jl@eng.cam.ac.uk
 Int. Coursework (overall) =hrs@eng.cam.ac.uk
 Integrated Design Project =jmrm@eng.cam.ac.uk
-Workshop Skills =gtp@eng.cam.ac.uk
 Computer Build =tdw@eng.cam.ac.uk
-Language (French) =cd237@eng.cam.ac.uk
-Language (German) =cd237@eng.cam.ac.uk
-Language (Japanese) =cd237@eng.cam.ac.uk
-Language (Spanish) =cd237@eng.cam.ac.uk
 
 
 FFFMENU Part IB Education
-Exam Skills =hrs@eng.cam.ac.uk
-Examples Classes =hrs@eng.cam.ac.uk
-Lab. Experiments =ram1@eng.cam.ac.uk
-Supervisions =hrs@eng.cam.ac.uk
-Exams =hrs@eng.cam.ac.uk
-Computing =tpl@eng.cam.ac.uk
-Course as a Whole =hrs@eng.cam.ac.uk
+Exams (IB) =hrs@eng.cam.ac.uk
+IB Course as a Whole =hrs@eng.cam.ac.uk
 
 
 FFFMENU Part IB General
 Cycling Facilities =rmt23@eng.cam.ac.uk
-CUES =chairman@cues.org.uk
-SSJC =hrs@eng.cam.ac.uk
-Unclassifiable =hrs@eng.cam.ac.uk
 
 ### ---------------------
 FFFTITLE Part IIA Feedback
@@ -341,45 +323,43 @@ EAA Life Sciences =ajk61@eng.cam.ac.uk
 
 
 FFFMENU Part IIA Projects
-Advanced Power Generation =gtp@eng.cam.ac.uk
-Turbo-Expander =pgt23@eng.cam.ac.uk
-Heat Exchanger = rjm76@eng.cam.ac.uk
-Aircraft Wing Analysis =wrg@eng.cam.ac.uk
-Optical Fibre Link =tdw@eng.cam.ac.uk
-Electrical Power =tac1000@eng.cam.ac.uk
-VLSI =dmh@eng.cam.ac.uk
-Data Logger =sh315@eng.cam.ac.uk
-Mechanical CAD/CAM =pjgl2@eng.cam.ac.uk
-Light Aircraft Design =nc266@cam.ac.uk
-Automotive Suspension =djc13@eng.cam.ac.uk
-Bicycle Design =dc135@eng.cam.ac.uk
-Vibration Modelling =dc@eng.cam.ac.uk
-Constructionarium =mo318@eng.cam.ac.uk
+IIA Advanced Power Generation Project =gtp@eng.cam.ac.uk
+IIA Turbo-Expander Project =pgt23@eng.cam.ac.uk
+IIA Heat Exchanger Project = rjm76@eng.cam.ac.uk
+IIA Aircraft Wing Analysis Project =wrg@eng.cam.ac.uk
+IIA Optical Fibre Link Project =tdw@eng.cam.ac.uk
+IIA VLSI Project =dmh@eng.cam.ac.uk
+IIA Data Logger Project =sh315@eng.cam.ac.uk
+IIA Mechanical CAD/CAM Project =pjgl2@eng.cam.ac.uk
+IIA Light Aircraft Design Project =nc266@cam.ac.uk
+IIA Automotive Suspension Project =djc13@eng.cam.ac.uk
+IIA Bicycle Design Project =dc135@eng.cam.ac.uk
+IIA Vibration Modelling Project =dc@eng.cam.ac.uk
+IIA Constructionarium Project =mo318@eng.cam.ac.uk
 Structural Modelling =fam@eng.cam.ac.uk
-Civil Engineering Design =mdb@eng.cam.ac.uk
-Civil Engineering Field =dl359@eng.cam.ac.uk
+IIA Civil Engineering Design Project =mdb@eng.cam.ac.uk
+IIA Civil Engineering Field Project =dl359@eng.cam.ac.uk
 Surveying =alj3@eng.cam.ac.uk
-Control Systems =gv@eng.cam.ac.uk
-Software =ahg@eng.cam.ac.uk
-Data Analysis =wjf@eng.cam.ac.uk
-Image Processing =gmt11@eng.cam.ac.uk
-Atomic Force Microscope =jmg77@eng.cam.ac.uk
-Microfluidics =ajk61@eng.cam.ac.uk
-French =cd237@eng.cam.ac.uk
-German =mk596@eng.cam.ac.uk
-Spanish =asb49@eng.cam.ac.uk
-Japanese =ma214@eng.cam.ac.uk
-Chinese =cd237@eng.cam.ac.uk
+IIA Control Systems Project =gv@eng.cam.ac.uk
+IIA Software Project =ahg@eng.cam.ac.uk
+IIA Data Analysis Project =wjf@eng.cam.ac.uk
+IIA Image Processing Project =gmt11@eng.cam.ac.uk
+IIA Atomic Force Microscope Project =jmg77@eng.cam.ac.uk
+IIA Microfluidics Project =ajk61@eng.cam.ac.uk
+IIA French Project =cd237@eng.cam.ac.uk
+IIA German Project =mk596@eng.cam.ac.uk
+IIA Spanish Project =asb49@eng.cam.ac.uk
+IIA Japanese Project =ma214@eng.cam.ac.uk
+IIA Chinese Project =cd237@eng.cam.ac.uk
 
 
 FFFMENU Part IIA Education
-Exams =hrs@eng.cam.ac.uk
+Exams (IIA) =hrs@eng.cam.ac.uk
 Exams (MET) =jm329@eng.cam.ac.uk
 Coursework (all EAs) =mpfs@eng.cam.ac.uk
 Coursework (MET) =jm329@eng.cam.ac.uk
-Projects =hrs@eng.cam.ac.uk
-Computing =tpl@eng.cam.ac.uk
-Course as a Whole =hrs@eng.cam.ac.uk
+IIA Projects =hrs@eng.cam.ac.uk
+IIA Course as a Whole =hrs@eng.cam.ac.uk
 
 
 FFFMENU Part IIA Supervisions
@@ -427,9 +407,6 @@ FFFMENU Part IIA Supervisions
 
 
 FFFMENU Part IIA General
-CUES =chairman@cues.org.uk
-SSJC =hrs@eng.cam.ac.uk
-Unclassifiable =hrs@eng.cam.ac.uk
 
 ### ---------------------
 FFFTITLE Part IIB Feedback
@@ -595,18 +572,14 @@ FFFMENU Part IIB Group R: Graduate Modules
 
 
 FFFMENU Part IIB Group Coursework
-Project =ahg@eng.cam.ac.uk
+IIB Project =ahg@eng.cam.ac.uk
 
 FFFMENU Part IIB Group Education
-Coursework =hrs@eng.cam.ac.uk
-Exams =hrs@eng.cam.ac.uk
-Computing =tpl@eng.cam.ac.uk
-Course as a Whole =hrs@eng.cam.ac.uk
+Coursework (general) =hrs@eng.cam.ac.uk
+Exams (IIB) =hrs@eng.cam.ac.uk
+IIB Course as a Whole =hrs@eng.cam.ac.uk
 
 FFFMENU Part IIB Group General
-CUES =chairman@cues.org.uk
-SSJC =hrs@eng.cam.ac.uk
-Unclassifiable =hrs@eng.cam.ac.uk
 
 ### ---------------------
 FFFTITLE MET Feedback
@@ -647,9 +620,7 @@ FFFMENU MET Coursework
 3P10 Coursework =cyb@eng.cam.ac.uk
 
 FFFMENU MET Education
-Exams =jm329@eng.cam.ac.uk
-Computing =jm329@eng.cam.ac.uk
-Course as a Whole =jm329@eng.cam.ac.uk
+MET Course as a Whole =jm329@eng.cam.ac.uk
 
 FFFMENU MET Supervisions
 3P1 Supervisions =hrs@eng.cam.ac.uk
@@ -664,6 +635,3 @@ FFFMENU MET Supervisions
 3P10 Supervisions =cyb@eng.cam.ac.uk
 
 FFFMENU MET General
-CUES =chairman@cues.org.uk
-SSJC =hrs@eng.cam.ac.uk
-Unclassifiable =jm329@eng.cam.ac.uk
