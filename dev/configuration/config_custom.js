@@ -17,8 +17,11 @@
  */
 define(["config/config"], function(config) {
 
-    // Custom CSS Files to load in
-    // config.skinCSS = ["/dev/skins/default/skin.css"];
+    // Custom CSS Files to load in for QA:
+    // https://bugs.caret.cam.ac.uk/browse/CTTEN-273
+    if ( window.location.hostname.indexOf("-qa", 0) > -1 ) {
+       config.skinCSS = ["/dev/skins/default/skin-qa.css"];
+    }
 
     /**
      * Kaltura Settings
